@@ -1,0 +1,205 @@
+#!/bin/bash
+# detect and resolve symlink
+if [[ -L $0 ]]; then
+	if [[ $(readlink $0) =~ ^(.*)/([^/]+)$ ]]; then
+		WORKDIR="${BASH_REMATCH[1]}"
+		CALLED="${BASH_REMATCH[2]}"
+	fi
+else
+	if [[ $0 =~ ^(.*)/([^/]+)$ ]]; then
+		WORKDIR="${BASH_REMATCH[1]}"
+		CALLED="${BASH_REMATCH[2]}"
+	fi
+fi
+STATEDIR="${WORKDIR}/state"
+if [ ! -d ${STATEDIR} ]; then
+	mkdir ${STATEDIR}
+fi
+
+# detect available cmds
+commands() {
+	#echo "-- [COMMANDS] --"
+	printf "%s" "list"
+	for FILE in ${WORKDIR}/cmd.*.sh; do
+		if [[ $FILE =~ cmd[.](.+)[.]sh ]]; then
+			printf " %s" "${BASH_REMATCH[1]}"
+		fi
+	done
+	exit 1
+}
+if [[ -n "$1" && ${CALLED} == "drv.core" ]]; then
+	case "${1}" in
+		list) ## list commands
+			commands
+		;;
+		setup-params) ## output sddc.parameters
+			cat ${WORKDIR}/sddc.parameters
+		;;
+		setup-bash) ## output bash-cli
+			cat ${WORKDIR}/bash-cli
+		;;
+		*) ## execute command
+			if [ -f "${WORKDIR}/cmd.${1}.sh" ]; then
+				eval "${WORKDIR}/cmd.${1}.sh ${2} ${3} ${4}"
+			fi
+		;;
+	esac
+fi
+
+# get OSNAME
+OSNAME="$(uname -s)"
+case "${OSNAME}" in
+	Linux*)
+		#printf "HAHA you run a L:${OSNAME}\n" 1>&2
+	;;
+	Darwin*)
+		#printf "HAHA you run a D:${OSNAME}\n" 1>&2
+	;;
+esac
+
+# COLOURS
+NC='\033[0m' # no colour
+BLACK='\033[0;30m' # black
+RED='\033[0;31m' # red
+GREEN='\033[0;32m' # green
+ORANGE='\033[0;33m' # orange
+BLUE='\033[0;34m' # blue
+PURPLE='\033[0;35m' # purple
+CYAN='\033[0;36m' # cyan
+LIGHTGREY='\033[0;37m' # light grey
+DARKGREY='\033[0;30m' # dark grey
+LIGHTRED='\033[0;31m' # light red
+LIGHTGREEN='\033[0;32m' # light green
+YELLOW='\033[0;33m' # yellow
+LIGHTBLUE='\033[0;34m' # light blue
+LIGHTPURPLE='\033[0;35m' # light purple
+LIGHTCYAN='\033[0;36m' # light cyan
+WHITE='\033[0;37m' # white
+
+function corange {
+	local STRING=${1}
+	printf "${ORANGE}${STRING}${NC}"
+}
+function cgreen {
+	local STRING=${1}
+	printf "${GREEN}${STRING}${NC}"
+}
+function ccyan {
+	local STRING=${1}
+	printf "${CYAN}${STRING}${NC}"
+}
+
+function isSuccess {
+	local STRING=${1}
+	if [[ $STRING =~ ^(.*)([0-9]{3})$ ]]; then
+		local BODY=${BASH_REMATCH[1]}
+		local CODE=${BASH_REMATCH[2]}
+	fi
+	printf "[$(ccyan "${CODE}")] - " 1>&2
+	if [[ $CODE =~ 2..$ ]]; then
+		printf "SUCCESS\n" 1>&2
+	else
+		printf "ERROR\n" 1>&2
+	fi
+	printf "%s\n" "${BODY}"
+}
+
+function getFile {
+	local ENDPOINT=${1}
+	local BASE=${2}
+	local STATE
+	if [[ -n $BASE ]]; then
+		REGEX="^($BASE)"
+		if [[ $ENDPOINT =~ $REGEX ]]; then
+			ENDPOINT=${ENDPOINT#*"${BASH_REMATCH[1]}"}
+		fi
+	fi
+	while [[ $ENDPOINT =~ ([^/]+) ]]; do
+		ENDPOINT=${ENDPOINT#*"${BASH_REMATCH[1]}"}
+		STATE+=".${BASH_REMATCH[1]}"
+	done
+	STATE+=".json"
+	printf "${STATE}"
+}
+
+function getThumbprint {
+	local HOST="${1}"
+	local PAYLOAD=$(echo -n | openssl s_client -connect "${HOST}" 2>/dev/null)
+	local PRINT=$(echo "$PAYLOAD" | openssl x509 -noout -fingerprint -sha256)
+	local REGEX='^(.*)=(([0-9A-Fa-f]{2}[:])+([0-9A-Fa-f]{2}))$'
+	if [[ $PRINT =~ $REGEX ]]; then
+		local TYPE=${BASH_REMATCH[1]}
+		local CODE=${BASH_REMATCH[2]}
+	fi
+	printf "%s\n" "${CODE}" |  sed "s/\(.*\)/\L\1/g" | sed "s/://g"
+}
+
+function getCertificate {
+	local HOST="${1}"
+	local PAYLOAD=$(echo -n | openssl s_client -connect "${HOST}" 2>/dev/null)
+	local RESULT=$(echo "${PAYLOAD}" |  sed -e '1h;2,$H;$!d;g' -e 's/.*\(-----BEGIN\sCERTIFICATE-----.*-----END\sCERTIFICATE-----\).*/\1/g')
+	printf "%s\n" "$RESULT" | sed ':a;N;$!ba;s/\n/\\\\n/g'
+}
+
+# build and output table from input dataset
+function buildTable {
+	local INPUT="${1}"
+	read -r -d '' JQTABLE <<-CONFIG
+		if (.[0]?) then
+			[(
+				[.[0] | to_entries[] | .key]
+				| ., map(length * "-")
+			),(
+				.[] | [to_entries[] | .value]
+			)]
+		else . end
+	CONFIG
+	echo "$INPUT" | jq -r "$JQTABLE | .[] | @tsv" | column -t -s $'\t'
+}
+
+## filter payload with string
+function filter {
+	local PAYLOAD=${1}
+	local STRING=${2}
+	while [[ $STRING =~ ([^,]+) ]]; do
+		local FILTER="${BASH_REMATCH[1]}"
+		STRING=${STRING#*"${BASH_REMATCH[1]}"}
+		local FIELD="name"
+		local VALUE="."
+		if [[ $FILTER =~ ([^:]+):([^:]+) ]]; then
+			FIELD=${BASH_REMATCH[1]}
+			VALUE=${BASH_REMATCH[2]}
+		else
+			VALUE="${FILTER}"
+		fi
+		read -r -d '' FILTERSPEC <<-CONFIG
+			map(select(."$FIELD"|test("$VALUE";"i")))
+		CONFIG
+		PAYLOAD=$(echo "$PAYLOAD" | jq -r "$FILTERSPEC")
+	done
+	printf "%s\n" "${PAYLOAD}" | jq --tab .
+}
+
+## set current context
+function setContext {
+	local INPUT="${1}"
+	local ITEM="${2}"
+	local STATE="${STATEDIR}/ctx.${ITEM}.json"
+	local PAYLOAD=$(echo "$INPUT" | jq --tab '.[0]')
+	if [[ ! "${PAYLOAD}" == null ]]; then
+		printf "%s\n" "${PAYLOAD}" >"${STATE}"
+	fi
+}
+
+## get current context
+function getContext {
+	local FILTER="${1}"
+	if [[ -z $FILTER ]]; then
+		FILTER="."
+	fi
+	echo "FILTER: ${FILTER}" 1>&2
+	local PAYLOAD=$("${WORKDIR}"/cmd.context.list.sh "${FILTER}" json | jq '.[0]')
+	if [[ ! "$PAYLOAD" == null ]]; then
+		printf "%s\n" "${PAYLOAD}" | jq -r '.id'
+	fi
+}
