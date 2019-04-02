@@ -10,10 +10,7 @@ read -r -d '' BODY <<-CONFIG
 }
 CONFIG
 
-URL='https://10.196.164.25/api/ni/auth/token'
-#printf "${BODY}" | jq --tab .
-#printf "${URL}"
-#echo
+URL='https://1.1.1.1/api/ni/auth/token'
 
 RESPONSE=$(curl -k -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' \
 	-d "${BODY}" \
