@@ -4,12 +4,12 @@ if [[ $0 =~ ^(.*)/([^/]+)$ ]]; then
 fi
 source ${WORKDIR}/mod.command
 
-function run { ## build record
+function run {
 	read -r -d '' SPEC <<-CONFIG
-	.results | if (. != null) then map({
-		"entity_id": .entity_id,
-		"entity_type": .entity_type
-	}) else "" end
+		. | if (. != null) then map({
+			"modelKey": .modelKey,
+			"name": .name
+		}) else "" end
 	CONFIG
 	printf "${SPEC}"
 }

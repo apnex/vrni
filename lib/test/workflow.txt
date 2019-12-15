@@ -1,0 +1,7 @@
+# search for results to obtain modelKey
+https://field-demo.vrni.cmbu.local/api/search/query?searchString=host&timestamp=1576046206507&timeRangeString=%20at%20Now%20&includeObjects=false&includeFacets=true&includeMetrics=false&includeEvents=false&startIndex=0&maxItemCount=10&dateTimeZone=%2B11%3A00&sourceString=USER&includeModelKeyOnly=false
+
+https://field-demo.vrni.cmbu.local/api/search/query?searchString=host&includeObjects=false&includeModelKeyOnly=false
+
+# post to config/objects with JSON body of {"requests":[{"modelKey":"10000:4:141736118"}]}
+https://field-demo.vrni.cmbu.local/api/config/objects

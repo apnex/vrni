@@ -1,0 +1,2829 @@
+{
+	"status": true,
+	"statusCode": {
+		"code": 0,
+		"codeStr": "OK"
+	},
+	"message": "Success",
+	"data": [
+		{
+			"name": "sc2-hs2-b1609.eng.vmware.com",
+			"modelKey": "10000:4:141732398",
+			"numVms": 11,
+			"vmknics": [
+				{
+					"name": "[sc2-hs2-b1609.eng.vmware.com]-[vmk0]",
+					"modelKey": "10000:17:335776453",
+					"nicType": "MANAGEMENT",
+					"virtualNicParent": {
+						"numberednetworkinterfaceParent": {
+							"ipAddresses": [
+								{
+									"prefixLength": 22,
+									"ipAddress": "10.172.209.79",
+									"netMask": "255.255.252.0",
+									"networkAddress": "10.172.208.0/22",
+									"cidr": "10.172.209.79/22",
+									"start": 179097935,
+									"end": 179097935,
+									"ipAddressType": "ENDPOINT",
+									"privateAddress": true
+								}
+							],
+							"networkinterfaceParent": {
+								"nicId": "vmk0",
+								"administrativeStatus": "UP",
+								"operationalStatus": "ACTIVE",
+								"mtu": 1500,
+								"ifSpeed": -1,
+								"physicalAddress": "3c:fd:fe:ac:f2:ec",
+								"ifType": "ETHERNET",
+								"duplex": "FULL",
+								"interfaceName": "vmk0",
+								"connected": true
+							},
+							"ipEntities": [
+								{
+									"modelKey": "10000:541:1590387447",
+									"name": "10.172.209.79"
+								}
+							]
+						}
+					},
+					"manager": {
+						"modelKey": "10000:8:602129624",
+						"name": "sc2vc01.cmbu.local"
+					},
+					"host": {
+						"modelKey": "10000:4:141732398",
+						"name": "sc2-hs2-b1609.eng.vmware.com"
+					},
+					"cluster": {
+						"modelKey": "10000:66:1593633035",
+						"name": "sc2c01"
+					},
+					"defaultGateway": "10.172.211.253"
+				},
+				{
+					"name": "[sc2-hs2-b1609.eng.vmware.com]-[vmk3]",
+					"modelKey": "10000:17:335776546",
+					"nicType": "VTEP",
+					"virtualNicParent": {
+						"numberednetworkinterfaceParent": {
+							"ipAddresses": [
+								{
+									"prefixLength": 24,
+									"ipAddress": "10.173.22.109",
+									"netMask": "255.255.255.0",
+									"networkAddress": "10.173.22.0/24",
+									"cidr": "10.173.22.109/24",
+									"start": 179115629,
+									"end": 179115629,
+									"ipAddressType": "ENDPOINT",
+									"privateAddress": true
+								}
+							],
+							"networkinterfaceParent": {
+								"nicId": "vmk3",
+								"administrativeStatus": "UP",
+								"operationalStatus": "ACTIVE",
+								"mtu": 9000,
+								"ifSpeed": -1,
+								"physicalAddress": "00:50:56:63:e9:f8",
+								"ifType": "ETHERNET",
+								"duplex": "FULL",
+								"interfaceName": "vmk3",
+								"connected": true
+							},
+							"ipEntities": [
+								{
+									"modelKey": "10000:541:944307602",
+									"name": "10.173.22.109"
+								}
+							]
+						},
+						"dvpg": {
+							"modelKey": "10000:3:678527016",
+							"name": "vxw-vmknicPg-dvs-81-0-8f710449-623b-4407-9b1e-2a32989833c9"
+						},
+						"dvs": {
+							"modelKey": "10000:2:2100217279",
+							"name": "SC2-dSwitch-1"
+						},
+						"virtualPort": {
+							"connectedVirtualPort": "65"
+						}
+					},
+					"manager": {
+						"modelKey": "10000:8:602129624",
+						"name": "sc2vc01.cmbu.local"
+					},
+					"host": {
+						"modelKey": "10000:4:141732398",
+						"name": "sc2-hs2-b1609.eng.vmware.com"
+					},
+					"pathSwitchPorts": [
+						{
+							"modelKey": "10000:19:563100223",
+							"name": "[sc2-hs2-b1609.eng.vmware.com]-[vmnic3]"
+						}
+					],
+					"cluster": {
+						"modelKey": "10000:66:1593633035",
+						"name": "sc2c01"
+					},
+					"defaultGateway": "10.173.22.253"
+				},
+				{
+					"name": "[sc2-hs2-b1609.eng.vmware.com]-[vmk2]",
+					"modelKey": "10000:17:335776515",
+					"nicType": "MANAGEMENT",
+					"virtualNicParent": {
+						"numberednetworkinterfaceParent": {
+							"ipAddresses": [
+								{
+									"prefixLength": 22,
+									"ipAddress": "192.168.105.79",
+									"netMask": "255.255.252.0",
+									"networkAddress": "192.168.104.0/22",
+									"cidr": "192.168.105.79/22",
+									"start": 3232262479,
+									"end": 3232262479,
+									"ipAddressType": "ENDPOINT",
+									"privateAddress": true
+								}
+							],
+							"networkinterfaceParent": {
+								"nicId": "vmk2",
+								"administrativeStatus": "UP",
+								"operationalStatus": "ACTIVE",
+								"mtu": 9000,
+								"ifSpeed": -1,
+								"physicalAddress": "00:50:56:60:5d:13",
+								"ifType": "ETHERNET",
+								"duplex": "FULL",
+								"interfaceName": "vmk2",
+								"connected": true
+							},
+							"ipEntities": [
+								{
+									"modelKey": "10000:541:1107518892",
+									"name": "192.168.105.79"
+								}
+							]
+						}
+					},
+					"manager": {
+						"modelKey": "10000:8:602129624",
+						"name": "sc2vc01.cmbu.local"
+					},
+					"host": {
+						"modelKey": "10000:4:141732398",
+						"name": "sc2-hs2-b1609.eng.vmware.com"
+					},
+					"cluster": {
+						"modelKey": "10000:66:1593633035",
+						"name": "sc2c01"
+					},
+					"defaultGateway": "10.172.211.253"
+				},
+				{
+					"name": "[sc2-hs2-b1609.eng.vmware.com]-[vmk1]",
+					"modelKey": "10000:17:335776484",
+					"nicType": "MANAGEMENT",
+					"virtualNicParent": {
+						"numberednetworkinterfaceParent": {
+							"ipAddresses": [
+								{
+									"prefixLength": 24,
+									"ipAddress": "172.16.10.2",
+									"netMask": "255.255.255.0",
+									"networkAddress": "172.16.10.0/24",
+									"cidr": "172.16.10.2/24",
+									"start": 2886732290,
+									"end": 2886732290,
+									"ipAddressType": "ENDPOINT",
+									"privateAddress": true
+								}
+							],
+							"networkinterfaceParent": {
+								"nicId": "vmk1",
+								"administrativeStatus": "UP",
+								"operationalStatus": "ACTIVE",
+								"mtu": 9000,
+								"ifSpeed": -1,
+								"physicalAddress": "00:50:56:6a:38:80",
+								"ifType": "ETHERNET",
+								"duplex": "FULL",
+								"interfaceName": "vmk1",
+								"connected": true
+							},
+							"ipEntities": [
+								{
+									"modelKey": "10000:541:419705124",
+									"name": "172.16.10.2"
+								}
+							]
+						}
+					},
+					"manager": {
+						"modelKey": "10000:8:602129624",
+						"name": "sc2vc01.cmbu.local"
+					},
+					"host": {
+						"modelKey": "10000:4:141732398",
+						"name": "sc2-hs2-b1609.eng.vmware.com"
+					},
+					"cluster": {
+						"modelKey": "10000:66:1593633035",
+						"name": "sc2c01"
+					},
+					"defaultGateway": "10.172.211.253"
+				}
+			],
+			"embeddedPnics": [
+				{
+					"name": "[sc2-hs2-b1609.eng.vmware.com]-[vmnic2]",
+					"modelKey": "10000:19:563100192",
+					"administrativeStatus": "UP",
+					"operationalStatus": "UP",
+					"mtu": -1,
+					"ifSpeed": 10000000000,
+					"duplex": "FULL",
+					"connectionType": "SWITCH",
+					"manager": {
+						"modelKey": "10000:8:602129624",
+						"name": "sc2vc01.cmbu.local"
+					},
+					"device": {
+						"modelKey": "10000:4:141732398",
+						"name": "sc2-hs2-b1609.eng.vmware.com"
+					},
+					"subType": [
+						1110
+					],
+					"deviceInfo": {
+						"vendor": "VMware, Inc.",
+						"version": "6.7.0"
+					},
+					"physicalAddress": "3c:fd:fe:ac:f2:ec"
+				},
+				{
+					"name": "[sc2-hs2-b1609.eng.vmware.com]-[vmnic1]",
+					"modelKey": "10000:19:563100161",
+					"administrativeStatus": "UNKNOWN",
+					"operationalStatus": "DOWN",
+					"mtu": -1,
+					"ifSpeed": -1,
+					"duplex": "FULL",
+					"manager": {
+						"modelKey": "10000:8:602129624",
+						"name": "sc2vc01.cmbu.local"
+					},
+					"device": {
+						"modelKey": "10000:4:141732398",
+						"name": "sc2-hs2-b1609.eng.vmware.com"
+					},
+					"subType": [
+						1110
+					],
+					"deviceInfo": {
+						"vendor": "VMware, Inc.",
+						"version": "6.7.0"
+					},
+					"physicalAddress": "38:0e:4d:7d:bd:7f"
+				},
+				{
+					"name": "[sc2-hs2-b1609.eng.vmware.com]-[vmnic0]",
+					"modelKey": "10000:19:563100130",
+					"administrativeStatus": "UNKNOWN",
+					"operationalStatus": "DOWN",
+					"mtu": -1,
+					"ifSpeed": -1,
+					"duplex": "FULL",
+					"manager": {
+						"modelKey": "10000:8:602129624",
+						"name": "sc2vc01.cmbu.local"
+					},
+					"device": {
+						"modelKey": "10000:4:141732398",
+						"name": "sc2-hs2-b1609.eng.vmware.com"
+					},
+					"subType": [
+						1110
+					],
+					"deviceInfo": {
+						"vendor": "VMware, Inc.",
+						"version": "6.7.0"
+					},
+					"physicalAddress": "38:0e:4d:7d:bd:7e"
+				},
+				{
+					"name": "[sc2-hs2-b1609.eng.vmware.com]-[vmnic3]",
+					"modelKey": "10000:19:563100223",
+					"administrativeStatus": "UP",
+					"operationalStatus": "UP",
+					"mtu": 9000,
+					"ifSpeed": 10000000000,
+					"duplex": "FULL",
+					"vlans": [
+						{
+							"start": 0,
+							"end": 4094
+						}
+					],
+					"portKey": "48",
+					"connectionType": "SWITCH",
+					"manager": {
+						"modelKey": "10000:8:602129624",
+						"name": "sc2vc01.cmbu.local"
+					},
+					"device": {
+						"modelKey": "10000:4:141732398",
+						"name": "sc2-hs2-b1609.eng.vmware.com"
+					},
+					"subType": [
+						1110
+					],
+					"deviceInfo": {
+						"vendor": "VMware, Inc.",
+						"version": "6.7.0"
+					},
+					"physicalAddress": "3c:fd:fe:ac:f2:ed"
+				}
+			],
+			"firewallStatus": "Active",
+			"serverdataParent": {
+				"runtime": {
+					"powerState": "POWEREDON"
+				},
+				"oSHostName": "sc2-hs2-b1609",
+				"osFullName": "VMware ESXi 6.7.0 build-11675023",
+				"numCpus": 28,
+				"memoryMB": 195236,
+				"deviceInfo": {
+					"vendor": "VMware, Inc.",
+					"version": "6.7.0"
+				},
+				"cpuSockets": 2
+			},
+			"__searchTags": [
+				"3c:fd:fe:ac:f2:ec",
+				"38:0e:4d:7d:bd:7f",
+				"38:0e:4d:7d:bd:7e",
+				"3c:fd:fe:ac:f2:ed",
+				"3c:fd:fe:ac:f2:ec",
+				"00:50:56:63:e9:f8",
+				"00:50:56:60:5d:13",
+				"00:50:56:6a:38:80",
+				"sc2-hs2-b1609.eng.vmware.com",
+				"VMware, Inc.",
+				"host-35",
+				"10.172.208.0/22",
+				"10.173.22.0/24",
+				"192.168.104.0/22",
+				"172.16.10.0/24",
+				"prefixLength: 22\nipAddress: \"10.172.209.79\"\nnetMask: \"255.255.252.0\"\nnetworkAddress: \"10.172.208.0/22\"\ncidr: \"10.172.209.79/22\"\nstart: 179097935\nend: 179097935\nipAddressType: \"ENDPOINT\"\nprivateAddress: true\n",
+				"prefixLength: 24\nipAddress: \"10.173.22.109\"\nnetMask: \"255.255.255.0\"\nnetworkAddress: \"10.173.22.0/24\"\ncidr: \"10.173.22.109/24\"\nstart: 179115629\nend: 179115629\nipAddressType: \"ENDPOINT\"\nprivateAddress: true\n",
+				"prefixLength: 22\nipAddress: \"192.168.105.79\"\nnetMask: \"255.255.252.0\"\nnetworkAddress: \"192.168.104.0/22\"\ncidr: \"192.168.105.79/22\"\nstart: 3232262479\nend: 3232262479\nipAddressType: \"ENDPOINT\"\nprivateAddress: true\n",
+				"prefixLength: 24\nipAddress: \"172.16.10.2\"\nnetMask: \"255.255.255.0\"\nnetworkAddress: \"172.16.10.0/24\"\ncidr: \"172.16.10.2/24\"\nstart: 2886732290\nend: 2886732290\nipAddressType: \"ENDPOINT\"\nprivateAddress: true\n"
+			],
+			"__related_entities": [
+				"10000:8:602129624",
+				"10000:66:1593633035"
+			],
+			"manager": {
+				"modelKey": "10000:8:602129624",
+				"name": "sc2vc01.cmbu.local"
+			},
+			"numVmknics": 4,
+			"numPnics": 4,
+			"connectionState": "CONNECTED",
+			"maintenanceMode": "NOTINMAINTENANCEMODE",
+			"cluster": {
+				"modelKey": "10000:66:1593633035",
+				"name": "sc2c01"
+			},
+			"layer2ManagementDomain": [
+				{
+					"modelKey": "10000:544:785624178",
+					"name": "GBD-switch"
+				},
+				{
+					"modelKey": "10000:544:785624240",
+					"name": "DMZ-switch"
+				},
+				{
+					"modelKey": "10000:544:785624209",
+					"name": "HMD-switch"
+				},
+				{
+					"modelKey": "10000:544:1687910601",
+					"name": "dias-switch-01"
+				},
+				{
+					"modelKey": "10000:544:785624271",
+					"name": "cmac-switch"
+				}
+			],
+			"features": [
+				{
+					"modelKey": "10000:542:2055021664",
+					"name": "messagingInfra"
+				},
+				{
+					"modelKey": "10000:542:411871461",
+					"name": "hostPrep"
+				},
+				{
+					"modelKey": "10000:542:1646141974",
+					"name": "firewall"
+				},
+				{
+					"modelKey": "10000:542:934295303",
+					"name": "vxlan"
+				},
+				{
+					"modelKey": "10000:542:609907841",
+					"name": "vdr_mon"
+				}
+			],
+			"datastores": [
+				{
+					"modelKey": "10000:80:861608045",
+					"name": "SC2-NFS-01"
+				},
+				{
+					"modelKey": "10000:80:861609068",
+					"name": "datastore1 (1)"
+				},
+				{
+					"modelKey": "10000:80:861613842",
+					"name": "sc2c01vsan01"
+				}
+			],
+			"vxlanFeature": {
+				"name": "vxlan",
+				"modelKey": "10000:542:934295303",
+				"owner": {
+					"modelKey": "10000:4:141732398",
+					"name": ""
+				},
+				"fabricFeatureInfo": [
+					{
+						"version": "5.5",
+						"status": "GREEN",
+						"enabled": true,
+						"installed": true
+					}
+				],
+				"manager": {
+					"modelKey": "10000:7:1924368983",
+					"name": "sc2nsx.cmbu.local"
+				}
+			},
+			"fwFeature": {
+				"name": "firewall",
+				"modelKey": "10000:542:1646141974",
+				"owner": {
+					"modelKey": "10000:4:141732398",
+					"name": ""
+				},
+				"fabricFeatureInfo": [
+					{
+						"version": "5.5",
+						"status": "GREEN",
+						"enabled": true,
+						"installed": true
+					}
+				],
+				"manager": {
+					"modelKey": "10000:7:1924368983",
+					"name": "sc2nsx.cmbu.local"
+				}
+			},
+			"hostPrepFeature": {
+				"name": "hostPrep",
+				"modelKey": "10000:542:411871461",
+				"owner": {
+					"modelKey": "10000:4:141732398",
+					"name": ""
+				},
+				"fabricFeatureInfo": [
+					{
+						"version": "6.4.1.8599035",
+						"status": "GREEN",
+						"enabled": true,
+						"installed": true
+					}
+				],
+				"manager": {
+					"modelKey": "10000:7:1924368983",
+					"name": "sc2nsx.cmbu.local"
+				}
+			},
+			"msgInfraFeature": {
+				"name": "messagingInfra",
+				"modelKey": "10000:542:2055021664",
+				"owner": {
+					"modelKey": "10000:4:141732398",
+					"name": ""
+				},
+				"fabricFeatureInfo": [
+					{
+						"version": "5.5",
+						"status": "GREEN",
+						"enabled": true,
+						"installed": true
+					}
+				],
+				"manager": {
+					"modelKey": "10000:7:1924368983",
+					"name": "sc2nsx.cmbu.local"
+				}
+			},
+			"vdrMonFeature": {
+				"name": "vdr_mon",
+				"modelKey": "10000:542:609907841",
+				"owner": {
+					"modelKey": "10000:4:141732398",
+					"name": ""
+				},
+				"fabricFeatureInfo": [
+					{
+						"version": "Unknown",
+						"status": "UNKNOWN",
+						"enabled": true,
+						"installed": false
+					}
+				],
+				"manager": {
+					"modelKey": "10000:7:1924368983",
+					"name": "sc2nsx.cmbu.local"
+				}
+			},
+			"serviceTag": "WZP213717HE",
+			"numVteps": 1,
+			"scsiDisks": [
+				{
+					"modelKey": "10000:144:778878509",
+					"name": "Local TOSHIBA Disk (naa.58ce38ee2001478d)"
+				},
+				{
+					"modelKey": "10000:144:2019252483",
+					"name": "Local ATA Disk (naa.5002538c407104ac)"
+				},
+				{
+					"modelKey": "10000:144:33869560",
+					"name": "Local ATA Disk (t10.ATA_____Mircon_5100_MTFDDAV240TCB_______________________1739191C1FB2)"
+				}
+			],
+			"hostDiskLinks": [
+				{
+					"modelKey": "10000:146:1090417477",
+					"name": "sc2-hs2-b1609.eng.vmware.com - Local ATA Disk (naa.5002538c407104ac)"
+				},
+				{
+					"modelKey": "10000:146:1390477693",
+					"name": "sc2-hs2-b1609.eng.vmware.com - Local TOSHIBA Disk (naa.58ce38ee2001478d)"
+				},
+				{
+					"modelKey": "10000:146:109383660",
+					"name": "sc2-hs2-b1609.eng.vmware.com - Local ATA Disk (t10.ATA_____Mircon_5100_MTFDDAV240TCB_______________________1739191C1FB2)"
+				}
+			],
+			"modules": [
+				{
+					"modelKey": "10000:10401:1432556684",
+					"name": "traceflow"
+				},
+				{
+					"modelKey": "10000:10401:1497823728",
+					"name": "vsip"
+				},
+				{
+					"modelKey": "10000:10401:1497377824",
+					"name": "vdl2"
+				},
+				{
+					"modelKey": "10000:10401:1054472237",
+					"name": "netcpa-worker"
+				},
+				{
+					"modelKey": "10000:10401:1280075486",
+					"name": "dvfilter-switch-security"
+				},
+				{
+					"modelKey": "10000:10401:812187023",
+					"name": "vsfwd"
+				}
+			],
+			"networkControlPlanes": [
+				{
+					"networkId": 9005,
+					"layer2Network": {
+						"modelKey": "10000:11:56891367",
+						"name": "GBD-switch"
+					},
+					"controller": {
+						"modelKey": "10000:63:921371429",
+						"name": "sc2ctrl-03"
+					},
+					"controllerIp": {
+						"prefixLength": 32,
+						"ipAddress": "10.173.22.99",
+						"netMask": "255.255.255.255",
+						"networkAddress": "10.173.22.99",
+						"cidr": "10.173.22.99/32",
+						"start": 179115619,
+						"end": 179115619,
+						"ipAddressType": "ENDPOINT",
+						"privateAddress": true
+					},
+					"controllerConnectionStatus": "UP"
+				},
+				{
+					"networkId": 9002,
+					"layer2Network": {
+						"modelKey": "10000:11:56891364",
+						"name": "cmac-switch"
+					},
+					"controller": {
+						"modelKey": "10000:63:921371398",
+						"name": "sc2ctrl-02"
+					},
+					"controllerIp": {
+						"prefixLength": 32,
+						"ipAddress": "10.173.22.98",
+						"netMask": "255.255.255.255",
+						"networkAddress": "10.173.22.98",
+						"cidr": "10.173.22.98/32",
+						"start": 179115618,
+						"end": 179115618,
+						"ipAddressType": "ENDPOINT",
+						"privateAddress": true
+					},
+					"controllerConnectionStatus": "UP"
+				},
+				{
+					"networkId": 9004,
+					"layer2Network": {
+						"modelKey": "10000:11:56891366",
+						"name": "HMD-switch"
+					},
+					"controller": {
+						"modelKey": "10000:63:921371398",
+						"name": "sc2ctrl-02"
+					},
+					"controllerIp": {
+						"prefixLength": 32,
+						"ipAddress": "10.173.22.98",
+						"netMask": "255.255.255.255",
+						"networkAddress": "10.173.22.98",
+						"cidr": "10.173.22.98/32",
+						"start": 179115618,
+						"end": 179115618,
+						"ipAddressType": "ENDPOINT",
+						"privateAddress": true
+					},
+					"controllerConnectionStatus": "UP"
+				},
+				{
+					"networkId": 9003,
+					"layer2Network": {
+						"modelKey": "10000:11:56891365",
+						"name": "DMZ-switch"
+					},
+					"controller": {
+						"modelKey": "10000:63:921371429",
+						"name": "sc2ctrl-03"
+					},
+					"controllerIp": {
+						"prefixLength": 32,
+						"ipAddress": "10.173.22.99",
+						"netMask": "255.255.255.255",
+						"networkAddress": "10.173.22.99",
+						"cidr": "10.173.22.99/32",
+						"start": 179115619,
+						"end": 179115619,
+						"ipAddressType": "ENDPOINT",
+						"privateAddress": true
+					},
+					"controllerConnectionStatus": "UP"
+				}
+			],
+			"controlPlaneSyncStatus": "InSync",
+			"esxVibs": [
+				{
+					"modelKey": "10000:10403:669281937",
+					"name": "esx-nsxv"
+				}
+			],
+			"vendorId": "host-35",
+			"nsxManager": {
+				"modelKey": "10000:7:1924368983",
+				"name": "sc2nsx.cmbu.local"
+			},
+			"vms": [
+				{
+					"modelKey": "10000:1:667992963",
+					"name": "vrops-tenantapp"
+				},
+				{
+					"modelKey": "10000:1:667964226",
+					"name": "Skyline collector"
+				},
+				{
+					"modelKey": "10000:1:667784581",
+					"name": "kfultz-tenant-edge-0"
+				},
+				{
+					"modelKey": "10000:1:667936264",
+					"name": "SC2-CAS-Datacollector"
+				},
+				{
+					"modelKey": "10000:1:667785542",
+					"name": "hmourad-tenant-edge-0"
+				},
+				{
+					"modelKey": "10000:1:667753674",
+					"name": "sc2ctrl-03-NSX-controller-3"
+				},
+				{
+					"modelKey": "10000:1:991373664",
+					"name": "cmbu-sc2dc-02"
+				},
+				{
+					"modelKey": "10000:1:667784457",
+					"name": "cmac-tenant-edge-0"
+				},
+				{
+					"modelKey": "10000:1:667845899",
+					"name": "cmac-windows-fluentd"
+				},
+				{
+					"modelKey": "10000:1:774566050",
+					"name": "lcm-8-01a"
+				},
+				{
+					"modelKey": "10000:1:667788208",
+					"name": "gbrandon-jumpbox"
+				}
+			]
+		},
+		{
+			"name": "sc2-hs2-b1610.eng.vmware.com",
+			"modelKey": "10000:4:141732522",
+			"numVms": 11,
+			"vmknics": [
+				{
+					"name": "[sc2-hs2-b1610.eng.vmware.com]-[vmk1]",
+					"modelKey": "10000:17:1695893224",
+					"nicType": "MANAGEMENT",
+					"virtualNicParent": {
+						"numberednetworkinterfaceParent": {
+							"ipAddresses": [
+								{
+									"prefixLength": 24,
+									"ipAddress": "172.16.10.3",
+									"netMask": "255.255.255.0",
+									"networkAddress": "172.16.10.0/24",
+									"cidr": "172.16.10.3/24",
+									"start": 2886732291,
+									"end": 2886732291,
+									"ipAddressType": "ENDPOINT",
+									"privateAddress": true
+								}
+							],
+							"networkinterfaceParent": {
+								"nicId": "vmk1",
+								"administrativeStatus": "UP",
+								"operationalStatus": "ACTIVE",
+								"mtu": 9000,
+								"ifSpeed": -1,
+								"physicalAddress": "00:50:56:66:61:bb",
+								"ifType": "ETHERNET",
+								"duplex": "FULL",
+								"interfaceName": "vmk1",
+								"connected": true
+							},
+							"ipEntities": [
+								{
+									"modelKey": "10000:541:419705155",
+									"name": "172.16.10.3"
+								}
+							]
+						}
+					},
+					"manager": {
+						"modelKey": "10000:8:602129624",
+						"name": "sc2vc01.cmbu.local"
+					},
+					"host": {
+						"modelKey": "10000:4:141732522",
+						"name": "sc2-hs2-b1610.eng.vmware.com"
+					},
+					"cluster": {
+						"modelKey": "10000:66:1593633035",
+						"name": "sc2c01"
+					},
+					"defaultGateway": "10.172.211.253"
+				},
+				{
+					"name": "[sc2-hs2-b1610.eng.vmware.com]-[vmk3]",
+					"modelKey": "10000:17:1695893286",
+					"nicType": "VTEP",
+					"virtualNicParent": {
+						"numberednetworkinterfaceParent": {
+							"ipAddresses": [
+								{
+									"prefixLength": 24,
+									"ipAddress": "10.173.22.106",
+									"netMask": "255.255.255.0",
+									"networkAddress": "10.173.22.0/24",
+									"cidr": "10.173.22.106/24",
+									"start": 179115626,
+									"end": 179115626,
+									"ipAddressType": "ENDPOINT",
+									"privateAddress": true
+								}
+							],
+							"networkinterfaceParent": {
+								"nicId": "vmk3",
+								"administrativeStatus": "UP",
+								"operationalStatus": "ACTIVE",
+								"mtu": 9000,
+								"ifSpeed": -1,
+								"physicalAddress": "00:50:56:60:44:f9",
+								"ifType": "ETHERNET",
+								"duplex": "FULL",
+								"interfaceName": "vmk3",
+								"connected": true
+							},
+							"ipEntities": [
+								{
+									"modelKey": "10000:541:944307509",
+									"name": "10.173.22.106"
+								}
+							]
+						},
+						"dvpg": {
+							"modelKey": "10000:3:678527016",
+							"name": "vxw-vmknicPg-dvs-81-0-8f710449-623b-4407-9b1e-2a32989833c9"
+						},
+						"dvs": {
+							"modelKey": "10000:2:2100217279",
+							"name": "SC2-dSwitch-1"
+						},
+						"virtualPort": {
+							"connectedVirtualPort": "62"
+						}
+					},
+					"manager": {
+						"modelKey": "10000:8:602129624",
+						"name": "sc2vc01.cmbu.local"
+					},
+					"host": {
+						"modelKey": "10000:4:141732522",
+						"name": "sc2-hs2-b1610.eng.vmware.com"
+					},
+					"pathSwitchPorts": [
+						{
+							"modelKey": "10000:19:1965229379",
+							"name": "[sc2-hs2-b1610.eng.vmware.com]-[vmnic3]"
+						}
+					],
+					"cluster": {
+						"modelKey": "10000:66:1593633035",
+						"name": "sc2c01"
+					},
+					"defaultGateway": "10.173.22.253"
+				},
+				{
+					"name": "[sc2-hs2-b1610.eng.vmware.com]-[vmk2]",
+					"modelKey": "10000:17:1695893255",
+					"nicType": "MANAGEMENT",
+					"virtualNicParent": {
+						"numberednetworkinterfaceParent": {
+							"ipAddresses": [
+								{
+									"prefixLength": 22,
+									"ipAddress": "192.168.105.80",
+									"netMask": "255.255.252.0",
+									"networkAddress": "192.168.104.0/22",
+									"cidr": "192.168.105.80/22",
+									"start": 3232262480,
+									"end": 3232262480,
+									"ipAddressType": "ENDPOINT",
+									"privateAddress": true
+								}
+							],
+							"networkinterfaceParent": {
+								"nicId": "vmk2",
+								"administrativeStatus": "UP",
+								"operationalStatus": "ACTIVE",
+								"mtu": 9000,
+								"ifSpeed": -1,
+								"physicalAddress": "00:50:56:65:26:46",
+								"ifType": "ETHERNET",
+								"duplex": "FULL",
+								"interfaceName": "vmk2",
+								"connected": true
+							},
+							"ipEntities": [
+								{
+									"modelKey": "10000:541:1107518210",
+									"name": "192.168.105.80"
+								}
+							]
+						}
+					},
+					"manager": {
+						"modelKey": "10000:8:602129624",
+						"name": "sc2vc01.cmbu.local"
+					},
+					"host": {
+						"modelKey": "10000:4:141732522",
+						"name": "sc2-hs2-b1610.eng.vmware.com"
+					},
+					"cluster": {
+						"modelKey": "10000:66:1593633035",
+						"name": "sc2c01"
+					},
+					"defaultGateway": "10.172.211.253"
+				},
+				{
+					"name": "[sc2-hs2-b1610.eng.vmware.com]-[vmk0]",
+					"modelKey": "10000:17:1695893193",
+					"nicType": "MANAGEMENT",
+					"virtualNicParent": {
+						"numberednetworkinterfaceParent": {
+							"ipAddresses": [
+								{
+									"prefixLength": 22,
+									"ipAddress": "10.172.209.80",
+									"netMask": "255.255.252.0",
+									"networkAddress": "10.172.208.0/22",
+									"cidr": "10.172.209.80/22",
+									"start": 179097936,
+									"end": 179097936,
+									"ipAddressType": "ENDPOINT",
+									"privateAddress": true
+								}
+							],
+							"networkinterfaceParent": {
+								"nicId": "vmk0",
+								"administrativeStatus": "UP",
+								"operationalStatus": "ACTIVE",
+								"mtu": 1500,
+								"ifSpeed": -1,
+								"physicalAddress": "3c:fd:fe:ac:f7:38",
+								"ifType": "ETHERNET",
+								"duplex": "FULL",
+								"interfaceName": "vmk0",
+								"connected": true
+							},
+							"ipEntities": [
+								{
+									"modelKey": "10000:541:1590386765",
+									"name": "10.172.209.80"
+								}
+							]
+						}
+					},
+					"manager": {
+						"modelKey": "10000:8:602129624",
+						"name": "sc2vc01.cmbu.local"
+					},
+					"host": {
+						"modelKey": "10000:4:141732522",
+						"name": "sc2-hs2-b1610.eng.vmware.com"
+					},
+					"cluster": {
+						"modelKey": "10000:66:1593633035",
+						"name": "sc2c01"
+					},
+					"defaultGateway": "10.172.211.253"
+				}
+			],
+			"embeddedPnics": [
+				{
+					"name": "[sc2-hs2-b1610.eng.vmware.com]-[vmnic0]",
+					"modelKey": "10000:19:1965229286",
+					"administrativeStatus": "UNKNOWN",
+					"operationalStatus": "DOWN",
+					"mtu": -1,
+					"ifSpeed": -1,
+					"duplex": "FULL",
+					"manager": {
+						"modelKey": "10000:8:602129624",
+						"name": "sc2vc01.cmbu.local"
+					},
+					"device": {
+						"modelKey": "10000:4:141732522",
+						"name": "sc2-hs2-b1610.eng.vmware.com"
+					},
+					"subType": [
+						1110
+					],
+					"deviceInfo": {
+						"vendor": "VMware, Inc.",
+						"version": "6.7.0"
+					},
+					"physicalAddress": "38:0e:4d:7d:b2:f2"
+				},
+				{
+					"name": "[sc2-hs2-b1610.eng.vmware.com]-[vmnic3]",
+					"modelKey": "10000:19:1965229379",
+					"administrativeStatus": "UP",
+					"operationalStatus": "UP",
+					"mtu": 9000,
+					"ifSpeed": 10000000000,
+					"duplex": "FULL",
+					"vlans": [
+						{
+							"start": 0,
+							"end": 4094
+						}
+					],
+					"portKey": "44",
+					"connectionType": "SWITCH",
+					"manager": {
+						"modelKey": "10000:8:602129624",
+						"name": "sc2vc01.cmbu.local"
+					},
+					"device": {
+						"modelKey": "10000:4:141732522",
+						"name": "sc2-hs2-b1610.eng.vmware.com"
+					},
+					"subType": [
+						1110
+					],
+					"deviceInfo": {
+						"vendor": "VMware, Inc.",
+						"version": "6.7.0"
+					},
+					"physicalAddress": "3c:fd:fe:ac:f7:39"
+				},
+				{
+					"name": "[sc2-hs2-b1610.eng.vmware.com]-[vmnic1]",
+					"modelKey": "10000:19:1965229317",
+					"administrativeStatus": "UNKNOWN",
+					"operationalStatus": "DOWN",
+					"mtu": -1,
+					"ifSpeed": -1,
+					"duplex": "FULL",
+					"manager": {
+						"modelKey": "10000:8:602129624",
+						"name": "sc2vc01.cmbu.local"
+					},
+					"device": {
+						"modelKey": "10000:4:141732522",
+						"name": "sc2-hs2-b1610.eng.vmware.com"
+					},
+					"subType": [
+						1110
+					],
+					"deviceInfo": {
+						"vendor": "VMware, Inc.",
+						"version": "6.7.0"
+					},
+					"physicalAddress": "38:0e:4d:7d:b2:f3"
+				},
+				{
+					"name": "[sc2-hs2-b1610.eng.vmware.com]-[vmnic2]",
+					"modelKey": "10000:19:1965229348",
+					"administrativeStatus": "UP",
+					"operationalStatus": "UP",
+					"mtu": -1,
+					"ifSpeed": 10000000000,
+					"duplex": "FULL",
+					"connectionType": "SWITCH",
+					"manager": {
+						"modelKey": "10000:8:602129624",
+						"name": "sc2vc01.cmbu.local"
+					},
+					"device": {
+						"modelKey": "10000:4:141732522",
+						"name": "sc2-hs2-b1610.eng.vmware.com"
+					},
+					"subType": [
+						1110
+					],
+					"deviceInfo": {
+						"vendor": "VMware, Inc.",
+						"version": "6.7.0"
+					},
+					"physicalAddress": "3c:fd:fe:ac:f7:38"
+				}
+			],
+			"firewallStatus": "Active",
+			"serverdataParent": {
+				"runtime": {
+					"powerState": "POWEREDON"
+				},
+				"oSHostName": "sc2-hs2-b1610",
+				"osFullName": "VMware ESXi 6.7.0 build-10764712",
+				"numCpus": 28,
+				"memoryMB": 195236,
+				"deviceInfo": {
+					"vendor": "VMware, Inc.",
+					"version": "6.7.0"
+				},
+				"cpuSockets": 2
+			},
+			"__searchTags": [
+				"38:0e:4d:7d:b2:f2",
+				"3c:fd:fe:ac:f7:39",
+				"38:0e:4d:7d:b2:f3",
+				"3c:fd:fe:ac:f7:38",
+				"00:50:56:66:61:bb",
+				"00:50:56:60:44:f9",
+				"00:50:56:65:26:46",
+				"3c:fd:fe:ac:f7:38",
+				"sc2-hs2-b1610.eng.vmware.com",
+				"VMware, Inc.",
+				"host-39",
+				"172.16.10.0/24",
+				"10.173.22.0/24",
+				"192.168.104.0/22",
+				"10.172.208.0/22",
+				"prefixLength: 24\nipAddress: \"172.16.10.3\"\nnetMask: \"255.255.255.0\"\nnetworkAddress: \"172.16.10.0/24\"\ncidr: \"172.16.10.3/24\"\nstart: 2886732291\nend: 2886732291\nipAddressType: \"ENDPOINT\"\nprivateAddress: true\n",
+				"prefixLength: 24\nipAddress: \"10.173.22.106\"\nnetMask: \"255.255.255.0\"\nnetworkAddress: \"10.173.22.0/24\"\ncidr: \"10.173.22.106/24\"\nstart: 179115626\nend: 179115626\nipAddressType: \"ENDPOINT\"\nprivateAddress: true\n",
+				"prefixLength: 22\nipAddress: \"192.168.105.80\"\nnetMask: \"255.255.252.0\"\nnetworkAddress: \"192.168.104.0/22\"\ncidr: \"192.168.105.80/22\"\nstart: 3232262480\nend: 3232262480\nipAddressType: \"ENDPOINT\"\nprivateAddress: true\n",
+				"prefixLength: 22\nipAddress: \"10.172.209.80\"\nnetMask: \"255.255.252.0\"\nnetworkAddress: \"10.172.208.0/22\"\ncidr: \"10.172.209.80/22\"\nstart: 179097936\nend: 179097936\nipAddressType: \"ENDPOINT\"\nprivateAddress: true\n"
+			],
+			"__related_entities": [
+				"10000:8:602129624",
+				"10000:66:1593633035"
+			],
+			"manager": {
+				"modelKey": "10000:8:602129624",
+				"name": "sc2vc01.cmbu.local"
+			},
+			"numVmknics": 4,
+			"numPnics": 4,
+			"connectionState": "CONNECTED",
+			"maintenanceMode": "NOTINMAINTENANCEMODE",
+			"cluster": {
+				"modelKey": "10000:66:1593633035",
+				"name": "sc2c01"
+			},
+			"layer2ManagementDomain": [
+				{
+					"modelKey": "10000:544:785624178",
+					"name": "GBD-switch"
+				},
+				{
+					"modelKey": "10000:544:785624240",
+					"name": "DMZ-switch"
+				},
+				{
+					"modelKey": "10000:544:1687910632",
+					"name": "172.16.1-segment"
+				},
+				{
+					"modelKey": "10000:544:785624209",
+					"name": "HMD-switch"
+				},
+				{
+					"modelKey": "10000:544:1687910601",
+					"name": "dias-switch-01"
+				},
+				{
+					"modelKey": "10000:544:785624271",
+					"name": "cmac-switch"
+				}
+			],
+			"features": [
+				{
+					"modelKey": "10000:542:1079068419",
+					"name": "vxlan"
+				},
+				{
+					"modelKey": "10000:542:1375101214",
+					"name": "hostPrep"
+				},
+				{
+					"modelKey": "10000:542:1096622746",
+					"name": "firewall"
+				},
+				{
+					"modelKey": "10000:542:1558728676",
+					"name": "messagingInfra"
+				},
+				{
+					"modelKey": "10000:542:1997048450",
+					"name": "vdr_mon"
+				}
+			],
+			"datastores": [
+				{
+					"modelKey": "10000:80:861608045",
+					"name": "SC2-NFS-01"
+				},
+				{
+					"modelKey": "10000:80:861609843",
+					"name": "datastore1 (2)"
+				},
+				{
+					"modelKey": "10000:80:861613842",
+					"name": "sc2c01vsan01"
+				}
+			],
+			"vxlanFeature": {
+				"name": "vxlan",
+				"modelKey": "10000:542:1079068419",
+				"owner": {
+					"modelKey": "10000:4:141732522",
+					"name": ""
+				},
+				"fabricFeatureInfo": [
+					{
+						"version": "5.5",
+						"status": "GREEN",
+						"enabled": true,
+						"installed": true
+					}
+				],
+				"manager": {
+					"modelKey": "10000:7:1924368983",
+					"name": "sc2nsx.cmbu.local"
+				}
+			},
+			"fwFeature": {
+				"name": "firewall",
+				"modelKey": "10000:542:1096622746",
+				"owner": {
+					"modelKey": "10000:4:141732522",
+					"name": ""
+				},
+				"fabricFeatureInfo": [
+					{
+						"version": "5.5",
+						"status": "GREEN",
+						"enabled": true,
+						"installed": true
+					}
+				],
+				"manager": {
+					"modelKey": "10000:7:1924368983",
+					"name": "sc2nsx.cmbu.local"
+				}
+			},
+			"hostPrepFeature": {
+				"name": "hostPrep",
+				"modelKey": "10000:542:1375101214",
+				"owner": {
+					"modelKey": "10000:4:141732522",
+					"name": ""
+				},
+				"fabricFeatureInfo": [
+					{
+						"version": "6.4.1.8599035",
+						"status": "GREEN",
+						"enabled": true,
+						"installed": true
+					}
+				],
+				"manager": {
+					"modelKey": "10000:7:1924368983",
+					"name": "sc2nsx.cmbu.local"
+				}
+			},
+			"msgInfraFeature": {
+				"name": "messagingInfra",
+				"modelKey": "10000:542:1558728676",
+				"owner": {
+					"modelKey": "10000:4:141732522",
+					"name": ""
+				},
+				"fabricFeatureInfo": [
+					{
+						"version": "5.5",
+						"status": "GREEN",
+						"enabled": true,
+						"installed": true
+					}
+				],
+				"manager": {
+					"modelKey": "10000:7:1924368983",
+					"name": "sc2nsx.cmbu.local"
+				}
+			},
+			"vdrMonFeature": {
+				"name": "vdr_mon",
+				"modelKey": "10000:542:1997048450",
+				"owner": {
+					"modelKey": "10000:4:141732522",
+					"name": ""
+				},
+				"fabricFeatureInfo": [
+					{
+						"version": "Unknown",
+						"status": "UNKNOWN",
+						"enabled": true,
+						"installed": false
+					}
+				],
+				"manager": {
+					"modelKey": "10000:7:1924368983",
+					"name": "sc2nsx.cmbu.local"
+				}
+			},
+			"serviceTag": "WZP214102DX",
+			"numVteps": 1,
+			"scsiDisks": [
+				{
+					"modelKey": "10000:144:750170060",
+					"name": "Local TOSHIBA Disk (naa.58ce38ee200043c5)"
+				},
+				{
+					"modelKey": "10000:144:2019195195",
+					"name": "Local ATA Disk (naa.5002538c407102e1)"
+				},
+				{
+					"modelKey": "10000:144:136671095",
+					"name": "Local ATA Disk (t10.ATA_____Micron_5100_MTFDDAV240TCB_______________________171917083C02)"
+				}
+			],
+			"hostDiskLinks": [
+				{
+					"modelKey": "10000:146:152607930",
+					"name": "sc2-hs2-b1610.eng.vmware.com - Local TOSHIBA Disk (naa.58ce38ee200043c5)"
+				},
+				{
+					"modelKey": "10000:146:576278786",
+					"name": "sc2-hs2-b1610.eng.vmware.com - Local ATA Disk (naa.5002538c407102e1)"
+				},
+				{
+					"modelKey": "10000:146:1938147480",
+					"name": "sc2-hs2-b1610.eng.vmware.com - Local ATA Disk (t10.ATA_____Micron_5100_MTFDDAV240TCB_______________________171917083C02)"
+				}
+			],
+			"modules": [
+				{
+					"modelKey": "10000:10401:1431681935",
+					"name": "netcpa-worker"
+				},
+				{
+					"modelKey": "10000:10401:318817069",
+					"name": "vsfwd"
+				},
+				{
+					"modelKey": "10000:10401:1533861827",
+					"name": "vdl2"
+				},
+				{
+					"modelKey": "10000:10401:1383201359",
+					"name": "traceflow"
+				},
+				{
+					"modelKey": "10000:10401:1534307731",
+					"name": "vsip"
+				},
+				{
+					"modelKey": "10000:10401:2038819585",
+					"name": "dvfilter-switch-security"
+				}
+			],
+			"networkControlPlanes": [
+				{
+					"networkId": 9000,
+					"layer2Network": {
+						"modelKey": "10000:11:56891362",
+						"name": "172.16.1-segment"
+					},
+					"controller": {
+						"modelKey": "10000:63:921371429",
+						"name": "sc2ctrl-03"
+					},
+					"controllerIp": {
+						"prefixLength": 32,
+						"ipAddress": "10.173.22.99",
+						"netMask": "255.255.255.255",
+						"networkAddress": "10.173.22.99",
+						"cidr": "10.173.22.99/32",
+						"start": 179115619,
+						"end": 179115619,
+						"ipAddressType": "ENDPOINT",
+						"privateAddress": true
+					},
+					"controllerConnectionStatus": "UP"
+				},
+				{
+					"networkId": 9001,
+					"layer2Network": {
+						"modelKey": "10000:11:56891363",
+						"name": "dias-switch-01"
+					},
+					"controller": {
+						"modelKey": "10000:63:921371367",
+						"name": "sc2ctrl-01"
+					},
+					"controllerIp": {
+						"prefixLength": 32,
+						"ipAddress": "10.173.22.97",
+						"netMask": "255.255.255.255",
+						"networkAddress": "10.173.22.97",
+						"cidr": "10.173.22.97/32",
+						"start": 179115617,
+						"end": 179115617,
+						"ipAddressType": "ENDPOINT",
+						"privateAddress": true
+					},
+					"controllerConnectionStatus": "UP"
+				},
+				{
+					"networkId": 9005,
+					"layer2Network": {
+						"modelKey": "10000:11:56891367",
+						"name": "GBD-switch"
+					},
+					"controller": {
+						"modelKey": "10000:63:921371429",
+						"name": "sc2ctrl-03"
+					},
+					"controllerIp": {
+						"prefixLength": 32,
+						"ipAddress": "10.173.22.99",
+						"netMask": "255.255.255.255",
+						"networkAddress": "10.173.22.99",
+						"cidr": "10.173.22.99/32",
+						"start": 179115619,
+						"end": 179115619,
+						"ipAddressType": "ENDPOINT",
+						"privateAddress": true
+					},
+					"controllerConnectionStatus": "UP"
+				}
+			],
+			"controlPlaneSyncStatus": "InSync",
+			"esxVibs": [
+				{
+					"modelKey": "10000:10403:944784494",
+					"name": "esx-nsxv"
+				}
+			],
+			"vendorId": "host-39",
+			"nsxManager": {
+				"modelKey": "10000:7:1924368983",
+				"name": "sc2nsx.cmbu.local"
+			},
+			"vms": [
+				{
+					"modelKey": "10000:1:667779652",
+					"name": "dias-tenant-edge-0"
+				},
+				{
+					"modelKey": "10000:1:774588091",
+					"name": "vrops-fd-witness"
+				},
+				{
+					"modelKey": "10000:1:667752744",
+					"name": "sc2vrops-master"
+				},
+				{
+					"modelKey": "10000:1:774563942",
+					"name": "JDDevLoadGen"
+				},
+				{
+					"modelKey": "10000:1:667753736",
+					"name": "sc2nsx-edge-gw-0"
+				},
+				{
+					"modelKey": "10000:1:667788363",
+					"name": "gbrandon-photon"
+				},
+				{
+					"modelKey": "10000:1:667843915",
+					"name": "vro-dias"
+				},
+				{
+					"modelKey": "10000:1:667903466",
+					"name": "JD-Win10"
+				},
+				{
+					"modelKey": "10000:1:667877581",
+					"name": "HM-Win10"
+				},
+				{
+					"modelKey": "10000:1:774567073",
+					"name": "NSX-CAS-LB-SC2-0"
+				},
+				{
+					"modelKey": "10000:1:667788239",
+					"name": "gbrandon-vrops"
+				}
+			]
+		},
+		{
+			"name": "sc2-hs2-b1614.eng.vmware.com",
+			"modelKey": "10000:4:141734320",
+			"numVms": 11,
+			"vmknics": [
+				{
+					"name": "[sc2-hs2-b1614.eng.vmware.com]-[vmk1]",
+					"modelKey": "10000:17:57250525",
+					"nicType": "MANAGEMENT",
+					"virtualNicParent": {
+						"numberednetworkinterfaceParent": {
+							"ipAddresses": [
+								{
+									"prefixLength": 24,
+									"ipAddress": "172.16.10.7",
+									"netMask": "255.255.255.0",
+									"networkAddress": "172.16.10.0/24",
+									"cidr": "172.16.10.7/24",
+									"start": 2886732295,
+									"end": 2886732295,
+									"ipAddressType": "ENDPOINT",
+									"privateAddress": true
+								}
+							],
+							"networkinterfaceParent": {
+								"nicId": "vmk1",
+								"administrativeStatus": "UP",
+								"operationalStatus": "ACTIVE",
+								"mtu": 9000,
+								"ifSpeed": -1,
+								"physicalAddress": "00:50:56:6a:28:78",
+								"ifType": "ETHERNET",
+								"duplex": "FULL",
+								"interfaceName": "vmk1",
+								"connected": true
+							},
+							"ipEntities": [
+								{
+									"modelKey": "10000:541:419705279",
+									"name": "172.16.10.7"
+								}
+							]
+						}
+					},
+					"manager": {
+						"modelKey": "10000:8:602129624",
+						"name": "sc2vc01.cmbu.local"
+					},
+					"host": {
+						"modelKey": "10000:4:141734320",
+						"name": "sc2-hs2-b1614.eng.vmware.com"
+					},
+					"cluster": {
+						"modelKey": "10000:66:1593633097",
+						"name": "sc2c02"
+					},
+					"defaultGateway": "10.172.211.253"
+				},
+				{
+					"name": "[sc2-hs2-b1614.eng.vmware.com]-[vmk3]",
+					"modelKey": "10000:17:57250463",
+					"nicType": "VTEP",
+					"virtualNicParent": {
+						"numberednetworkinterfaceParent": {
+							"ipAddresses": [
+								{
+									"prefixLength": 24,
+									"ipAddress": "10.173.22.105",
+									"netMask": "255.255.255.0",
+									"networkAddress": "10.173.22.0/24",
+									"cidr": "10.173.22.105/24",
+									"start": 179115625,
+									"end": 179115625,
+									"ipAddressType": "ENDPOINT",
+									"privateAddress": true
+								}
+							],
+							"networkinterfaceParent": {
+								"nicId": "vmk3",
+								"administrativeStatus": "UP",
+								"operationalStatus": "ACTIVE",
+								"mtu": 9000,
+								"ifSpeed": -1,
+								"physicalAddress": "00:50:56:6f:21:35",
+								"ifType": "ETHERNET",
+								"duplex": "FULL",
+								"interfaceName": "vmk3",
+								"connected": true
+							},
+							"ipEntities": [
+								{
+									"modelKey": "10000:541:944307478",
+									"name": "10.173.22.105"
+								}
+							]
+						},
+						"dvpg": {
+							"modelKey": "10000:3:678527016",
+							"name": "vxw-vmknicPg-dvs-81-0-8f710449-623b-4407-9b1e-2a32989833c9"
+						},
+						"dvs": {
+							"modelKey": "10000:2:2100217279",
+							"name": "SC2-dSwitch-1"
+						},
+						"virtualPort": {
+							"connectedVirtualPort": "61"
+						}
+					},
+					"manager": {
+						"modelKey": "10000:8:602129624",
+						"name": "sc2vc01.cmbu.local"
+					},
+					"host": {
+						"modelKey": "10000:4:141734320",
+						"name": "sc2-hs2-b1614.eng.vmware.com"
+					},
+					"pathSwitchPorts": [
+						{
+							"modelKey": "10000:19:821265661",
+							"name": "[sc2-hs2-b1614.eng.vmware.com]-[vmnic3]"
+						}
+					],
+					"cluster": {
+						"modelKey": "10000:66:1593633097",
+						"name": "sc2c02"
+					},
+					"defaultGateway": "10.173.22.253"
+				},
+				{
+					"name": "[sc2-hs2-b1614.eng.vmware.com]-[vmk0]",
+					"modelKey": "10000:17:57250556",
+					"nicType": "MANAGEMENT",
+					"virtualNicParent": {
+						"numberednetworkinterfaceParent": {
+							"ipAddresses": [
+								{
+									"prefixLength": 22,
+									"ipAddress": "10.172.209.84",
+									"netMask": "255.255.252.0",
+									"networkAddress": "10.172.208.0/22",
+									"cidr": "10.172.209.84/22",
+									"start": 179097940,
+									"end": 179097940,
+									"ipAddressType": "ENDPOINT",
+									"privateAddress": true
+								}
+							],
+							"networkinterfaceParent": {
+								"nicId": "vmk0",
+								"administrativeStatus": "UP",
+								"operationalStatus": "ACTIVE",
+								"mtu": 1500,
+								"ifSpeed": -1,
+								"physicalAddress": "3c:fd:fe:ac:f4:90",
+								"ifType": "ETHERNET",
+								"duplex": "FULL",
+								"interfaceName": "vmk0",
+								"connected": true
+							},
+							"ipEntities": [
+								{
+									"modelKey": "10000:541:1590386641",
+									"name": "10.172.209.84"
+								}
+							]
+						}
+					},
+					"manager": {
+						"modelKey": "10000:8:602129624",
+						"name": "sc2vc01.cmbu.local"
+					},
+					"host": {
+						"modelKey": "10000:4:141734320",
+						"name": "sc2-hs2-b1614.eng.vmware.com"
+					},
+					"cluster": {
+						"modelKey": "10000:66:1593633097",
+						"name": "sc2c02"
+					},
+					"defaultGateway": "10.172.211.253"
+				},
+				{
+					"name": "[sc2-hs2-b1614.eng.vmware.com]-[vmk2]",
+					"modelKey": "10000:17:57250494",
+					"nicType": "MANAGEMENT",
+					"virtualNicParent": {
+						"numberednetworkinterfaceParent": {
+							"ipAddresses": [
+								{
+									"prefixLength": 22,
+									"ipAddress": "192.168.105.84",
+									"netMask": "255.255.252.0",
+									"networkAddress": "192.168.104.0/22",
+									"cidr": "192.168.105.84/22",
+									"start": 3232262484,
+									"end": 3232262484,
+									"ipAddressType": "ENDPOINT",
+									"privateAddress": true
+								}
+							],
+							"networkinterfaceParent": {
+								"nicId": "vmk2",
+								"administrativeStatus": "UP",
+								"operationalStatus": "ACTIVE",
+								"mtu": 9000,
+								"ifSpeed": -1,
+								"physicalAddress": "00:50:56:6c:ca:18",
+								"ifType": "ETHERNET",
+								"duplex": "FULL",
+								"interfaceName": "vmk2",
+								"connected": true
+							},
+							"ipEntities": [
+								{
+									"modelKey": "10000:541:1107518086",
+									"name": "192.168.105.84"
+								}
+							]
+						}
+					},
+					"manager": {
+						"modelKey": "10000:8:602129624",
+						"name": "sc2vc01.cmbu.local"
+					},
+					"host": {
+						"modelKey": "10000:4:141734320",
+						"name": "sc2-hs2-b1614.eng.vmware.com"
+					},
+					"cluster": {
+						"modelKey": "10000:66:1593633097",
+						"name": "sc2c02"
+					},
+					"defaultGateway": "10.172.211.253"
+				}
+			],
+			"embeddedPnics": [
+				{
+					"name": "[sc2-hs2-b1614.eng.vmware.com]-[vmnic2]",
+					"modelKey": "10000:19:821265630",
+					"administrativeStatus": "UP",
+					"operationalStatus": "UP",
+					"mtu": -1,
+					"ifSpeed": 10000000000,
+					"duplex": "FULL",
+					"connectionType": "SWITCH",
+					"manager": {
+						"modelKey": "10000:8:602129624",
+						"name": "sc2vc01.cmbu.local"
+					},
+					"device": {
+						"modelKey": "10000:4:141734320",
+						"name": "sc2-hs2-b1614.eng.vmware.com"
+					},
+					"subType": [
+						1110
+					],
+					"deviceInfo": {
+						"vendor": "VMware, Inc.",
+						"version": "6.7.0"
+					},
+					"physicalAddress": "3c:fd:fe:ac:f4:90"
+				},
+				{
+					"name": "[sc2-hs2-b1614.eng.vmware.com]-[vmnic1]",
+					"modelKey": "10000:19:821265599",
+					"administrativeStatus": "UNKNOWN",
+					"operationalStatus": "DOWN",
+					"mtu": -1,
+					"ifSpeed": -1,
+					"duplex": "FULL",
+					"manager": {
+						"modelKey": "10000:8:602129624",
+						"name": "sc2vc01.cmbu.local"
+					},
+					"device": {
+						"modelKey": "10000:4:141734320",
+						"name": "sc2-hs2-b1614.eng.vmware.com"
+					},
+					"subType": [
+						1110
+					],
+					"deviceInfo": {
+						"vendor": "VMware, Inc.",
+						"version": "6.7.0"
+					},
+					"physicalAddress": "38:0e:4d:7d:b4:83"
+				},
+				{
+					"name": "[sc2-hs2-b1614.eng.vmware.com]-[vmnic0]",
+					"modelKey": "10000:19:821265568",
+					"administrativeStatus": "UNKNOWN",
+					"operationalStatus": "DOWN",
+					"mtu": -1,
+					"ifSpeed": -1,
+					"duplex": "FULL",
+					"manager": {
+						"modelKey": "10000:8:602129624",
+						"name": "sc2vc01.cmbu.local"
+					},
+					"device": {
+						"modelKey": "10000:4:141734320",
+						"name": "sc2-hs2-b1614.eng.vmware.com"
+					},
+					"subType": [
+						1110
+					],
+					"deviceInfo": {
+						"vendor": "VMware, Inc.",
+						"version": "6.7.0"
+					},
+					"physicalAddress": "38:0e:4d:7d:b4:82"
+				},
+				{
+					"name": "[sc2-hs2-b1614.eng.vmware.com]-[vmnic3]",
+					"modelKey": "10000:19:821265661",
+					"administrativeStatus": "UP",
+					"operationalStatus": "UP",
+					"mtu": 9000,
+					"ifSpeed": 10000000000,
+					"duplex": "FULL",
+					"vlans": [
+						{
+							"start": 0,
+							"end": 4094
+						}
+					],
+					"portKey": "28",
+					"connectionType": "SWITCH",
+					"manager": {
+						"modelKey": "10000:8:602129624",
+						"name": "sc2vc01.cmbu.local"
+					},
+					"device": {
+						"modelKey": "10000:4:141734320",
+						"name": "sc2-hs2-b1614.eng.vmware.com"
+					},
+					"subType": [
+						1110
+					],
+					"deviceInfo": {
+						"vendor": "VMware, Inc.",
+						"version": "6.7.0"
+					},
+					"physicalAddress": "3c:fd:fe:ac:f4:91"
+				}
+			],
+			"firewallStatus": "Active",
+			"serverdataParent": {
+				"runtime": {
+					"powerState": "POWEREDON"
+				},
+				"oSHostName": "sc2-hs2-b1614",
+				"osFullName": "VMware ESXi 6.7.0 build-10764712",
+				"numCpus": 28,
+				"memoryMB": 195236,
+				"deviceInfo": {
+					"vendor": "VMware, Inc.",
+					"version": "6.7.0"
+				},
+				"cpuSockets": 2
+			},
+			"__searchTags": [
+				"3c:fd:fe:ac:f4:90",
+				"38:0e:4d:7d:b4:83",
+				"38:0e:4d:7d:b4:82",
+				"3c:fd:fe:ac:f4:91",
+				"00:50:56:6a:28:78",
+				"00:50:56:6f:21:35",
+				"3c:fd:fe:ac:f4:90",
+				"00:50:56:6c:ca:18",
+				"sc2-hs2-b1614.eng.vmware.com",
+				"VMware, Inc.",
+				"host-55",
+				"172.16.10.0/24",
+				"10.173.22.0/24",
+				"10.172.208.0/22",
+				"192.168.104.0/22",
+				"prefixLength: 24\nipAddress: \"172.16.10.7\"\nnetMask: \"255.255.255.0\"\nnetworkAddress: \"172.16.10.0/24\"\ncidr: \"172.16.10.7/24\"\nstart: 2886732295\nend: 2886732295\nipAddressType: \"ENDPOINT\"\nprivateAddress: true\n",
+				"prefixLength: 24\nipAddress: \"10.173.22.105\"\nnetMask: \"255.255.255.0\"\nnetworkAddress: \"10.173.22.0/24\"\ncidr: \"10.173.22.105/24\"\nstart: 179115625\nend: 179115625\nipAddressType: \"ENDPOINT\"\nprivateAddress: true\n",
+				"prefixLength: 22\nipAddress: \"10.172.209.84\"\nnetMask: \"255.255.252.0\"\nnetworkAddress: \"10.172.208.0/22\"\ncidr: \"10.172.209.84/22\"\nstart: 179097940\nend: 179097940\nipAddressType: \"ENDPOINT\"\nprivateAddress: true\n",
+				"prefixLength: 22\nipAddress: \"192.168.105.84\"\nnetMask: \"255.255.252.0\"\nnetworkAddress: \"192.168.104.0/22\"\ncidr: \"192.168.105.84/22\"\nstart: 3232262484\nend: 3232262484\nipAddressType: \"ENDPOINT\"\nprivateAddress: true\n"
+			],
+			"__related_entities": [
+				"10000:8:602129624",
+				"10000:66:1593633097"
+			],
+			"manager": {
+				"modelKey": "10000:8:602129624",
+				"name": "sc2vc01.cmbu.local"
+			},
+			"numVmknics": 4,
+			"numPnics": 4,
+			"connectionState": "CONNECTED",
+			"maintenanceMode": "NOTINMAINTENANCEMODE",
+			"cluster": {
+				"modelKey": "10000:66:1593633097",
+				"name": "sc2c02"
+			},
+			"layer2ManagementDomain": [
+				{
+					"modelKey": "10000:544:1687910601",
+					"name": "dias-switch-01"
+				},
+				{
+					"modelKey": "10000:544:785624271",
+					"name": "cmac-switch"
+				}
+			],
+			"features": [
+				{
+					"modelKey": "10000:542:1718528532",
+					"name": "firewall"
+				},
+				{
+					"modelKey": "10000:542:1116688694",
+					"name": "vxlan"
+				},
+				{
+					"modelKey": "10000:542:1342552353",
+					"name": "messagingInfra"
+				},
+				{
+					"modelKey": "10000:542:1004274627",
+					"name": "vdr_mon"
+				},
+				{
+					"modelKey": "10000:542:1516401240",
+					"name": "hostPrep"
+				}
+			],
+			"datastores": [
+				{
+					"modelKey": "10000:80:861608045",
+					"name": "SC2-NFS-01"
+				},
+				{
+					"modelKey": "10000:80:861610990",
+					"name": "datastore1 (6)"
+				},
+				{
+					"modelKey": "10000:80:861613811",
+					"name": "sc2c02vsan01"
+				}
+			],
+			"vxlanFeature": {
+				"name": "vxlan",
+				"modelKey": "10000:542:1116688694",
+				"owner": {
+					"modelKey": "10000:4:141734320",
+					"name": ""
+				},
+				"fabricFeatureInfo": [
+					{
+						"version": "5.5",
+						"status": "GREEN",
+						"enabled": true,
+						"installed": true
+					}
+				],
+				"manager": {
+					"modelKey": "10000:7:1924368983",
+					"name": "sc2nsx.cmbu.local"
+				}
+			},
+			"fwFeature": {
+				"name": "firewall",
+				"modelKey": "10000:542:1718528532",
+				"owner": {
+					"modelKey": "10000:4:141734320",
+					"name": ""
+				},
+				"fabricFeatureInfo": [
+					{
+						"version": "5.5",
+						"status": "GREEN",
+						"enabled": true,
+						"installed": true
+					}
+				],
+				"manager": {
+					"modelKey": "10000:7:1924368983",
+					"name": "sc2nsx.cmbu.local"
+				}
+			},
+			"hostPrepFeature": {
+				"name": "hostPrep",
+				"modelKey": "10000:542:1516401240",
+				"owner": {
+					"modelKey": "10000:4:141734320",
+					"name": ""
+				},
+				"fabricFeatureInfo": [
+					{
+						"version": "6.4.1.8599035",
+						"status": "GREEN",
+						"enabled": true,
+						"installed": true
+					}
+				],
+				"manager": {
+					"modelKey": "10000:7:1924368983",
+					"name": "sc2nsx.cmbu.local"
+				}
+			},
+			"msgInfraFeature": {
+				"name": "messagingInfra",
+				"modelKey": "10000:542:1342552353",
+				"owner": {
+					"modelKey": "10000:4:141734320",
+					"name": ""
+				},
+				"fabricFeatureInfo": [
+					{
+						"version": "5.5",
+						"status": "GREEN",
+						"enabled": true,
+						"installed": true
+					}
+				],
+				"manager": {
+					"modelKey": "10000:7:1924368983",
+					"name": "sc2nsx.cmbu.local"
+				}
+			},
+			"vdrMonFeature": {
+				"name": "vdr_mon",
+				"modelKey": "10000:542:1004274627",
+				"owner": {
+					"modelKey": "10000:4:141734320",
+					"name": ""
+				},
+				"fabricFeatureInfo": [
+					{
+						"version": "Unknown",
+						"status": "UNKNOWN",
+						"enabled": true,
+						"installed": false
+					}
+				],
+				"manager": {
+					"modelKey": "10000:7:1924368983",
+					"name": "sc2nsx.cmbu.local"
+				}
+			},
+			"serviceTag": "WZP214102DZ",
+			"numVteps": 1,
+			"scsiDisks": [
+				{
+					"modelKey": "10000:144:33422850",
+					"name": "Local ATA Disk (t10.ATA_____Mircon_5100_MTFDDAV240TCB_______________________1739191C17B7)"
+				},
+				{
+					"modelKey": "10000:144:2019195226",
+					"name": "Local ATA Disk (naa.5002538c407102e2)"
+				},
+				{
+					"modelKey": "10000:144:750127652",
+					"name": "Local TOSHIBA Disk (naa.58ce38ee20004371)"
+				}
+			],
+			"hostDiskLinks": [
+				{
+					"modelKey": "10000:146:1145461870",
+					"name": "sc2-hs2-b1614.eng.vmware.com - Local ATA Disk (naa.5002538c407102e2)"
+				},
+				{
+					"modelKey": "10000:146:1706090734",
+					"name": "sc2-hs2-b1614.eng.vmware.com - Local TOSHIBA Disk (naa.58ce38ee20004371)"
+				},
+				{
+					"modelKey": "10000:146:103650977",
+					"name": "sc2-hs2-b1614.eng.vmware.com - Local ATA Disk (t10.ATA_____Mircon_5100_MTFDDAV240TCB_______________________1739191C17B7)"
+				}
+			],
+			"modules": [
+				{
+					"modelKey": "10000:10401:411350221",
+					"name": "vsip"
+				},
+				{
+					"modelKey": "10000:10401:371209621",
+					"name": "netcpa-worker"
+				},
+				{
+					"modelKey": "10000:10401:225775931",
+					"name": "dvfilter-switch-security"
+				},
+				{
+					"modelKey": "10000:10401:410904317",
+					"name": "vdl2"
+				},
+				{
+					"modelKey": "10000:10401:133127372",
+					"name": "vsfwd"
+				},
+				{
+					"modelKey": "10000:10401:939363657",
+					"name": "traceflow"
+				}
+			],
+			"controlPlaneSyncStatus": "InSync",
+			"esxVibs": [
+				{
+					"modelKey": "10000:10403:99183156",
+					"name": "esx-nsxv"
+				}
+			],
+			"vendorId": "host-55",
+			"nsxManager": {
+				"modelKey": "10000:7:1924368983",
+				"name": "sc2nsx.cmbu.local"
+			},
+			"vms": [
+				{
+					"modelKey": "10000:1:667845124",
+					"name": "sc2-vesxi-49"
+				},
+				{
+					"modelKey": "10000:1:667812388",
+					"name": "sc2-vesxi-07"
+				},
+				{
+					"modelKey": "10000:1:667814372",
+					"name": "sc2-vesxi-27"
+				},
+				{
+					"modelKey": "10000:1:667845062",
+					"name": "sc2-vesxi-47"
+				},
+				{
+					"modelKey": "10000:1:774588122",
+					"name": "vrops-fd-sc201"
+				},
+				{
+					"modelKey": "10000:1:667845093",
+					"name": "sc2-vesxi-48"
+				},
+				{
+					"modelKey": "10000:1:667812295",
+					"name": "sc2-vesxi-04"
+				},
+				{
+					"modelKey": "10000:1:667814248",
+					"name": "sc2-vesxi-23"
+				},
+				{
+					"modelKey": "10000:1:667813225",
+					"name": "sc2-vesxi-11"
+				},
+				{
+					"modelKey": "10000:1:774594725",
+					"name": "sc2-cp01"
+				},
+				{
+					"modelKey": "10000:1:667813132",
+					"name": "sc2-vesxi-10"
+				}
+			]
+		},
+		{
+			"name": "sc2-hs2-b1617.eng.vmware.com",
+			"modelKey": "10000:4:141735343",
+			"numVms": 11,
+			"vmknics": [
+				{
+					"name": "[sc2-hs2-b1617.eng.vmware.com]-[vmk1]",
+					"modelKey": "10000:17:426294339",
+					"nicType": "MANAGEMENT",
+					"virtualNicParent": {
+						"numberednetworkinterfaceParent": {
+							"ipAddresses": [
+								{
+									"prefixLength": 24,
+									"ipAddress": "172.16.10.10",
+									"netMask": "255.255.255.0",
+									"networkAddress": "172.16.10.0/24",
+									"cidr": "172.16.10.10/24",
+									"start": 2886732298,
+									"end": 2886732298,
+									"ipAddressType": "ENDPOINT",
+									"privateAddress": true
+								}
+							],
+							"networkinterfaceParent": {
+								"nicId": "vmk1",
+								"administrativeStatus": "UP",
+								"operationalStatus": "ACTIVE",
+								"mtu": 9000,
+								"ifSpeed": -1,
+								"physicalAddress": "00:50:56:6e:f4:38",
+								"ifType": "ETHERNET",
+								"duplex": "FULL",
+								"interfaceName": "vmk1",
+								"connected": true
+							},
+							"ipEntities": [
+								{
+									"modelKey": "10000:541:125954693",
+									"name": "172.16.10.10"
+								}
+							]
+						}
+					},
+					"manager": {
+						"modelKey": "10000:8:602129624",
+						"name": "sc2vc01.cmbu.local"
+					},
+					"host": {
+						"modelKey": "10000:4:141735343",
+						"name": "sc2-hs2-b1617.eng.vmware.com"
+					},
+					"cluster": {
+						"modelKey": "10000:66:1593633097",
+						"name": "sc2c02"
+					},
+					"defaultGateway": "10.172.211.253"
+				},
+				{
+					"name": "[sc2-hs2-b1617.eng.vmware.com]-[vmk2]",
+					"modelKey": "10000:17:426294370",
+					"nicType": "MANAGEMENT",
+					"virtualNicParent": {
+						"numberednetworkinterfaceParent": {
+							"ipAddresses": [
+								{
+									"prefixLength": 22,
+									"ipAddress": "192.168.105.87",
+									"netMask": "255.255.252.0",
+									"networkAddress": "192.168.104.0/22",
+									"cidr": "192.168.105.87/22",
+									"start": 3232262487,
+									"end": 3232262487,
+									"ipAddressType": "ENDPOINT",
+									"privateAddress": true
+								}
+							],
+							"networkinterfaceParent": {
+								"nicId": "vmk2",
+								"administrativeStatus": "UP",
+								"operationalStatus": "ACTIVE",
+								"mtu": 9000,
+								"ifSpeed": -1,
+								"physicalAddress": "00:50:56:6d:98:2b",
+								"ifType": "ETHERNET",
+								"duplex": "FULL",
+								"interfaceName": "vmk2",
+								"connected": true
+							},
+							"ipEntities": [
+								{
+									"modelKey": "10000:541:1107517993",
+									"name": "192.168.105.87"
+								}
+							]
+						}
+					},
+					"manager": {
+						"modelKey": "10000:8:602129624",
+						"name": "sc2vc01.cmbu.local"
+					},
+					"host": {
+						"modelKey": "10000:4:141735343",
+						"name": "sc2-hs2-b1617.eng.vmware.com"
+					},
+					"cluster": {
+						"modelKey": "10000:66:1593633097",
+						"name": "sc2c02"
+					},
+					"defaultGateway": "10.172.211.253"
+				},
+				{
+					"name": "[sc2-hs2-b1617.eng.vmware.com]-[vmk0]",
+					"modelKey": "10000:17:426294308",
+					"nicType": "MANAGEMENT",
+					"virtualNicParent": {
+						"numberednetworkinterfaceParent": {
+							"ipAddresses": [
+								{
+									"prefixLength": 22,
+									"ipAddress": "10.172.209.87",
+									"netMask": "255.255.252.0",
+									"networkAddress": "10.172.208.0/22",
+									"cidr": "10.172.209.87/22",
+									"start": 179097943,
+									"end": 179097943,
+									"ipAddressType": "ENDPOINT",
+									"privateAddress": true
+								}
+							],
+							"networkinterfaceParent": {
+								"nicId": "vmk0",
+								"administrativeStatus": "UP",
+								"operationalStatus": "ACTIVE",
+								"mtu": 1500,
+								"ifSpeed": -1,
+								"physicalAddress": "3c:fd:fe:ac:f8:50",
+								"ifType": "ETHERNET",
+								"duplex": "FULL",
+								"interfaceName": "vmk0",
+								"connected": true
+							},
+							"ipEntities": [
+								{
+									"modelKey": "10000:541:1590386548",
+									"name": "10.172.209.87"
+								}
+							]
+						}
+					},
+					"manager": {
+						"modelKey": "10000:8:602129624",
+						"name": "sc2vc01.cmbu.local"
+					},
+					"host": {
+						"modelKey": "10000:4:141735343",
+						"name": "sc2-hs2-b1617.eng.vmware.com"
+					},
+					"cluster": {
+						"modelKey": "10000:66:1593633097",
+						"name": "sc2c02"
+					},
+					"defaultGateway": "10.172.211.253"
+				},
+				{
+					"name": "[sc2-hs2-b1617.eng.vmware.com]-[vmk3]",
+					"modelKey": "10000:17:426294401",
+					"nicType": "VTEP",
+					"virtualNicParent": {
+						"numberednetworkinterfaceParent": {
+							"ipAddresses": [
+								{
+									"prefixLength": 24,
+									"ipAddress": "10.173.22.103",
+									"netMask": "255.255.255.0",
+									"networkAddress": "10.173.22.0/24",
+									"cidr": "10.173.22.103/24",
+									"start": 179115623,
+									"end": 179115623,
+									"ipAddressType": "ENDPOINT",
+									"privateAddress": true
+								}
+							],
+							"networkinterfaceParent": {
+								"nicId": "vmk3",
+								"administrativeStatus": "UP",
+								"operationalStatus": "ACTIVE",
+								"mtu": 9000,
+								"ifSpeed": -1,
+								"physicalAddress": "00:50:56:6c:f7:d6",
+								"ifType": "ETHERNET",
+								"duplex": "FULL",
+								"interfaceName": "vmk3",
+								"connected": true
+							},
+							"ipEntities": [
+								{
+									"modelKey": "10000:541:944307416",
+									"name": "10.173.22.103"
+								}
+							]
+						},
+						"dvpg": {
+							"modelKey": "10000:3:678527016",
+							"name": "vxw-vmknicPg-dvs-81-0-8f710449-623b-4407-9b1e-2a32989833c9"
+						},
+						"dvs": {
+							"modelKey": "10000:2:2100217279",
+							"name": "SC2-dSwitch-1"
+						},
+						"virtualPort": {
+							"connectedVirtualPort": "59"
+						}
+					},
+					"manager": {
+						"modelKey": "10000:8:602129624",
+						"name": "sc2vc01.cmbu.local"
+					},
+					"host": {
+						"modelKey": "10000:4:141735343",
+						"name": "sc2-hs2-b1617.eng.vmware.com"
+					},
+					"pathSwitchPorts": [
+						{
+							"modelKey": "10000:19:1651412958",
+							"name": "[sc2-hs2-b1617.eng.vmware.com]-[vmnic3]"
+						}
+					],
+					"cluster": {
+						"modelKey": "10000:66:1593633097",
+						"name": "sc2c02"
+					},
+					"defaultGateway": "10.173.22.253"
+				}
+			],
+			"embeddedPnics": [
+				{
+					"name": "[sc2-hs2-b1617.eng.vmware.com]-[vmnic2]",
+					"modelKey": "10000:19:1651412927",
+					"administrativeStatus": "UP",
+					"operationalStatus": "UP",
+					"mtu": -1,
+					"ifSpeed": 10000000000,
+					"duplex": "FULL",
+					"connectionType": "SWITCH",
+					"manager": {
+						"modelKey": "10000:8:602129624",
+						"name": "sc2vc01.cmbu.local"
+					},
+					"device": {
+						"modelKey": "10000:4:141735343",
+						"name": "sc2-hs2-b1617.eng.vmware.com"
+					},
+					"subType": [
+						1110
+					],
+					"deviceInfo": {
+						"vendor": "VMware, Inc.",
+						"version": "6.7.0"
+					},
+					"physicalAddress": "3c:fd:fe:ac:f8:50"
+				},
+				{
+					"name": "[sc2-hs2-b1617.eng.vmware.com]-[vmnic0]",
+					"modelKey": "10000:19:1651412865",
+					"administrativeStatus": "UNKNOWN",
+					"operationalStatus": "DOWN",
+					"mtu": -1,
+					"ifSpeed": -1,
+					"duplex": "FULL",
+					"manager": {
+						"modelKey": "10000:8:602129624",
+						"name": "sc2vc01.cmbu.local"
+					},
+					"device": {
+						"modelKey": "10000:4:141735343",
+						"name": "sc2-hs2-b1617.eng.vmware.com"
+					},
+					"subType": [
+						1110
+					],
+					"deviceInfo": {
+						"vendor": "VMware, Inc.",
+						"version": "6.7.0"
+					},
+					"physicalAddress": "38:0e:4d:7d:b0:22"
+				},
+				{
+					"name": "[sc2-hs2-b1617.eng.vmware.com]-[vmnic3]",
+					"modelKey": "10000:19:1651412958",
+					"administrativeStatus": "UP",
+					"operationalStatus": "UP",
+					"mtu": 9000,
+					"ifSpeed": 10000000000,
+					"duplex": "FULL",
+					"vlans": [
+						{
+							"start": 0,
+							"end": 4094
+						}
+					],
+					"portKey": "16",
+					"connectionType": "SWITCH",
+					"manager": {
+						"modelKey": "10000:8:602129624",
+						"name": "sc2vc01.cmbu.local"
+					},
+					"device": {
+						"modelKey": "10000:4:141735343",
+						"name": "sc2-hs2-b1617.eng.vmware.com"
+					},
+					"subType": [
+						1110
+					],
+					"deviceInfo": {
+						"vendor": "VMware, Inc.",
+						"version": "6.7.0"
+					},
+					"physicalAddress": "3c:fd:fe:ac:f8:51"
+				},
+				{
+					"name": "[sc2-hs2-b1617.eng.vmware.com]-[vmnic1]",
+					"modelKey": "10000:19:1651412896",
+					"administrativeStatus": "UNKNOWN",
+					"operationalStatus": "DOWN",
+					"mtu": -1,
+					"ifSpeed": -1,
+					"duplex": "FULL",
+					"manager": {
+						"modelKey": "10000:8:602129624",
+						"name": "sc2vc01.cmbu.local"
+					},
+					"device": {
+						"modelKey": "10000:4:141735343",
+						"name": "sc2-hs2-b1617.eng.vmware.com"
+					},
+					"subType": [
+						1110
+					],
+					"deviceInfo": {
+						"vendor": "VMware, Inc.",
+						"version": "6.7.0"
+					},
+					"physicalAddress": "38:0e:4d:7d:b0:23"
+				}
+			],
+			"firewallStatus": "Active",
+			"serverdataParent": {
+				"runtime": {
+					"powerState": "POWEREDON"
+				},
+				"oSHostName": "sc2-hs2-b1617",
+				"osFullName": "VMware ESXi 6.7.0 build-10764712",
+				"numCpus": 28,
+				"memoryMB": 195236,
+				"deviceInfo": {
+					"vendor": "VMware, Inc.",
+					"version": "6.7.0"
+				},
+				"cpuSockets": 2
+			},
+			"__searchTags": [
+				"3c:fd:fe:ac:f8:50",
+				"38:0e:4d:7d:b0:22",
+				"3c:fd:fe:ac:f8:51",
+				"38:0e:4d:7d:b0:23",
+				"00:50:56:6e:f4:38",
+				"00:50:56:6d:98:2b",
+				"3c:fd:fe:ac:f8:50",
+				"00:50:56:6c:f7:d6",
+				"sc2-hs2-b1617.eng.vmware.com",
+				"VMware, Inc.",
+				"host-67",
+				"172.16.10.0/24",
+				"192.168.104.0/22",
+				"10.172.208.0/22",
+				"10.173.22.0/24",
+				"prefixLength: 24\nipAddress: \"172.16.10.10\"\nnetMask: \"255.255.255.0\"\nnetworkAddress: \"172.16.10.0/24\"\ncidr: \"172.16.10.10/24\"\nstart: 2886732298\nend: 2886732298\nipAddressType: \"ENDPOINT\"\nprivateAddress: true\n",
+				"prefixLength: 22\nipAddress: \"192.168.105.87\"\nnetMask: \"255.255.252.0\"\nnetworkAddress: \"192.168.104.0/22\"\ncidr: \"192.168.105.87/22\"\nstart: 3232262487\nend: 3232262487\nipAddressType: \"ENDPOINT\"\nprivateAddress: true\n",
+				"prefixLength: 22\nipAddress: \"10.172.209.87\"\nnetMask: \"255.255.252.0\"\nnetworkAddress: \"10.172.208.0/22\"\ncidr: \"10.172.209.87/22\"\nstart: 179097943\nend: 179097943\nipAddressType: \"ENDPOINT\"\nprivateAddress: true\n",
+				"prefixLength: 24\nipAddress: \"10.173.22.103\"\nnetMask: \"255.255.255.0\"\nnetworkAddress: \"10.173.22.0/24\"\ncidr: \"10.173.22.103/24\"\nstart: 179115623\nend: 179115623\nipAddressType: \"ENDPOINT\"\nprivateAddress: true\n"
+			],
+			"__related_entities": [
+				"10000:8:602129624",
+				"10000:66:1593633097"
+			],
+			"manager": {
+				"modelKey": "10000:8:602129624",
+				"name": "sc2vc01.cmbu.local"
+			},
+			"numVmknics": 4,
+			"numPnics": 4,
+			"connectionState": "CONNECTED",
+			"maintenanceMode": "NOTINMAINTENANCEMODE",
+			"cluster": {
+				"modelKey": "10000:66:1593633097",
+				"name": "sc2c02"
+			},
+			"features": [
+				{
+					"modelKey": "10000:542:667521450",
+					"name": "firewall"
+				},
+				{
+					"modelKey": "10000:542:1226540281",
+					"name": "hostPrep"
+				},
+				{
+					"modelKey": "10000:542:1142002208",
+					"name": "messagingInfra"
+				},
+				{
+					"modelKey": "10000:542:2069794135",
+					"name": "vxlan"
+				},
+				{
+					"modelKey": "10000:542:102020125",
+					"name": "vdr_mon"
+				}
+			],
+			"datastores": [
+				{
+					"modelKey": "10000:80:861608045",
+					"name": "SC2-NFS-01"
+				},
+				{
+					"modelKey": "10000:80:861612013",
+					"name": "datastore1 (9)"
+				},
+				{
+					"modelKey": "10000:80:861613811",
+					"name": "sc2c02vsan01"
+				}
+			],
+			"vxlanFeature": {
+				"name": "vxlan",
+				"modelKey": "10000:542:2069794135",
+				"owner": {
+					"modelKey": "10000:4:141735343",
+					"name": ""
+				},
+				"fabricFeatureInfo": [
+					{
+						"version": "5.5",
+						"status": "GREEN",
+						"enabled": true,
+						"installed": true
+					}
+				],
+				"manager": {
+					"modelKey": "10000:7:1924368983",
+					"name": "sc2nsx.cmbu.local"
+				}
+			},
+			"fwFeature": {
+				"name": "firewall",
+				"modelKey": "10000:542:667521450",
+				"owner": {
+					"modelKey": "10000:4:141735343",
+					"name": ""
+				},
+				"fabricFeatureInfo": [
+					{
+						"version": "5.5",
+						"status": "GREEN",
+						"enabled": true,
+						"installed": true
+					}
+				],
+				"manager": {
+					"modelKey": "10000:7:1924368983",
+					"name": "sc2nsx.cmbu.local"
+				}
+			},
+			"hostPrepFeature": {
+				"name": "hostPrep",
+				"modelKey": "10000:542:1226540281",
+				"owner": {
+					"modelKey": "10000:4:141735343",
+					"name": ""
+				},
+				"fabricFeatureInfo": [
+					{
+						"version": "6.4.1.8599035",
+						"status": "GREEN",
+						"enabled": true,
+						"installed": true
+					}
+				],
+				"manager": {
+					"modelKey": "10000:7:1924368983",
+					"name": "sc2nsx.cmbu.local"
+				}
+			},
+			"msgInfraFeature": {
+				"name": "messagingInfra",
+				"modelKey": "10000:542:1142002208",
+				"owner": {
+					"modelKey": "10000:4:141735343",
+					"name": ""
+				},
+				"fabricFeatureInfo": [
+					{
+						"version": "5.5",
+						"status": "GREEN",
+						"enabled": true,
+						"installed": true
+					}
+				],
+				"manager": {
+					"modelKey": "10000:7:1924368983",
+					"name": "sc2nsx.cmbu.local"
+				}
+			},
+			"vdrMonFeature": {
+				"name": "vdr_mon",
+				"modelKey": "10000:542:102020125",
+				"owner": {
+					"modelKey": "10000:4:141735343",
+					"name": ""
+				},
+				"fabricFeatureInfo": [
+					{
+						"version": "Unknown",
+						"status": "UNKNOWN",
+						"enabled": true,
+						"installed": false
+					}
+				],
+				"manager": {
+					"modelKey": "10000:7:1924368983",
+					"name": "sc2nsx.cmbu.local"
+				}
+			},
+			"serviceTag": "WZP213717HU",
+			"numVteps": 1,
+			"scsiDisks": [
+				{
+					"modelKey": "10000:144:2019251181",
+					"name": "Local ATA Disk (naa.5002538c407104a9)"
+				},
+				{
+					"modelKey": "10000:144:823783241",
+					"name": "Local ATA Disk (t10.ATA_____Micron_5100_MTFDDAV240TCB_______________________1723176AF9A2)"
+				},
+				{
+					"modelKey": "10000:144:754309087",
+					"name": "Local TOSHIBA Disk (naa.58ce38ee20007aa5)"
+				}
+			],
+			"hostDiskLinks": [
+				{
+					"modelKey": "10000:146:1587007051",
+					"name": "sc2-hs2-b1617.eng.vmware.com - Local TOSHIBA Disk (naa.58ce38ee20007aa5)"
+				},
+				{
+					"modelKey": "10000:146:1374627559",
+					"name": "sc2-hs2-b1617.eng.vmware.com - Local ATA Disk (t10.ATA_____Micron_5100_MTFDDAV240TCB_______________________1723176AF9A2)"
+				},
+				{
+					"modelKey": "10000:146:214626980",
+					"name": "sc2-hs2-b1617.eng.vmware.com - Local ATA Disk (naa.5002538c407104a9)"
+				}
+			],
+			"modules": [
+				{
+					"modelKey": "10000:10401:979990162",
+					"name": "vsip"
+				},
+				{
+					"modelKey": "10000:10401:1912373782",
+					"name": "traceflow"
+				},
+				{
+					"modelKey": "10000:10401:315006316",
+					"name": "vsfwd"
+				},
+				{
+					"modelKey": "10000:10401:980436066",
+					"name": "vdl2"
+				},
+				{
+					"modelKey": "10000:10401:197367029",
+					"name": "netcpa-worker"
+				},
+				{
+					"modelKey": "10000:10401:317609435",
+					"name": "dvfilter-switch-security"
+				}
+			],
+			"controlPlaneSyncStatus": "InSync",
+			"esxVibs": [
+				{
+					"modelKey": "10000:10403:1793923691",
+					"name": "esx-nsxv"
+				}
+			],
+			"vendorId": "host-67",
+			"nsxManager": {
+				"modelKey": "10000:7:1924368983",
+				"name": "sc2nsx.cmbu.local"
+			},
+			"vms": [
+				{
+					"modelKey": "10000:1:667811489",
+					"name": "sc2-vesxi-02"
+				},
+				{
+					"modelKey": "10000:1:667841218",
+					"name": "sc2-vesxi-30"
+				},
+				{
+					"modelKey": "10000:1:667754542",
+					"name": "PRD-RDC-TMMORG"
+				},
+				{
+					"modelKey": "10000:1:667842086",
+					"name": "sc2-vesxi-37"
+				},
+				{
+					"modelKey": "10000:1:667814341",
+					"name": "sc2-vesxi-26"
+				},
+				{
+					"modelKey": "10000:1:774589052",
+					"name": "vROps80PMTeam"
+				},
+				{
+					"modelKey": "10000:1:667842055",
+					"name": "sc2-vesxi-36"
+				},
+				{
+					"modelKey": "10000:1:667936233",
+					"name": "tag-01"
+				},
+				{
+					"modelKey": "10000:1:667815085",
+					"name": "sc2-vesxi-29"
+				},
+				{
+					"modelKey": "10000:1:667814093",
+					"name": "sc2-vesxi-18"
+				},
+				{
+					"modelKey": "10000:1:774595810",
+					"name": "sc2-cp"
+				}
+			]
+		}
+	]
+}

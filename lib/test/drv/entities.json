@@ -1,0 +1,13 @@
+[
+	{
+		"modelKey": "10000:515:1018548286",
+		"metricNames": [
+			"flow.totalBytes.delta.summation.bytes",
+			"flow.totalBytesRate.rate.average.bitsPerSecond"
+		],
+		"indicativeValues": true,
+		"startDate": 1576099008489,
+		"endDate": 1576185408489,
+		"defaultValue": -1
+	}
+]

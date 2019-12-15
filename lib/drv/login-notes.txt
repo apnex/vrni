@@ -1,0 +1,13 @@
+{
+	"status": true,
+	"statusCode": {
+		"code": 0,
+		"codeStr": "OK"
+	},
+	"responseMessage": "Logged In",
+	"displayName": "demouser@cmbu.local",
+	"serverTimestamp": 1576037347717,
+	"csrfToken": "D660/Qkd5ZTgZlT+eSSKMg==",
+	"redirectUrl": null
+}
+

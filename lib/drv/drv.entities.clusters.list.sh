@@ -2,12 +2,11 @@
 if [[ $0 =~ ^(.*)/[^/]+$ ]]; then
 	WORKDIR=${BASH_REMATCH[1]}
 fi
-source ${WORKDIR}/drv.core
 source ${WORKDIR}/drv.vrni.client
 
 CALL=$1
 if [[ -n "${VRNIHOST}" ]]; then
-	ITEM="groups/applications"
+	ITEM="entities/clusters"
 	URL=$(buildURL "${ITEM}")
 	if [[ -n "${CALL}" ]]; then
 		URL+="/${CALL}"

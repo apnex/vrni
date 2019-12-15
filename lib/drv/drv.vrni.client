@@ -14,7 +14,7 @@ STATEDIR="${WORKDIR}/state"
 if [ ! -d ${STATEDIR} ]; then
         mkdir ${STATEDIR}
 fi
-source ${WORKDIR}/drv.core
+source ${WORKDIR}/mod.core
 
 PARAMS=$(cat ${SDDCDIR}/sddc.parameters)
 DOMAIN=$(echo "${PARAMS}" | jq -r '.domain')
@@ -31,47 +31,6 @@ VRNIONLINE=$(echo "$SPEC" | jq -r '.online')
 VRNISESSION="${STATEDIR}/vrni.token.txt"
 VRNIBASE="https://${VRNIHOST}/api/ni/"
 
-function isSuccess {
-	local STRING=${1}
-	local SESSION=$VRNISESSION
-	local CODE=$(getCode "${STRING}")
-	printf "[$(ccyan "${CODE}")] - " 1>&2
-	case $CODE in
-		2[0-9][0-9])
-			printf "SUCCESS\n" 1>&2
-		;;
-		40[0-3])
-			printf "ERROR-AUTH\n" 1>&2
-			if [ -f "${SESSION}" ]; then
-				rm "${SESSION}"
-			fi
-		;;
-		*)
-			printf "ERROR\n" 1>&2
-		;;
-	esac
-	local BODY=$(getBody "${STRING}")
-	printf "%s\n" "${BODY}"
-}
-
-function getCode {
-	local STRING=${1}
-	if [[ $STRING =~ ^(.*)([0-9]{3})$ ]]; then
-		local BODY=${BASH_REMATCH[1]}
-		local CODE=${BASH_REMATCH[2]}
-	fi
-	printf "%s\n" "${CODE}"
-}
-
-function getBody {
-	local STRING=${1}
-	if [[ $STRING =~ ^(.*)([0-9]{3})$ ]]; then
-		local BODY=${BASH_REMATCH[1]}
-		local CODE=${BASH_REMATCH[2]}
-	fi
-	printf "%s\n" "${BODY}"
-}
-
 function vrniLogin {
 	local URL="https://${VRNIHOST}/api/ni/auth/token"
 	read -r -d '' VRNIBODY <<-CONFIG
@@ -83,7 +42,8 @@ function vrniLogin {
 		}
 	}
 	CONFIG
-	local RESPONSE=$(curl -k -w "%{http_code}" -X POST \
+	#local RESPONSE=$(curl -k -w "%{http_code}" -X POST \
+	local RESPONSE=$(curl -k -c "${STATEDIR}/vrni.cookies.txt" -D "${STATEDIR}/vrni.headers.txt" -w "%{http_code}" -X POST \
 		-H 'Content-Type: application/json' \
 		-H 'Accept: application/json' \
 		-d "$VRNIBODY" \
@@ -135,20 +95,33 @@ function vrniGet {
 	local ONLINE="${VRNIONLINE}"
 	local STATE
 	if [[ "$ONLINE" == "true" ]]; then
+		local SUCCESS=$(vrniSession)
 		local FILE=$(getFile "${URL}" "${BASE}")
 		STATE="${STATEDIR}/vrni${FILE}"
-		RESPONSE=$(curl -k -w "%{http_code}" -X GET \
-			-H "Content-Type: application/json" \
+
+		### DEBUG ###
+		curl -k --trace-ascii /dev/stdout -b "${STATEDIR}/vrni.cookies.txt" -D "${STATEDIR}/vrni.headers.txt" -w "%{http_code}" -X GET \
 			-H 'Accept: application/json' \
-			-H "Authorization: NetworkInsight $(cat ${VRNISESSION})" \
-		"${URL}" 2>/dev/null)
-		RESULT=$(isSuccess "${RESPONSE}")
+			-H 'Origin: https://field-demo.vrni.cmbu.local' \
+			-H 'x-vrni-csrf-token: RW6X9sZkHvNM+rJLFlEpaQ==' \
+		"${URL}" 1>&2
+		### DEBUG ###
+			#-H "Authorization: NetworkInsight $(cat ${VRNISESSION})" \
+
+		#RESPONSE=$(curl -k -w "%{http_code}" -X GET \
+		#	-H "Content-Type: application/json" \
+		#	-H 'Accept: application/json' \
+		#	-H 'Origin: https://field-demo.vrni.cmbu.local' \
+		#	-H 'x-vrni-csrf-token: RW6X9sZkHvNM+rJLFlEpaQ==' \
+		#	-H "Authorization: NetworkInsight $(cat ${VRNISESSION})" \
+		#"${URL}" 2>/dev/null)
+		#RESULT=$(isSuccess "${RESPONSE}")
 	else
 		printf "[$(ccyan "OFFLINE")] - SUCCESS\n" 1>&2
 		RESULT=$(cat "${URL}")
 		STATE="${URL}"
 	fi
-	printf "%s\n" "${RESULT}" | jq --tab . >"${STATE}"
+	#printf "%s\n" "${RESULT}" | jq --tab . >"${STATE}"
 	printf "%s\n" "${RESULT}" | jq --tab .
 }
 

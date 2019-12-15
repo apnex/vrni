@@ -1,0 +1,1 @@
+/home/apnex/vmware/lab/nuc/vrni/test

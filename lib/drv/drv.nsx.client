@@ -1,0 +1,199 @@
+#!/bin/bash
+if [ -z ${WORKDIR} ]; then
+	if [[ $0 =~ ^(.*)/[^/]+$ ]]; then
+		WORKDIR=${BASH_REMATCH[1]}
+	fi
+	if [[ $0 == "bash" ]]; then
+		WORKDIR="."
+	fi
+fi
+if [ -z ${SDDCDIR} ]; then
+	SDDCDIR=${WORKDIR}
+fi
+STATEDIR="${WORKDIR}/state"
+if [ ! -d ${STATEDIR} ]; then
+        mkdir ${STATEDIR}
+fi
+source ${WORKDIR}/mod.core
+
+PARAMS=$(cat ${SDDCDIR}/sddc.parameters)
+DOMAIN=$(echo "${PARAMS}" | jq -r '.domain')
+SPEC=$(echo "${PARAMS}" | jq -r '.endpoints[] | select(.type=="nsx")')
+NSXHOST=$(echo "$SPEC" | jq -r '.hostname')
+if [[ ! "$NSXHOST" =~ ^[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}$ ]]; then
+	if [[ ! "$NSXHOST" =~ [.] ]]; then
+		NSXHOST+=".$DOMAIN" #if not an IP or FQDN, append domain
+	fi
+fi
+NSXUSER=$(echo "$SPEC" | jq -r '.username')
+NSXPASS=$(echo "$SPEC" | jq -r '.password')
+NSXONLINE=$(echo "$SPEC" | jq -r '.online')
+NSXSESSION="${STATEDIR}/nsx.token.txt"
+NSXBASE="https://${NSXHOST}/api/v1/"
+
+function nsxLogin {
+	local URL="https://${NSXHOST}/api/session/create"
+
+	### DEBUG ###
+	#printf "%s\n" "NSXUSER: ${NSXUSER}" 1>&2
+	#printf "%s\n" "NSXPASS: ${NSXPASS}" 1>&2
+	#curl -k --trace-ascii /dev/stdout -c "${STATEDIR}/nsx.cookies.txt" -D "${STATEDIR}/nsx.headers.txt" -w "%{http_code}" -X POST \
+	#	--data-urlencode "j_username=${NSXUSER}" \
+	#	--data-urlencode "j_password=${NSXPASS}" \
+	#"${URL}" 1>&2
+	### DEBUG ###
+
+	local RESPONSE=$(curl -k -c "${STATEDIR}/nsx.cookies.txt" -D "${STATEDIR}/nsx.headers.txt" -w "%{http_code}" -X POST \
+		--data-urlencode "j_username=${NSXUSER}" \
+		--data-urlencode "j_password=${NSXPASS}" \
+	"${URL}" 2>/dev/null)
+	local RESULT=$(isSuccess "${RESPONSE}" "${NSXSESSION}")
+	local CODE=$(getCode "${RESPONSE}")
+	if [[ $CODE =~ 2..$ ]]; then
+		local HEADER="$(grep X-XSRF-TOKEN: "${STATEDIR}/nsx.headers.txt")"
+		if [[ $HEADER =~ ([-a-f0-9:]+)[^-a-f0-9:]*$ ]]; then
+			local TOKEN=${BASH_REMATCH[1]}
+		fi
+		printf "%s\n" "${TOKEN}"
+	fi
+}
+
+function nsxSession {
+	local SESSION=$NSXSESSION
+	local ONLINE=$NSXONLINE
+	if [[ "$ONLINE" == "true" ]]; then
+		local RUNFIND="$(find ${SESSION} -mmin -10 2>/dev/null)"
+		if [[ -z ${RUNFIND} ]]; then
+			printf "No valid session found, authenticating... " 1>&2
+			local LOGIN=$(nsxLogin)
+			if [[ -n ${LOGIN} ]]; then
+				echo "${LOGIN}" >"$SESSION"
+			fi
+		fi
+	fi
+	printf "%s\n" "$(cat "${SESSION}" 2>/dev/null)"
+	#printf "%s\n" "$(cat "${SESSION}")" 1>&2
+}
+
+function nsxPost {
+	local URL=${1}
+	local BODY=${2}
+	if [[ "$NSXONLINE" == "true" ]]; then
+		RESPONSE=$(curl -k -b "${STATEDIR}/nsx.cookies.txt" -w "%{http_code}" -X POST \
+			-H "X-Allow-Overwrite: true" \
+			-H "X-XSRF-TOKEN: $(cat ${NSXSESSION})" \
+			-H "Content-Type: application/json" \
+			-d "$BODY" \
+		"$URL" 2>/dev/null)
+		RESULT=$(isSuccess "${RESPONSE}" "${NSXSESSION}")
+	else
+		printf "[$(ccyan "OFFLINE")] - SUCCESS\n" 1>&2
+	fi
+	printf "%s\n" "${RESULT}" | jq --tab .
+}
+
+function nsxPut {
+	local URL=${1}
+	local BODY=${2}
+	if [[ "$NSXONLINE" == "true" ]]; then
+
+		### DEBUG ###
+		#curl -k --trace-ascii /dev/stdout -b "${STATEDIR}/nsx.cookies.txt" -w "%{http_code}" -X PUT \
+		#	-H "X-Allow-Overwrite: true" \
+		#	-H "X-XSRF-TOKEN: $(cat ${NSXSESSION})" \
+		#	-H "Content-Type: application/json" \
+		#	--data "${BODY}" \
+		#"${URL}" 1>&2
+		### DEBUG ###
+
+		RESPONSE=$(curl -k -b "${STATEDIR}/nsx.cookies.txt" -w "%{http_code}" -X PUT \
+			-H "X-Allow-Overwrite: true" \
+			-H "X-XSRF-TOKEN: $(cat ${NSXSESSION})" \
+			-H "Content-Type: application/json" \
+			--data "${BODY}" \
+		"$URL" 2>/dev/null)
+		RESULT=$(isSuccess "${RESPONSE}" "${NSXSESSION}")
+	else
+		printf "[$(ccyan "OFFLINE")] - SUCCESS\n" 1>&2
+	fi
+	#printf "%s\n" "${RESULT}" | jq --tab .
+}
+
+function nsxDelete {
+	local URL=${1}
+	local BODY=${2}
+	if [[ "$NSXONLINE" == "true" ]]; then
+		STATE=$(getFile "${URL}")
+
+		### DEBUG ###
+		#curl -k --trace-ascii /dev/stdout -b "${STATEDIR}/nsx.cookies.txt" -w "%{http_code}" -G -X DELETE \
+		#	-H "X-Allow-Overwrite: true" \
+		#	-H "X-XSRF-TOKEN: $(cat ${NSXSESSION})" \
+		#	-H "Content-Type: application/x-form-urlencoded" \
+		#	--data "${BODY}" \
+		#"${URL}" 1>&2
+		### DEBUG ###
+
+		RESPONSE=$(curl -k -b "${STATEDIR}/nsx.cookies.txt" -w "%{http_code}" -G -X DELETE \
+			-H "X-Allow-Overwrite: true" \
+			-H "X-XSRF-TOKEN: $(cat ${NSXSESSION})" \
+			-H "Content-Type: application/x-form-urlencoded" \
+			--data "$BODY" \
+		"$URL" 2>/dev/null)
+		RESULT=$(isSuccess "${RESPONSE}" "${NSXSESSION}")
+	else
+		printf "[$(ccyan "OFFLINE")] - SUCCESS\n" 1>&2
+	fi
+	#work out state synch for deletes
+	printf "%s\n" "${RESULT}" | jq --tab .
+}
+
+function nsxGet {
+	local URL=${1}
+	local BASE=${NSXBASE}
+	local STATE
+	if [[ "$NSXONLINE" == "true" ]]; then
+		local FILE=$(getFile "${URL}" "${BASE}")
+		STATE="${STATEDIR}/nsx${FILE}"
+
+		### DEBUG ###
+		#curl -k --trace-ascii /dev/stdout -b "${STATEDIR}/nsx.cookies.txt" -w "%{http_code}" -X PUT \
+		#	-H "X-Allow-Overwrite: true" \
+		#	-H "X-XSRF-TOKEN: $(cat ${NSXSESSION})" \
+		#	-H "Content-Type: application/json" \
+		#	--data "${BODY}" \
+		#"${URL}" 1>&2
+		### DEBUG ###
+
+		RESPONSE=$(curl -k -b "${STATEDIR}/nsx.cookies.txt" -w "%{http_code}" -X GET \
+			-H "X-XSRF-TOKEN: $(cat ${NSXSESSION})" \
+			-H "Content-Type: application/json" \
+		"$URL" 2>/dev/null)
+		RESULT=$(isSuccess "${RESPONSE}" "${NSXSESSION}")
+	else
+		printf "[$(ccyan "OFFLINE")] - SUCCESS\n" 1>&2
+		RESULT=$(cat "${URL}")
+		STATE="${URL}"
+	fi
+	printf "%s\n" "${RESULT}" | jq --tab . >"${STATE}"
+	printf "%s\n" "${RESULT}" | jq --tab .
+}
+
+function buildURL {
+	local ENDPOINT="${1}"
+	local BASE="${NSXBASE}"
+	local STATE="${STATEDIR}"
+	local ONLINE="${NSXONLINE}"
+	if [[ "$ONLINE" == "true" ]]; then
+		local SUCCESS=$(nsxSession)
+		if [[ -n ${SUCCESS} ]]; then
+			URL="$BASE$ENDPOINT"
+		else
+			URL="" #failed to obtain valid session
+		fi
+	else
+		local FILE=$(getFile "${ENDPOINT}")
+		URL="${STATE}/nsx${FILE}"
+	fi
+	printf "$URL"
+}

@@ -10,7 +10,7 @@ read -r -d '' BODY <<-CONFIG
 }
 CONFIG
 
-URL='https://1.1.1.1/api/ni/auth/token'
+URL='https://field-demo.vrni.cmbu.local/api/ni/auth/token'
 
 RESPONSE=$(curl -k -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' \
 	-d "${BODY}" \

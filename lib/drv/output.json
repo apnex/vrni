@@ -1,0 +1,6453 @@
+{
+	"1": {
+		"_metric": {
+			"net.received.rate.maximum.kiloBitsPerSecond": {
+				"propertyType": "INT",
+				"canonicalName": "net.received.rate.maximum.kiloBitsPerSecond",
+				"friendlyName": "Max Network Rx Rate",
+				"aliases": [
+					"Max Network Rx Rate",
+					"max rx rate",
+					"net max rx rate",
+					"net.received.rate.maximum.kilobitspersecond",
+					"network max rx rate"
+				],
+				"categories": [
+					"NETWORK",
+					"METRIC"
+				],
+				"helpText": "Maximum network data receive rate over five minute windows.",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"datastore.numberWriteAveraged.rate.average.number": {
+				"propertyType": "INT",
+				"canonicalName": "datastore.numberWriteAveraged.rate.average.number",
+				"friendlyName": "Write IOPS",
+				"aliases": [
+					"Write IOPS",
+					"datastore write iops",
+					"datastore.numberwriteaveraged.rate.average.number",
+					"write iops"
+				],
+				"categories": [
+					"STORAGE",
+					"METRIC"
+				],
+				"helpText": "Average write IOPS sent from this VM to all of its connected datastores",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"datastore.totalReadLatency.absolute.average.millisecond": {
+				"propertyType": "INT",
+				"canonicalName": "datastore.totalReadLatency.absolute.average.millisecond",
+				"friendlyName": "Read Latency",
+				"aliases": [
+					"Read Latency",
+					"datastore read delay",
+					"datastore read lag",
+					"datastore read latency",
+					"datastore.totalreadlatency.absolute.average.millisecond",
+					"device read delay",
+					"device read lag",
+					"device read latency",
+					"read latency"
+				],
+				"categories": [
+					"STORAGE",
+					"METRIC"
+				],
+				"helpText": "The average latency in milliseconds of each read operation issued by VM on its datastore.",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"datastore.write.rate.average.kiloBytesPerSecond": {
+				"propertyType": "INT",
+				"canonicalName": "datastore.write.rate.average.kiloBytesPerSecond",
+				"friendlyName": "Write Throughput",
+				"aliases": [
+					"Write Throughput",
+					"datastore write rate",
+					"datastore.write.rate.average.kilobytespersecond",
+					"write throughput"
+				],
+				"categories": [
+					"STORAGE",
+					"METRIC"
+				],
+				"helpText": "Write Throughput of datastores connected to VM in kBps averaged over a period of 24 hour",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"net.broadcastByRx.ratio.compute.percent": {
+				"propertyType": "INT",
+				"canonicalName": "net.broadcastByRx.ratio.compute.percent",
+				"friendlyName": "Rx Broadcast Ratio",
+				"aliases": [
+					"Rx Broadcast Ratio",
+					"broadcast rx ratio",
+					"net broadcast rx ratio",
+					"net.broadcastbyrx.ratio.compute.percent",
+					"network broadcast rx ratio",
+					"rx broadcast ratio"
+				],
+				"categories": [
+					"NETWORK",
+					"METRIC"
+				],
+				"helpText": "Ratio of received broadcast packets to received packets expressed as percent.",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"mem.consumed.absolute.average.kiloBytes": {
+				"propertyType": "INT",
+				"canonicalName": "mem.consumed.absolute.average.kiloBytes",
+				"friendlyName": "Memory Consumed",
+				"aliases": [
+					"Memory Consumed",
+					"mem consumed",
+					"mem.consumed.absolute.average.kilobytes",
+					"memory consumed"
+				],
+				"categories": [
+					"METRIC",
+					"COMPUTE"
+				],
+				"helpText": "Amount of memory consumed by a virtual machine, host, or cluster. Amount of guest physical memory consumed by the virtual machine for guest memory. Consumed memory does not include overhead memory. It includes shared memory and memory that might be reserved, but not actually used. Use this metric for charge-back purposes.   vm consumed memory = memory granted - memory saved due to memory sharing.",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"storage.committed.absolute.latest.bytes": {
+				"propertyType": "INT",
+				"canonicalName": "storage.committed.absolute.latest.bytes",
+				"friendlyName": "Committed Space",
+				"aliases": [
+					"Committed Space",
+					"storage.committed.absolute.latest.bytes"
+				],
+				"categories": [
+					"METRIC"
+				],
+				"helpText": "Committed Space in bytes for VM storage",
+				"facetSupported": false,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"net.packetDropRx.ratio.compute.percent": {
+				"propertyType": "INT",
+				"canonicalName": "net.packetDropRx.ratio.compute.percent",
+				"friendlyName": "Rx Packet Drop Ratio",
+				"aliases": [
+					"Rx Packet Drop Ratio",
+					"drop rx percentage",
+					"drop rx rate",
+					"drop rx ratio",
+					"dropped rx percentage",
+					"dropped rx rate",
+					"dropped rx ratio",
+					"drops rx percentage",
+					"drops rx rate",
+					"drops rx ratio",
+					"net drop rx percentage",
+					"net drop rx rate",
+					"net drop rx ratio",
+					"net dropped rx percentage",
+					"net dropped rx rate",
+					"net dropped rx ratio",
+					"net drops rx percentage",
+					"net drops rx rate",
+					"net drops rx ratio",
+					"net packet drop rx percentage",
+					"net packet drop rx rate",
+					"net packet drop rx ratio",
+					"net packet dropped rx percentage",
+					"net packet dropped rx rate",
+					"net packet dropped rx ratio",
+					"net packet drops rx percentage",
+					"net packet drops rx rate",
+					"net packet drops rx ratio",
+					"net packet rx drop percentage",
+					"net packet rx drop rate",
+					"net packet rx drop ratio",
+					"net packet rx dropped percentage",
+					"net packet rx dropped rate",
+					"net packet rx dropped ratio",
+					"net packet rx drops percentage",
+					"net packet rx drops rate",
+					"net packet rx drops ratio",
+					"net packets drop rx percentage",
+					"net packets drop rx rate",
+					"net packets drop rx ratio",
+					"net packets dropped rx percentage",
+					"net packets dropped rx rate",
+					"net packets dropped rx ratio",
+					"net packets drops rx percentage",
+					"net packets drops rx rate",
+					"net packets drops rx ratio",
+					"net packets rx drop percentage",
+					"net packets rx drop rate",
+					"net packets rx drop ratio",
+					"net packets rx dropped percentage",
+					"net packets rx dropped rate",
+					"net packets rx dropped ratio",
+					"net packets rx drops percentage",
+					"net packets rx drops rate",
+					"net packets rx drops ratio",
+					"net rx drop percentage",
+					"net rx drop rate",
+					"net rx drop ratio",
+					"net rx dropped percentage",
+					"net rx dropped rate",
+					"net rx dropped ratio",
+					"net rx drops percentage",
+					"net rx drops rate",
+					"net rx drops ratio",
+					"net.packetdroprx.ratio.compute.percent",
+					"network drop rx percentage",
+					"network drop rx rate",
+					"network drop rx ratio",
+					"network dropped rx percentage",
+					"network dropped rx rate",
+					"network dropped rx ratio",
+					"network drops rx percentage",
+					"network drops rx rate",
+					"network drops rx ratio",
+					"network packet drop rx percentage",
+					"network packet drop rx rate",
+					"network packet drop rx ratio",
+					"network packet dropped rx percentage",
+					"network packet dropped rx rate",
+					"network packet dropped rx ratio",
+					"network packet drops rx percentage",
+					"network packet drops rx rate",
+					"network packet drops rx ratio",
+					"network packet rx drop percentage",
+					"network packet rx drop rate",
+					"network packet rx drop ratio",
+					"network packet rx dropped percentage",
+					"network packet rx dropped rate",
+					"network packet rx dropped ratio",
+					"network packet rx drops percentage",
+					"network packet rx drops rate",
+					"network packet rx drops ratio",
+					"network packets drop rx percentage",
+					"network packets drop rx rate",
+					"network packets drop rx ratio",
+					"network packets dropped rx percentage",
+					"network packets dropped rx rate",
+					"network packets dropped rx ratio",
+					"network packets drops rx percentage",
+					"network packets drops rx rate",
+					"network packets drops rx ratio",
+					"network packets rx drop percentage",
+					"network packets rx drop rate",
+					"network packets rx drop ratio",
+					"network packets rx dropped percentage",
+					"network packets rx dropped rate",
+					"network packets rx dropped ratio",
+					"network packets rx drops percentage",
+					"network packets rx drops rate",
+					"network packets rx drops ratio",
+					"network rx drop percentage",
+					"network rx drop rate",
+					"network rx drop ratio",
+					"network rx dropped percentage",
+					"network rx dropped rate",
+					"network rx dropped ratio",
+					"network rx drops percentage",
+					"network rx drops rate",
+					"network rx drops ratio",
+					"packet drop rx percentage",
+					"packet drop rx rate",
+					"packet drop rx ratio",
+					"packet dropped rx percentage",
+					"packet dropped rx rate",
+					"packet dropped rx ratio",
+					"packet drops rx percentage",
+					"packet drops rx rate",
+					"packet drops rx ratio",
+					"packet rx drop percentage",
+					"packet rx drop rate",
+					"packet rx drop ratio",
+					"packet rx dropped percentage",
+					"packet rx dropped rate",
+					"packet rx dropped ratio",
+					"packet rx drops percentage",
+					"packet rx drops rate",
+					"packet rx drops ratio",
+					"packets drop rx percentage",
+					"packets drop rx rate",
+					"packets drop rx ratio",
+					"packets dropped rx percentage",
+					"packets dropped rx rate",
+					"packets dropped rx ratio",
+					"packets drops rx percentage",
+					"packets drops rx rate",
+					"packets drops rx ratio",
+					"packets rx drop percentage",
+					"packets rx drop rate",
+					"packets rx drop ratio",
+					"packets rx dropped percentage",
+					"packets rx dropped rate",
+					"packets rx dropped ratio",
+					"packets rx drops percentage",
+					"packets rx drops rate",
+					"packets rx drops ratio",
+					"rx drop percentage",
+					"rx drop rate",
+					"rx drop ratio",
+					"rx dropped percentage",
+					"rx dropped rate",
+					"rx dropped ratio",
+					"rx drops percentage",
+					"rx drops rate",
+					"rx drops ratio",
+					"rx packet drop ratio"
+				],
+				"categories": [
+					"NETWORK",
+					"METRIC"
+				],
+				"helpText": "Average ratio of dropped rx packets to total rx packets on all the virtual nics of this vms.",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"mem.overhead.absolute.average.kiloBytes": {
+				"propertyType": "INT",
+				"canonicalName": "mem.overhead.absolute.average.kiloBytes",
+				"friendlyName": "Memory Overhead",
+				"aliases": [
+					"Memory Overhead",
+					"mem overhead",
+					"mem.overhead.absolute.average.kilobytes",
+					"memory overhead"
+				],
+				"categories": [
+					"METRIC",
+					"COMPUTE"
+				],
+				"helpText": "Amount of machine memory allocated to a virtual machine beyond its reserved amount. Amount of machine memory used by the VMkernel to run the virtual machine.",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"net.multicastRx.delta.summation.number": {
+				"propertyType": "INT",
+				"canonicalName": "net.multicastRx.delta.summation.number",
+				"friendlyName": "Multicast Rx Packets",
+				"aliases": [
+					"Multicast Rx Packets",
+					"multicast rx",
+					"multicast rx packets",
+					"net multicast rx",
+					"net.multicastrx.delta.summation.number",
+					"network multicast rx"
+				],
+				"categories": [
+					"NETWORK",
+					"METRIC"
+				],
+				"helpText": "Number of multicast packets received during the sampling interval.",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"net.packetDrop.ratio.compute.percent": {
+				"propertyType": "INT",
+				"canonicalName": "net.packetDrop.ratio.compute.percent",
+				"friendlyName": "Total Packet Drop Ratio",
+				"aliases": [
+					"Total Packet Drop Ratio",
+					"drop packet percentage",
+					"drop packet rate",
+					"drop packet ratio",
+					"drop packets percentage",
+					"drop packets rate",
+					"drop packets ratio",
+					"drop percentage",
+					"drop rate",
+					"drop ratio",
+					"dropped packet percentage",
+					"dropped packet rate",
+					"dropped packet ratio",
+					"dropped packets percentage",
+					"dropped packets rate",
+					"dropped packets ratio",
+					"dropped percentage",
+					"dropped rate",
+					"dropped ratio",
+					"drops packet percentage",
+					"drops packet rate",
+					"drops packet ratio",
+					"drops packets percentage",
+					"drops packets rate",
+					"drops packets ratio",
+					"drops percentage",
+					"drops rate",
+					"drops ratio",
+					"net drop packet percentage",
+					"net drop packet rate",
+					"net drop packet ratio",
+					"net drop packets percentage",
+					"net drop packets rate",
+					"net drop packets ratio",
+					"net drop percentage",
+					"net drop rate",
+					"net drop ratio",
+					"net dropped packet percentage",
+					"net dropped packet rate",
+					"net dropped packet ratio",
+					"net dropped packets percentage",
+					"net dropped packets rate",
+					"net dropped packets ratio",
+					"net dropped percentage",
+					"net dropped rate",
+					"net dropped ratio",
+					"net drops packet percentage",
+					"net drops packet rate",
+					"net drops packet ratio",
+					"net drops packets percentage",
+					"net drops packets rate",
+					"net drops packets ratio",
+					"net drops percentage",
+					"net drops rate",
+					"net drops ratio",
+					"net packet drop percentage",
+					"net packet drop rate",
+					"net packet drop ratio",
+					"net packet dropped percentage",
+					"net packet dropped rate",
+					"net packet dropped ratio",
+					"net packet drops percentage",
+					"net packet drops rate",
+					"net packet drops ratio",
+					"net packets drop percentage",
+					"net packets drop rate",
+					"net packets drop ratio",
+					"net packets dropped percentage",
+					"net packets dropped rate",
+					"net packets dropped ratio",
+					"net packets drops percentage",
+					"net packets drops rate",
+					"net packets drops ratio",
+					"net.packetdrop.ratio.compute.percent",
+					"network drop packet percentage",
+					"network drop packet rate",
+					"network drop packet ratio",
+					"network drop packets percentage",
+					"network drop packets rate",
+					"network drop packets ratio",
+					"network drop percentage",
+					"network drop rate",
+					"network drop ratio",
+					"network dropped packet percentage",
+					"network dropped packet rate",
+					"network dropped packet ratio",
+					"network dropped packets percentage",
+					"network dropped packets rate",
+					"network dropped packets ratio",
+					"network dropped percentage",
+					"network dropped rate",
+					"network dropped ratio",
+					"network drops packet percentage",
+					"network drops packet rate",
+					"network drops packet ratio",
+					"network drops packets percentage",
+					"network drops packets rate",
+					"network drops packets ratio",
+					"network drops percentage",
+					"network drops rate",
+					"network drops ratio",
+					"network packet drop percentage",
+					"network packet drop rate",
+					"network packet drop ratio",
+					"network packet dropped percentage",
+					"network packet dropped rate",
+					"network packet dropped ratio",
+					"network packet drops percentage",
+					"network packet drops rate",
+					"network packet drops ratio",
+					"network packets drop percentage",
+					"network packets drop rate",
+					"network packets drop ratio",
+					"network packets dropped percentage",
+					"network packets dropped rate",
+					"network packets dropped ratio",
+					"network packets drops percentage",
+					"network packets drops rate",
+					"network packets drops ratio",
+					"packet drop percentage",
+					"packet drop rate",
+					"packet drop ratio",
+					"packet dropped percentage",
+					"packet dropped rate",
+					"packet dropped ratio",
+					"packet drops percentage",
+					"packet drops rate",
+					"packet drops ratio",
+					"packets drop percentage",
+					"packets drop rate",
+					"packets drop ratio",
+					"packets dropped percentage",
+					"packets dropped rate",
+					"packets dropped ratio",
+					"packets drops percentage",
+					"packets drops rate",
+					"packets drops ratio",
+					"total packet drop ratio"
+				],
+				"categories": [
+					"NETWORK",
+					"METRIC"
+				],
+				"helpText": "Average ratio of total dropped packets to total number packets on all the virtual nics of this vms.",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"datastore.numberReadAveraged.rate.average.number": {
+				"propertyType": "INT",
+				"canonicalName": "datastore.numberReadAveraged.rate.average.number",
+				"friendlyName": "Read IOPS",
+				"aliases": [
+					"Read IOPS",
+					"datastore read iops",
+					"datastore.numberreadaveraged.rate.average.number",
+					"read iops"
+				],
+				"categories": [
+					"STORAGE",
+					"METRIC"
+				],
+				"helpText": "Average read IOPS sent from this VM to all of its connected datastores",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"datastore.totalWriteLatency.absolute.average.millisecond": {
+				"propertyType": "INT",
+				"canonicalName": "datastore.totalWriteLatency.absolute.average.millisecond",
+				"friendlyName": "Write Latency",
+				"aliases": [
+					"Write Latency",
+					"datastore write delay",
+					"datastore write lag",
+					"datastore write latency",
+					"datastore.totalwritelatency.absolute.average.millisecond",
+					"device write delay",
+					"device write lag",
+					"device write latency",
+					"write latency"
+				],
+				"categories": [
+					"STORAGE",
+					"METRIC"
+				],
+				"helpText": "The average latency of each write operation issued by this VM on its datastore.",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"net.unicastTx.delta.summation.number": {
+				"propertyType": "INT",
+				"canonicalName": "net.unicastTx.delta.summation.number",
+				"friendlyName": "Unicast Tx Packets",
+				"aliases": [
+					"Unicast Tx Packets",
+					"net unicast tx",
+					"net.unicasttx.delta.summation.number",
+					"network unicast tx",
+					"unicast tx",
+					"unicast tx packets"
+				],
+				"categories": [
+					"NETWORK",
+					"METRIC"
+				],
+				"helpText": "Unicast Transmitted Packets by VM",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"cpu.wait.delta.summation.millisecond": {
+				"propertyType": "INT",
+				"canonicalName": "cpu.wait.delta.summation.millisecond",
+				"friendlyName": "CPU Wait Time",
+				"aliases": [
+					"CPU Wait Time",
+					"cpu.wait.delta.summation.millisecond"
+				],
+				"categories": [
+					"METRIC",
+					"COMPUTE"
+				],
+				"helpText": "CPU time spent in wait state. The wait total includes time spent the CPU Idle, CPU Swap Wait, and CPU I/O Wait states.",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"mem.swapinRate.rate.average.kiloBytesPerSecond": {
+				"propertyType": "INT",
+				"canonicalName": "mem.swapinRate.rate.average.kiloBytesPerSecond",
+				"friendlyName": "Memory Swapin Rate",
+				"aliases": [
+					"Memory Swapin Rate",
+					"mem swapin rate",
+					"mem.swapinrate.rate.average.kilobytespersecond",
+					"memory swapin rate"
+				],
+				"categories": [
+					"METRIC",
+					"COMPUTE"
+				],
+				"helpText": "Rate at which memory is swapped from disk into active memory during the interval. This counter applies to virtual machines and is generally more useful than the swapin counter to determine if the virtual machine is running slow due to swapping, especially when looking at real-time statistics.",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"net.broadcastTx.delta.summation.number": {
+				"propertyType": "INT",
+				"canonicalName": "net.broadcastTx.delta.summation.number",
+				"friendlyName": "Tx Broadcast Packets",
+				"aliases": [
+					"Tx Broadcast Packets",
+					"broadcast tx",
+					"net broadcast tx",
+					"net.broadcasttx.delta.summation.number",
+					"network broadcast tx",
+					"tx broadcast packets"
+				],
+				"categories": [
+					"NETWORK",
+					"METRIC"
+				],
+				"helpText": "Number of broadcast packets transmitted during the sampling interval.",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"cpu.run.rate.average.percent": {
+				"propertyType": "INT",
+				"canonicalName": "cpu.run.rate.average.percent",
+				"friendlyName": "CPU Run Rate",
+				"aliases": [
+					"CPU Run Rate",
+					"cpu.run.rate.average.percent"
+				],
+				"categories": [
+					"METRIC",
+					"COMPUTE"
+				],
+				"helpText": "Percent of Time spent in Run state by all vcpus of this VM.",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"mem.swapped.absolute.average.kiloBytes": {
+				"propertyType": "INT",
+				"canonicalName": "mem.swapped.absolute.average.kiloBytes",
+				"friendlyName": "Memory Swapped",
+				"aliases": [
+					"Memory Swapped",
+					"mem swapped",
+					"mem.swapped.absolute.average.kilobytes",
+					"memory swapped"
+				],
+				"categories": [
+					"METRIC",
+					"COMPUTE"
+				],
+				"helpText": "Current amount of guest physical memory swapped out to the virtual machine's swap file by the VMkernel. Swapped memory stays on disk until the virtual machine needs it. This statistic refers to VMkernel swapping and not to guest OS swapping.    swapped = swapin + swapout",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"net.usage.rate.average.kiloBytesPerSecond": {
+				"propertyType": "INT",
+				"canonicalName": "net.usage.rate.average.kiloBytesPerSecond",
+				"friendlyName": "net.usage.rate.average.kiloBytesPerSecond",
+				"aliases": [
+					"net.usage.rate.average.kiloBytesPerSecond"
+				],
+				"categories": [
+					"NETWORK",
+					"METRIC"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"net.received.rate.average.kiloBytesPerSecond": {
+				"propertyType": "INT",
+				"canonicalName": "net.received.rate.average.kiloBytesPerSecond",
+				"friendlyName": "net.received.rate.average.kiloBytesPerSecond",
+				"aliases": [
+					"net.received.rate.average.kiloBytesPerSecond"
+				],
+				"categories": [
+					"NETWORK",
+					"METRIC"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"cpu.ready_vcpu.rate.average.percent": {
+				"propertyType": "INT",
+				"canonicalName": "cpu.ready_vcpu.rate.average.percent",
+				"friendlyName": "CPU Ready Rate vCPU",
+				"aliases": [
+					"CPU Ready Rate vCPU",
+					"cpu ready",
+					"cpu ready rate vcpu",
+					"cpu.ready_vcpu.rate.average.percent"
+				],
+				"categories": [
+					"METRIC",
+					"COMPUTE"
+				],
+				"helpText": "Percentage of time per vcpu that the virtual machine was ready, but could not get scheduled to run on the physical CPU. CPU ready time is dependent on the number of virtual machines on the host and their CPU loads.",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"net.usage.delta.summation.kiloBytes": {
+				"propertyType": "INT",
+				"canonicalName": "net.usage.delta.summation.kiloBytes",
+				"friendlyName": "Total Network Traffic",
+				"aliases": [
+					"Total Network Traffic",
+					"net byte",
+					"net bytes",
+					"net traffic",
+					"net.usage.delta.summation.kilobytes",
+					"network byte",
+					"network bytes",
+					"network traffic",
+					"total network traffic"
+				],
+				"categories": [
+					"NETWORK",
+					"METRIC"
+				],
+				"helpText": "Network utilization (combined transmit- and receive-rates) during the interval. Sum of data transmitted and received across all virtual NIC instances connected to the virtual machine.",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"mem.swapoutRate.rate.average.kiloBytesPerSecond": {
+				"propertyType": "INT",
+				"canonicalName": "mem.swapoutRate.rate.average.kiloBytesPerSecond",
+				"friendlyName": "Memory Swapout Rate",
+				"aliases": [
+					"Memory Swapout Rate",
+					"mem swapout rate",
+					"mem.swapoutrate.rate.average.kilobytespersecond",
+					"memory swapout rate"
+				],
+				"categories": [
+					"METRIC",
+					"COMPUTE"
+				],
+				"helpText": "Rate at which memory is being swapped from active memory to disk during the current interval. This counter applies to virtual machines and is generally more useful than the swapout counter to determine if the virtual machine is running slow due to swapping, especially when looking at real-time statistics.",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"net.unicastRx.delta.summation.number": {
+				"propertyType": "INT",
+				"canonicalName": "net.unicastRx.delta.summation.number",
+				"friendlyName": "Unicast Rx Packets",
+				"aliases": [
+					"Unicast Rx Packets",
+					"net unicast rx",
+					"net.unicastrx.delta.summation.number",
+					"network unicast rx",
+					"unicast rx",
+					"unicast rx packets"
+				],
+				"categories": [
+					"NETWORK",
+					"METRIC"
+				],
+				"helpText": "Unicast Received Packets by VM",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"storage.provisioned.absolute.latest.bytes": {
+				"propertyType": "INT",
+				"canonicalName": "storage.provisioned.absolute.latest.bytes",
+				"friendlyName": "Provisioned Space",
+				"aliases": [
+					"Provisioned Space",
+					"storage.provisioned.absolute.latest.bytes"
+				],
+				"categories": [
+					"METRIC"
+				],
+				"helpText": "The storage capacity in bytes allocated for the VM",
+				"facetSupported": false,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"cpu.wait_vcpu.rate.average.percent": {
+				"propertyType": "INT",
+				"canonicalName": "cpu.wait_vcpu.rate.average.percent",
+				"friendlyName": "CPU Wait Rate vCPU",
+				"aliases": [
+					"CPU Wait Rate vCPU",
+					"cpu wait",
+					"cpu wait rate vcpu",
+					"cpu.wait_vcpu.rate.average.percent"
+				],
+				"categories": [
+					"METRIC",
+					"COMPUTE"
+				],
+				"helpText": "Percentage of CPU time per vcpu spent in wait state. The wait total includes time spent the CPU Idle, CPU Swap Wait, and CPU I/O Wait states.",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"net.usage.rate.maximum.kiloBitsPerSecond": {
+				"propertyType": "INT",
+				"canonicalName": "net.usage.rate.maximum.kiloBitsPerSecond",
+				"friendlyName": "Max Network Rate",
+				"aliases": [
+					"Max Network Rate",
+					"max net consumption",
+					"max net rate",
+					"max net throughput",
+					"max net usage",
+					"max net utilization",
+					"max network consumption",
+					"max network rate",
+					"max network throughput",
+					"max network usage",
+					"max network usage rate",
+					"max network utilization",
+					"net.usage.rate.maximum.kilobitspersecond"
+				],
+				"categories": [
+					"NETWORK",
+					"METRIC"
+				],
+				"helpText": "Maximum total network usage rate over five minute windows.",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"net.packetsTx.delta.summation.number": {
+				"propertyType": "INT",
+				"canonicalName": "net.packetsTx.delta.summation.number",
+				"friendlyName": "Tx Packets",
+				"aliases": [
+					"Tx Packets",
+					"net packet tx",
+					"net packets tx",
+					"net.packetstx.delta.summation.number",
+					"network packet tx",
+					"network packets tx",
+					"packet tx",
+					"packets tx",
+					"tx packets"
+				],
+				"categories": [
+					"NETWORK",
+					"METRIC"
+				],
+				"helpText": "Number of packets transmitted during the interval. Number of packets transmitted by each vNIC on the virtual machine.",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"storage.uncommitted.absolute.latest.bytes": {
+				"propertyType": "INT",
+				"canonicalName": "storage.uncommitted.absolute.latest.bytes",
+				"friendlyName": "Uncommitted Space",
+				"aliases": [
+					"Uncommitted Space",
+					"storage.uncommitted.absolute.latest.bytes",
+					"uncommitted space"
+				],
+				"categories": [
+					"METRIC"
+				],
+				"helpText": "Uncommitted Space in bytes for VM storage",
+				"facetSupported": false,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"cpu.usagemhz.rate.average.megaHertz": {
+				"propertyType": "INT",
+				"canonicalName": "cpu.usagemhz.rate.average.megaHertz",
+				"friendlyName": "CPU Usage Mhz",
+				"aliases": [
+					"CPU Usage Mhz",
+					"cpu consumption mhz",
+					"cpu usage mhz",
+					"cpu used mhz",
+					"cpu utilization mhz",
+					"cpu.usagemhz.rate.average.megahertz"
+				],
+				"categories": [
+					"METRIC",
+					"COMPUTE"
+				],
+				"helpText": "CPU usage, as measured in megahertz, during the interval. Amount of actively used virtual CPU. This is the host's view of the CPU usage, not the guest operating system view.",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"mem.usage.absolute.average.percent": {
+				"propertyType": "INT",
+				"canonicalName": "mem.usage.absolute.average.percent",
+				"friendlyName": "Memory Usage Rate",
+				"aliases": [
+					"Memory Usage Rate",
+					"mem consumption",
+					"mem usage",
+					"mem usage rate",
+					"mem used",
+					"mem utilization",
+					"mem.usage.absolute.average.percent",
+					"memory consumption",
+					"memory usage",
+					"memory usage rate",
+					"memory used",
+					"memory utilization"
+				],
+				"categories": [
+					"METRIC",
+					"COMPUTE"
+				],
+				"helpText": "Memory usage as percentage of total configured or available memory, expressed as a hundredth of a percent (1 = 0.01%). A value between 0 and 10,000. Percentage of configured virtual machine \"physical\" memory:   active &divide; virtual machine configured size.",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"mem.active.absolute.average.kiloBytes": {
+				"propertyType": "INT",
+				"canonicalName": "mem.active.absolute.average.kiloBytes",
+				"friendlyName": "Active Memory",
+				"aliases": [
+					"Active Memory",
+					"active mem",
+					"active memory",
+					"mem.active.absolute.average.kilobytes"
+				],
+				"categories": [
+					"METRIC",
+					"COMPUTE"
+				],
+				"helpText": "Amount of memory that is actively used, as estimated by VMkernel based on recently touched memory pages. Amount of guest \"physical\" memory actively used.",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"cpu.costop.delta.summation.millisecond": {
+				"propertyType": "INT",
+				"canonicalName": "cpu.costop.delta.summation.millisecond",
+				"friendlyName": "CPU Costop Time",
+				"aliases": [
+					"CPU Costop Time",
+					"cpu.costop.delta.summation.millisecond"
+				],
+				"categories": [
+					"METRIC",
+					"COMPUTE"
+				],
+				"helpText": "Time spent in co-stop state by all vcpus of this VM. Co-Stop happens if the VM has >1 vCPU, and one of them is waiting for the other. The waiting happens because ESXi does not have enough physical CPU to serve it.",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"net.droppedTx.delta.summation.number": {
+				"propertyType": "INT",
+				"canonicalName": "net.droppedTx.delta.summation.number",
+				"friendlyName": "Tx Packet Drops",
+				"aliases": [
+					"Tx Packet Drops",
+					"drop packet tx",
+					"drop packets tx",
+					"drop tx",
+					"dropped packet tx",
+					"dropped packets tx",
+					"dropped tx",
+					"net drop packet tx",
+					"net drop packets tx",
+					"net drop tx",
+					"net dropped packet tx",
+					"net dropped packets tx",
+					"net dropped tx",
+					"net packet drop tx",
+					"net packet dropped tx",
+					"net packets drop tx",
+					"net packets dropped tx",
+					"net.droppedtx.delta.summation.number",
+					"network drop packet tx",
+					"network drop packets tx",
+					"network drop tx",
+					"network dropped packet tx",
+					"network dropped packets tx",
+					"network dropped tx",
+					"network packet drop tx",
+					"network packet dropped tx",
+					"network packets drop tx",
+					"network packets dropped tx",
+					"packet drop tx",
+					"packet dropped tx",
+					"packets drop tx",
+					"packets dropped tx",
+					"tx packet drops"
+				],
+				"categories": [
+					"NETWORK",
+					"METRIC"
+				],
+				"helpText": "Number of transmit packets dropped during the collection interval.",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"net.packetDropTx.ratio.compute.percent": {
+				"propertyType": "INT",
+				"canonicalName": "net.packetDropTx.ratio.compute.percent",
+				"friendlyName": "Tx Packet Drop Ratio",
+				"aliases": [
+					"Tx Packet Drop Ratio",
+					"drop tx percentage",
+					"drop tx rate",
+					"drop tx ratio",
+					"dropped tx percentage",
+					"dropped tx rate",
+					"dropped tx ratio",
+					"drops tx percentage",
+					"drops tx rate",
+					"drops tx ratio",
+					"net drop tx percentage",
+					"net drop tx rate",
+					"net drop tx ratio",
+					"net dropped tx percentage",
+					"net dropped tx rate",
+					"net dropped tx ratio",
+					"net drops tx percentage",
+					"net drops tx rate",
+					"net drops tx ratio",
+					"net packet drop tx percentage",
+					"net packet drop tx rate",
+					"net packet drop tx ratio",
+					"net packet dropped tx percentage",
+					"net packet dropped tx rate",
+					"net packet dropped tx ratio",
+					"net packet drops tx percentage",
+					"net packet drops tx rate",
+					"net packet drops tx ratio",
+					"net packet tx drop percentage",
+					"net packet tx drop rate",
+					"net packet tx drop ratio",
+					"net packet tx dropped percentage",
+					"net packet tx dropped rate",
+					"net packet tx dropped ratio",
+					"net packet tx drops percentage",
+					"net packet tx drops rate",
+					"net packet tx drops ratio",
+					"net packets drop tx percentage",
+					"net packets drop tx rate",
+					"net packets drop tx ratio",
+					"net packets dropped tx percentage",
+					"net packets dropped tx rate",
+					"net packets dropped tx ratio",
+					"net packets drops tx percentage",
+					"net packets drops tx rate",
+					"net packets drops tx ratio",
+					"net packets tx drop percentage",
+					"net packets tx drop rate",
+					"net packets tx drop ratio",
+					"net packets tx dropped percentage",
+					"net packets tx dropped rate",
+					"net packets tx dropped ratio",
+					"net packets tx drops percentage",
+					"net packets tx drops rate",
+					"net packets tx drops ratio",
+					"net tx drop percentage",
+					"net tx drop rate",
+					"net tx drop ratio",
+					"net tx dropped percentage",
+					"net tx dropped rate",
+					"net tx dropped ratio",
+					"net tx drops percentage",
+					"net tx drops rate",
+					"net tx drops ratio",
+					"net.packetdroptx.ratio.compute.percent",
+					"network drop tx percentage",
+					"network drop tx rate",
+					"network drop tx ratio",
+					"network dropped tx percentage",
+					"network dropped tx rate",
+					"network dropped tx ratio",
+					"network drops tx percentage",
+					"network drops tx rate",
+					"network drops tx ratio",
+					"network packet drop tx percentage",
+					"network packet drop tx rate",
+					"network packet drop tx ratio",
+					"network packet dropped tx percentage",
+					"network packet dropped tx rate",
+					"network packet dropped tx ratio",
+					"network packet drops tx percentage",
+					"network packet drops tx rate",
+					"network packet drops tx ratio",
+					"network packet tx drop percentage",
+					"network packet tx drop rate",
+					"network packet tx drop ratio",
+					"network packet tx dropped percentage",
+					"network packet tx dropped rate",
+					"network packet tx dropped ratio",
+					"network packet tx drops percentage",
+					"network packet tx drops rate",
+					"network packet tx drops ratio",
+					"network packets drop tx percentage",
+					"network packets drop tx rate",
+					"network packets drop tx ratio",
+					"network packets dropped tx percentage",
+					"network packets dropped tx rate",
+					"network packets dropped tx ratio",
+					"network packets drops tx percentage",
+					"network packets drops tx rate",
+					"network packets drops tx ratio",
+					"network packets tx drop percentage",
+					"network packets tx drop rate",
+					"network packets tx drop ratio",
+					"network packets tx dropped percentage",
+					"network packets tx dropped rate",
+					"network packets tx dropped ratio",
+					"network packets tx drops percentage",
+					"network packets tx drops rate",
+					"network packets tx drops ratio",
+					"network tx drop percentage",
+					"network tx drop rate",
+					"network tx drop ratio",
+					"network tx dropped percentage",
+					"network tx dropped rate",
+					"network tx dropped ratio",
+					"network tx drops percentage",
+					"network tx drops rate",
+					"network tx drops ratio",
+					"packet drop tx percentage",
+					"packet drop tx rate",
+					"packet drop tx ratio",
+					"packet dropped tx percentage",
+					"packet dropped tx rate",
+					"packet dropped tx ratio",
+					"packet drops tx percentage",
+					"packet drops tx rate",
+					"packet drops tx ratio",
+					"packet tx drop percentage",
+					"packet tx drop rate",
+					"packet tx drop ratio",
+					"packet tx dropped percentage",
+					"packet tx dropped rate",
+					"packet tx dropped ratio",
+					"packet tx drops percentage",
+					"packet tx drops rate",
+					"packet tx drops ratio",
+					"packets drop tx percentage",
+					"packets drop tx rate",
+					"packets drop tx ratio",
+					"packets dropped tx percentage",
+					"packets dropped tx rate",
+					"packets dropped tx ratio",
+					"packets drops tx percentage",
+					"packets drops tx rate",
+					"packets drops tx ratio",
+					"packets tx drop percentage",
+					"packets tx drop rate",
+					"packets tx drop ratio",
+					"packets tx dropped percentage",
+					"packets tx dropped rate",
+					"packets tx dropped ratio",
+					"packets tx drops percentage",
+					"packets tx drops rate",
+					"packets tx drops ratio",
+					"tx drop percentage",
+					"tx drop rate",
+					"tx drop ratio",
+					"tx dropped percentage",
+					"tx dropped rate",
+					"tx dropped ratio",
+					"tx drops percentage",
+					"tx drops rate",
+					"tx drops ratio",
+					"tx packet drop ratio"
+				],
+				"categories": [
+					"NETWORK",
+					"METRIC"
+				],
+				"helpText": "Average ratio of dropped tx packets to total tx packets on all the virtual nics of this vms.",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"cpu.wait.rate.average.percent": {
+				"propertyType": "INT",
+				"canonicalName": "cpu.wait.rate.average.percent",
+				"friendlyName": "CPU Wait Rate",
+				"aliases": [
+					"CPU Wait Rate",
+					"cpu.wait.rate.average.percent"
+				],
+				"categories": [
+					"METRIC",
+					"COMPUTE"
+				],
+				"helpText": "Percentage of CPU time spent in wait state. The wait total includes time spent the CPU Idle, CPU Swap Wait, and CPU I/O Wait states.",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"net.broadcastByTx.ratio.compute.percent": {
+				"propertyType": "INT",
+				"canonicalName": "net.broadcastByTx.ratio.compute.percent",
+				"friendlyName": "Tx Broadcast Ratio",
+				"aliases": [
+					"Tx Broadcast Ratio",
+					"broadcast tx ratio",
+					"net broadcast tx ratio",
+					"net.broadcastbytx.ratio.compute.percent",
+					"network broadcast tx ratio",
+					"tx broadcast ratio"
+				],
+				"categories": [
+					"NETWORK",
+					"METRIC"
+				],
+				"helpText": "Ratio of transmitted broadcast packets to transmitted packets expressed as percent.",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"cpu.run.delta.summation.millisecond": {
+				"propertyType": "INT",
+				"canonicalName": "cpu.run.delta.summation.millisecond",
+				"friendlyName": "CPU Run Time",
+				"aliases": [
+					"CPU Run Time",
+					"cpu.run.delta.summation.millisecond"
+				],
+				"categories": [
+					"METRIC",
+					"COMPUTE"
+				],
+				"helpText": "Time spent in Run state by all vcpus of this VM.",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"datastore.usage.rate.average.kiloBytesPerSecond": {
+				"propertyType": "INT",
+				"canonicalName": "datastore.usage.rate.average.kiloBytesPerSecond",
+				"friendlyName": "RW Throughput",
+				"aliases": [
+					"RW Throughput",
+					"datastore rw throughput",
+					"datastore.usage.rate.average.kilobytespersecond",
+					"rw throughput",
+					"total rw throughput"
+				],
+				"categories": [
+					"STORAGE",
+					"METRIC"
+				],
+				"helpText": "The RW Throughput of datastores connected to VM in kBps averaged over a period of 24 hours",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"snapshot.used.absolute.latest.bytes": {
+				"propertyType": "INT",
+				"canonicalName": "snapshot.used.absolute.latest.bytes",
+				"friendlyName": "Snapshot Size",
+				"aliases": [
+					"Snapshot Size",
+					"snapshot used size",
+					"snapshot.used.absolute.latest.bytes"
+				],
+				"categories": [
+					"STORAGE",
+					"METRIC"
+				],
+				"helpText": "The size of the VM Snapshot",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"cpu.costop.rate.average.percent": {
+				"propertyType": "INT",
+				"canonicalName": "cpu.costop.rate.average.percent",
+				"friendlyName": "CPU Costop Rate",
+				"aliases": [
+					"CPU Costop Rate",
+					"cpu.costop.rate.average.percent"
+				],
+				"categories": [
+					"METRIC",
+					"COMPUTE"
+				],
+				"helpText": "Percentage of time spent in co-stop state by all vcpus of this VM. Co-Stop happens if the VM has >1 vCPU, and one of them is waiting for the other. The waiting happens because ESXi does not have enough physical CPU to serve it.",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"net.transmitted.rate.maximum.kiloBitsPerSecond": {
+				"propertyType": "INT",
+				"canonicalName": "net.transmitted.rate.maximum.kiloBitsPerSecond",
+				"friendlyName": "Max Network Tx Rate",
+				"aliases": [
+					"Max Network Tx Rate",
+					"max tx rate",
+					"net max tx rate",
+					"net.transmitted.rate.maximum.kilobitspersecond",
+					"network max tx rate"
+				],
+				"categories": [
+					"NETWORK",
+					"METRIC"
+				],
+				"helpText": "Maximum network data transmit rate over five minute windows.",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"cpu.ready.delta.summation.millisecond": {
+				"propertyType": "INT",
+				"canonicalName": "cpu.ready.delta.summation.millisecond",
+				"friendlyName": "CPU Ready Time",
+				"aliases": [
+					"CPU Ready Time",
+					"cpu.ready.delta.summation.millisecond"
+				],
+				"categories": [
+					"METRIC",
+					"COMPUTE"
+				],
+				"helpText": "Absolute time that the virtual machine was ready, but could not get scheduled to run on the physical CPU. CPU ready time is dependent on the number of virtual machines on the host and their CPU loads.",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"net.packetsRx.delta.summation.number": {
+				"propertyType": "INT",
+				"canonicalName": "net.packetsRx.delta.summation.number",
+				"friendlyName": "Rx Packets",
+				"aliases": [
+					"Rx Packets",
+					"net packet rx",
+					"net packets rx",
+					"net.packetsrx.delta.summation.number",
+					"network packet rx",
+					"network packets rx",
+					"packet rx",
+					"packets rx",
+					"rx packets"
+				],
+				"categories": [
+					"NETWORK",
+					"METRIC"
+				],
+				"helpText": "Number of packets received during the interval. The number of packets received by each vNIC (virtual network interface controller) on the virtual machine.",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"net.received.rate.average.kiloBitsPerSecond": {
+				"propertyType": "INT",
+				"canonicalName": "net.received.rate.average.kiloBitsPerSecond",
+				"friendlyName": "Network Rx Rate",
+				"aliases": [
+					"Network Rx Rate",
+					"net rx rate",
+					"net.received.rate.average.kilobitspersecond",
+					"network rx rate",
+					"rx rate"
+				],
+				"categories": [
+					"NETWORK",
+					"METRIC"
+				],
+				"helpText": "Average rate at which data was received during the interval. This represents the bandwidth of the network. The rate at which data is received across the virtual machine's vNIC (virtual network interface controller).",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"datastore.maxTotalLatency.absolute.latest.millisecond": {
+				"propertyType": "INT",
+				"canonicalName": "datastore.maxTotalLatency.absolute.latest.millisecond",
+				"friendlyName": "Max Latency",
+				"aliases": [
+					"Max Latency",
+					"datastore.maxtotallatency.absolute.latest.millisecond",
+					"max latency",
+					"max total delay",
+					"max total lag",
+					"max total latency"
+				],
+				"categories": [
+					"STORAGE",
+					"METRIC"
+				],
+				"helpText": "Highest latency value across all datastores connected to VM",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"cpu.run_vcpu.rate.average.percent": {
+				"propertyType": "INT",
+				"canonicalName": "cpu.run_vcpu.rate.average.percent",
+				"friendlyName": "CPU Run Rate vCPU",
+				"aliases": [
+					"CPU Run Rate vCPU",
+					"cpu.run_vcpu.rate.average.percent"
+				],
+				"categories": [
+					"METRIC",
+					"COMPUTE"
+				],
+				"helpText": "Average Percent of Time spent in Run state per vcpu.",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"net.packetDrop.ratio.maximum.percent": {
+				"propertyType": "INT",
+				"canonicalName": "net.packetDrop.ratio.maximum.percent",
+				"friendlyName": "Max Packet Drop Ratio",
+				"aliases": [
+					"Max Packet Drop Ratio",
+					"max drop packet percentage",
+					"max drop packet rate",
+					"max drop packet ratio",
+					"max drop packets percentage",
+					"max drop packets rate",
+					"max drop packets ratio",
+					"max drop percentage",
+					"max drop rate",
+					"max drop ratio",
+					"max dropped packet percentage",
+					"max dropped packet rate",
+					"max dropped packet ratio",
+					"max dropped packets percentage",
+					"max dropped packets rate",
+					"max dropped packets ratio",
+					"max dropped percentage",
+					"max dropped rate",
+					"max dropped ratio",
+					"max drops packet percentage",
+					"max drops packet rate",
+					"max drops packet ratio",
+					"max drops packets percentage",
+					"max drops packets rate",
+					"max drops packets ratio",
+					"max drops percentage",
+					"max drops rate",
+					"max drops ratio",
+					"max net drop packet percentage",
+					"max net drop packet rate",
+					"max net drop packet ratio",
+					"max net drop packets percentage",
+					"max net drop packets rate",
+					"max net drop packets ratio",
+					"max net drop percentage",
+					"max net drop rate",
+					"max net drop ratio",
+					"max net dropped packet percentage",
+					"max net dropped packet rate",
+					"max net dropped packet ratio",
+					"max net dropped packets percentage",
+					"max net dropped packets rate",
+					"max net dropped packets ratio",
+					"max net dropped percentage",
+					"max net dropped rate",
+					"max net dropped ratio",
+					"max net drops packet percentage",
+					"max net drops packet rate",
+					"max net drops packet ratio",
+					"max net drops packets percentage",
+					"max net drops packets rate",
+					"max net drops packets ratio",
+					"max net drops percentage",
+					"max net drops rate",
+					"max net drops ratio",
+					"max net packet drop percentage",
+					"max net packet drop rate",
+					"max net packet drop ratio",
+					"max net packet dropped percentage",
+					"max net packet dropped rate",
+					"max net packet dropped ratio",
+					"max net packet drops percentage",
+					"max net packet drops rate",
+					"max net packet drops ratio",
+					"max net packets drop percentage",
+					"max net packets drop rate",
+					"max net packets drop ratio",
+					"max net packets dropped percentage",
+					"max net packets dropped rate",
+					"max net packets dropped ratio",
+					"max net packets drops percentage",
+					"max net packets drops rate",
+					"max net packets drops ratio",
+					"max network drop packet percentage",
+					"max network drop packet rate",
+					"max network drop packet ratio",
+					"max network drop packets percentage",
+					"max network drop packets rate",
+					"max network drop packets ratio",
+					"max network drop percentage",
+					"max network drop rate",
+					"max network drop ratio",
+					"max network dropped packet percentage",
+					"max network dropped packet rate",
+					"max network dropped packet ratio",
+					"max network dropped packets percentage",
+					"max network dropped packets rate",
+					"max network dropped packets ratio",
+					"max network dropped percentage",
+					"max network dropped rate",
+					"max network dropped ratio",
+					"max network drops packet percentage",
+					"max network drops packet rate",
+					"max network drops packet ratio",
+					"max network drops packets percentage",
+					"max network drops packets rate",
+					"max network drops packets ratio",
+					"max network drops percentage",
+					"max network drops rate",
+					"max network drops ratio",
+					"max network packet drop percentage",
+					"max network packet drop rate",
+					"max network packet drop ratio",
+					"max network packet dropped percentage",
+					"max network packet dropped rate",
+					"max network packet dropped ratio",
+					"max network packet drops percentage",
+					"max network packet drops rate",
+					"max network packet drops ratio",
+					"max network packets drop percentage",
+					"max network packets drop rate",
+					"max network packets drop ratio",
+					"max network packets dropped percentage",
+					"max network packets dropped rate",
+					"max network packets dropped ratio",
+					"max network packets drops percentage",
+					"max network packets drops rate",
+					"max network packets drops ratio",
+					"max packet drop percentage",
+					"max packet drop rate",
+					"max packet drop ratio",
+					"max packet dropped percentage",
+					"max packet dropped rate",
+					"max packet dropped ratio",
+					"max packet drops percentage",
+					"max packet drops rate",
+					"max packet drops ratio",
+					"max packets drop percentage",
+					"max packets drop rate",
+					"max packets drop ratio",
+					"max packets dropped percentage",
+					"max packets dropped rate",
+					"max packets dropped ratio",
+					"max packets drops percentage",
+					"max packets drops rate",
+					"max packets drops ratio",
+					"net.packetdrop.ratio.maximum.percent"
+				],
+				"categories": [
+					"NETWORK",
+					"METRIC"
+				],
+				"helpText": "Maximum 5 min interval ratio of total dropped packets to total number packets.",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"net.droppedTotal.delta.maximum.number": {
+				"propertyType": "INT",
+				"canonicalName": "net.droppedTotal.delta.maximum.number",
+				"friendlyName": "Max Packet Drops",
+				"aliases": [
+					"Max Packet Drops",
+					"max drop packet",
+					"max drop packets",
+					"max dropped packet",
+					"max dropped packets",
+					"max drops packet",
+					"max drops packets",
+					"max packet drop",
+					"max packet dropped",
+					"max packet drops",
+					"max packets drop",
+					"max packets dropped",
+					"max packets drops",
+					"net max drop packet",
+					"net max drop packets",
+					"net max dropped packet",
+					"net max dropped packets",
+					"net max drops packet",
+					"net max drops packets",
+					"net max packet drop",
+					"net max packet dropped",
+					"net max packet drops",
+					"net max packets drop",
+					"net max packets dropped",
+					"net max packets drops",
+					"net.droppedtotal.delta.maximum.number",
+					"network max drop packet",
+					"network max drop packets",
+					"network max dropped packet",
+					"network max dropped packets",
+					"network max drops packet",
+					"network max drops packets",
+					"network max packet drop",
+					"network max packet dropped",
+					"network max packet drops",
+					"network max packets drop",
+					"network max packets dropped",
+					"network max packets drops"
+				],
+				"categories": [
+					"NETWORK",
+					"METRIC"
+				],
+				"helpText": "Maximum number of dropped packets over any 5 min interval in the selected duration (rx + tx).",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"net.transmitted.rate.average.kiloBitsPerSecond": {
+				"propertyType": "INT",
+				"canonicalName": "net.transmitted.rate.average.kiloBitsPerSecond",
+				"friendlyName": "Network Tx Rate",
+				"aliases": [
+					"Network Tx Rate",
+					"net tx rate",
+					"net.transmitted.rate.average.kilobitspersecond",
+					"network tx rate",
+					"tx rate"
+				],
+				"categories": [
+					"NETWORK",
+					"METRIC"
+				],
+				"helpText": "Average rate at which data was transmitted during the interval. This represents the bandwidth of the network. The rate at which data is transmitted across the virtual machine's vNIC (virtual network interface controller).",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"net.usage.rate.average.kiloBitsPerSecond": {
+				"propertyType": "INT",
+				"canonicalName": "net.usage.rate.average.kiloBitsPerSecond",
+				"friendlyName": "Network Rate",
+				"aliases": [
+					"Network Rate",
+					"net consumption",
+					"net rate",
+					"net throughput",
+					"net usage",
+					"net utilization",
+					"net.usage.rate.average.kilobitspersecond",
+					"network consumption",
+					"network rate",
+					"network throughput",
+					"network usage",
+					"network usage rate",
+					"network utilization"
+				],
+				"categories": [
+					"NETWORK",
+					"METRIC"
+				],
+				"helpText": "Network utilization (combined transmit- and receive-rates) during the interval. Sum of data transmitted and received across all virtual NIC instances connected to the virtual machine.",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"sys.uptime.absolute.latest.second": {
+				"propertyType": "INT",
+				"canonicalName": "sys.uptime.absolute.latest.second",
+				"friendlyName": "Sys Uptime",
+				"aliases": [
+					"Sys Uptime",
+					"sys.uptime.absolute.latest.second",
+					"system uptime"
+				],
+				"categories": [
+					"METRIC"
+				],
+				"helpText": "Total time elapsed, in seconds, since last system startup.",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"net.droppedRx.delta.summation.number": {
+				"propertyType": "INT",
+				"canonicalName": "net.droppedRx.delta.summation.number",
+				"friendlyName": "Rx Packet Drops",
+				"aliases": [
+					"Rx Packet Drops",
+					"drop packet rx",
+					"drop packets rx",
+					"drop rx",
+					"dropped packet rx",
+					"dropped packets rx",
+					"dropped rx",
+					"net drop packet rx",
+					"net drop packets rx",
+					"net drop rx",
+					"net dropped packet rx",
+					"net dropped packets rx",
+					"net dropped rx",
+					"net packet drop rx",
+					"net packet dropped rx",
+					"net packets drop rx",
+					"net packets dropped rx",
+					"net.droppedrx.delta.summation.number",
+					"network drop packet rx",
+					"network drop packets rx",
+					"network drop rx",
+					"network dropped packet rx",
+					"network dropped packets rx",
+					"network dropped rx",
+					"network packet drop rx",
+					"network packet dropped rx",
+					"network packets drop rx",
+					"network packets dropped rx",
+					"packet drop rx",
+					"packet dropped rx",
+					"packets drop rx",
+					"packets dropped rx",
+					"rx packet drops"
+				],
+				"categories": [
+					"NETWORK",
+					"METRIC"
+				],
+				"helpText": "Number of receive packets dropped during the collection interval.",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"net.droppedTotal.delta.summation.number": {
+				"propertyType": "INT",
+				"canonicalName": "net.droppedTotal.delta.summation.number",
+				"friendlyName": "Total Packet Drops",
+				"aliases": [
+					"Total Packet Drops",
+					"drop packet",
+					"drop packets",
+					"dropped packet",
+					"dropped packets",
+					"net drop packet",
+					"net drop packets",
+					"net dropped packet",
+					"net dropped packets",
+					"net packet drop",
+					"net packet dropped",
+					"net packet drops",
+					"net packets drop",
+					"net packets dropped",
+					"net packets drops",
+					"net.droppedtotal.delta.summation.number",
+					"network drop packet",
+					"network drop packets",
+					"network dropped packet",
+					"network dropped packets",
+					"network packet drop",
+					"network packet dropped",
+					"network packet drops",
+					"network packets drop",
+					"network packets dropped",
+					"network packets drops",
+					"packet drop",
+					"packet dropped",
+					"packet drops",
+					"packets drop",
+					"packets dropped",
+					"packets drops",
+					"total packet drops"
+				],
+				"categories": [
+					"NETWORK",
+					"METRIC"
+				],
+				"helpText": "Total number of packet drops.",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"datastore.numberRWAveraged.rate.average.number": {
+				"propertyType": "INT",
+				"canonicalName": "datastore.numberRWAveraged.rate.average.number",
+				"friendlyName": "RW IOPS",
+				"aliases": [
+					"RW IOPS",
+					"datastore.numberrwaveraged.rate.average.number",
+					"iops",
+					"rw iops",
+					"total iops"
+				],
+				"categories": [
+					"STORAGE",
+					"METRIC"
+				],
+				"helpText": "Average total IOPS sent from this VM to all of its connected datastores",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"cpu.usage.rate.average.percent": {
+				"propertyType": "INT",
+				"canonicalName": "cpu.usage.rate.average.percent",
+				"friendlyName": "CPU Usage Rate",
+				"aliases": [
+					"CPU Usage Rate",
+					"cpu consumption",
+					"cpu percentage",
+					"cpu usage",
+					"cpu usage rate",
+					"cpu used",
+					"cpu utilization",
+					"cpu.usage.rate.average.percent"
+				],
+				"categories": [
+					"METRIC",
+					"COMPUTE"
+				],
+				"helpText": "CPU usage as a percentage during the interval. Amount of actively used virtual CPU, as a percentage of total available CPU. This is the host's view of the CPU usage, not the guest operating system view. It is the average CPU utilization over all available virtual CPUs in the virtual machine. For example, if a virtual machine with one virtual CPU is running on a host that has four physical CPUs and the CPU usage is 100%, the virtual machine is using one physical CPU completely.   virtual CPU usage = usagemhz / (# of virtual CPUs x core frequency)",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"mem.vmmemctl.absolute.average.kiloBytes": {
+				"propertyType": "INT",
+				"canonicalName": "mem.vmmemctl.absolute.average.kiloBytes",
+				"friendlyName": "Memory Balloon",
+				"aliases": [
+					"Memory Balloon",
+					"mem balloon",
+					"mem.vmmemctl.absolute.average.kilobytes",
+					"memory balloon"
+				],
+				"categories": [
+					"METRIC",
+					"COMPUTE"
+				],
+				"helpText": "Amount of memory allocated by the virtual machine memory control driver (vmmemctl), which is installed with VMware Tools. It is a VMware exclusive memory-management driver that controls ballooning. Amount of guest physical memory that is currently reclaimed from the virtual machine through ballooning. This is the amount of guest physical memory that has been allocated and pinned by the balloon driver.",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"datastore.read.rate.average.kiloBytesPerSecond": {
+				"propertyType": "INT",
+				"canonicalName": "datastore.read.rate.average.kiloBytesPerSecond",
+				"friendlyName": "Read Throughput",
+				"aliases": [
+					"Read Throughput",
+					"datastore read rate",
+					"datastore.read.rate.average.kilobytespersecond",
+					"read throughput"
+				],
+				"categories": [
+					"STORAGE",
+					"METRIC"
+				],
+				"helpText": "Read Throughput of datastores connected to VM in kBps averaged over a period of 24 hours",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"cpu.ready.rate.average.percent": {
+				"propertyType": "INT",
+				"canonicalName": "cpu.ready.rate.average.percent",
+				"friendlyName": "CPU Ready Rate",
+				"aliases": [
+					"CPU Ready Rate",
+					"cpu.ready.rate.average.percent"
+				],
+				"categories": [
+					"METRIC",
+					"COMPUTE"
+				],
+				"helpText": "Percentage of time that the virtual machine was ready, but could not get scheduled to run on the physical CPU. CPU ready time is dependent on the number of virtual machines on the host and their CPU loads.",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"net.multicastTx.delta.summation.number": {
+				"propertyType": "INT",
+				"canonicalName": "net.multicastTx.delta.summation.number",
+				"friendlyName": "Multicast Tx Packets",
+				"aliases": [
+					"Multicast Tx Packets",
+					"net multicast tx packets",
+					"net.multicasttx.delta.summation.number",
+					"network multicast tx packets"
+				],
+				"categories": [
+					"NETWORK",
+					"METRIC"
+				],
+				"helpText": "Number of multicast packets transmitted during the sampling interval.",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"net.transmitted.rate.average.kiloBytesPerSecond": {
+				"propertyType": "INT",
+				"canonicalName": "net.transmitted.rate.average.kiloBytesPerSecond",
+				"friendlyName": "net.transmitted.rate.average.kiloBytesPerSecond",
+				"aliases": [
+					"net.transmitted.rate.average.kiloBytesPerSecond"
+				],
+				"categories": [
+					"NETWORK",
+					"METRIC"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"net.packetsTotal.delta.summation.number": {
+				"propertyType": "INT",
+				"canonicalName": "net.packetsTotal.delta.summation.number",
+				"friendlyName": "Total Packets",
+				"aliases": [
+					"Total Packets",
+					"net packet",
+					"net packets",
+					"net.packetstotal.delta.summation.number",
+					"network packet",
+					"network packets",
+					"packet",
+					"packets",
+					"total packets"
+				],
+				"categories": [
+					"NETWORK",
+					"METRIC"
+				],
+				"helpText": "Total number of received plus transmitted packets to received packets expressed as percent.",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"net.broadcastRx.delta.summation.number": {
+				"propertyType": "INT",
+				"canonicalName": "net.broadcastRx.delta.summation.number",
+				"friendlyName": "Rx Broadcast Packets",
+				"aliases": [
+					"Rx Broadcast Packets",
+					"broadcast rx",
+					"net broadcast rx",
+					"net.broadcastrx.delta.summation.number",
+					"network broadcast rx",
+					"rx broadcast packets"
+				],
+				"categories": [
+					"NETWORK",
+					"METRIC"
+				],
+				"helpText": "Number of broadcast packets received during the sampling interval.",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"cpu.costop_vcpu.rate.average.percent": {
+				"propertyType": "INT",
+				"canonicalName": "cpu.costop_vcpu.rate.average.percent",
+				"friendlyName": "CPU Costop Rate vCPU",
+				"aliases": [
+					"CPU Costop Rate vCPU",
+					"cpu costop",
+					"cpu costop rate vcpu",
+					"cpu.costop_vcpu.rate.average.percent"
+				],
+				"categories": [
+					"METRIC",
+					"COMPUTE"
+				],
+				"helpText": "Average Percentage of time spent in costop stage per vcpu. Co-Stop happens if the VM has >1 vCPU, and one of them is waiting for the other. The waiting happens because ESXi does not have enough physical CPU to serve it.",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			}
+		},
+		"_denorm": {
+			"__numGroups": {
+				"propertyType": "INT",
+				"canonicalName": "__numGroups",
+				"friendlyName": "Folder Count",
+				"aliases": [
+					"Folder Count",
+					"__numgroups",
+					"folder count"
+				],
+				"helpText": "",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"cluster": {
+				"propertyType": "REFERENCE",
+				"canonicalName": "cluster",
+				"friendlyName": "Cluster",
+				"aliases": [
+					"Cluster"
+				],
+				"categories": [
+					"COMPUTE"
+				],
+				"helpText": "Name of the cluster under which the VM resides.",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"nsxManager": {
+				"propertyType": "REFERENCE",
+				"canonicalName": "nsxManager",
+				"friendlyName": "NSX",
+				"aliases": [
+					"NSX",
+					"nsx manager",
+					"nsx_manager",
+					"nsxmanager"
+				],
+				"categories": [
+					"NETWORK",
+					"GENERAL"
+				],
+				"helpText": "Nsx manager of VM",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"currentSnapshot.modelKey": {
+				"propertyType": "STRING",
+				"canonicalName": "currentSnapshot.modelKey",
+				"friendlyName": "currentSnapshot.modelKey",
+				"aliases": [
+					"currentSnapshot.modelKey"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"srcInversionRuleSets.firewall": {
+				"propertyType": "REFERENCE",
+				"canonicalName": "srcInversionRuleSets.firewall",
+				"friendlyName": "source_inversion_rules.firewall",
+				"aliases": [
+					"source_inversion_rules.firewall",
+					"srcinversionrulesets.firewall"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"destInversionRuleSets.subType": {
+				"propertyType": "STRING",
+				"canonicalName": "destInversionRuleSets.subType",
+				"friendlyName": "destInversionRuleSets.subType",
+				"aliases": [
+					"destInversionRuleSets.subType"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"ipSets.modelKey": {
+				"propertyType": "STRING",
+				"canonicalName": "ipSets.modelKey",
+				"friendlyName": "ipSets.modelKey",
+				"aliases": [
+					"ipSets.modelKey",
+					"ip_sets.entity_id",
+					"ipsets.modelkey"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"destRuleSets.rules.name": {
+				"propertyType": "STRING",
+				"canonicalName": "destRuleSets.rules.name",
+				"friendlyName": "destRuleSets.rules.name",
+				"aliases": [
+					"destRuleSets.rules.name",
+					"destination_firewall_rules.rules.name",
+					"destrulesets.rules.name"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"ipAddresses.ipMetadata.location.cityName": {
+				"propertyType": "STRING",
+				"canonicalName": "ipAddresses.ipMetadata.location.cityName",
+				"friendlyName": "ipAddresses.ipMetadata.location.cityName",
+				"aliases": [
+					"ipAddresses.ipMetadata.location.cityName"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"dvs": {
+				"propertyType": "REFERENCE",
+				"canonicalName": "dvs",
+				"friendlyName": "Dvs",
+				"aliases": [
+					"Dvs",
+					"vds"
+				],
+				"categories": [
+					"NETWORK"
+				],
+				"helpText": "Distributed Virtual Switches of VM",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"routeConfig.routeTable.ipRoutes.prefixLength": {
+				"propertyType": "INT",
+				"canonicalName": "routeConfig.routeTable.ipRoutes.prefixLength",
+				"friendlyName": "routeConfig.routeTable.ipRoutes.prefixLength",
+				"aliases": [
+					"routeConfig.routeTable.ipRoutes.prefixLength"
+				],
+				"helpText": "VM routes prefix",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"ipAddresses.ipMetadata.isp": {
+				"propertyType": "STRING",
+				"canonicalName": "ipAddresses.ipMetadata.isp",
+				"friendlyName": "ipAddresses.ipMetadata.isp",
+				"aliases": [
+					"ipAddresses.ipMetadata.isp"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"routeConfig.routeTable.ipRoutes.network": {
+				"propertyType": "STRING",
+				"canonicalName": "routeConfig.routeTable.ipRoutes.network",
+				"friendlyName": "routeConfig.routeTable.ipRoutes.network",
+				"aliases": [
+					"routeConfig.routeTable.ipRoutes.network"
+				],
+				"helpText": "VM routes network",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"routeConfig.routeTable.ipv6routes.interfaceName": {
+				"propertyType": "STRING",
+				"canonicalName": "routeConfig.routeTable.ipv6routes.interfaceName",
+				"friendlyName": "routeConfig.routeTable.ipv6routes.interfaceName",
+				"aliases": [
+					"routeConfig.routeTable.ipv6routes.interfaceName"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"checkpointHost": {
+				"propertyType": "REFERENCE",
+				"canonicalName": "checkpointHost",
+				"friendlyName": "checkpoint host",
+				"aliases": [
+					"checkpoint host",
+					"checkpoint hosts",
+					"checkpointhost"
+				],
+				"categories": [
+					"SECURITY"
+				],
+				"helpText": "Checkpoint host of VM",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"natDeviceDeprecated.name": {
+				"propertyType": "STRING",
+				"canonicalName": "natDeviceDeprecated.name",
+				"friendlyName": "natDeviceDeprecated.name",
+				"aliases": [
+					"natDeviceDeprecated.name"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"dvpg": {
+				"propertyType": "REFERENCE",
+				"canonicalName": "dvpg",
+				"friendlyName": "Dvpg",
+				"aliases": [
+					"Dvpg",
+					"port group",
+					"port groups",
+					"portgroup",
+					"portgroups"
+				],
+				"categories": [
+					"NETWORK"
+				],
+				"helpText": "Distributed Virtual Portgroups of VM",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"nsxManager.modelKey": {
+				"propertyType": "STRING",
+				"canonicalName": "nsxManager.modelKey",
+				"friendlyName": "nsxManager.modelKey",
+				"aliases": [
+					"nsxManager.modelKey",
+					"nsx_manager.entity_id",
+					"nsxmanager.modelkey"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"securityGroups.modelKey": {
+				"propertyType": "STRING",
+				"canonicalName": "securityGroups.modelKey",
+				"friendlyName": "securityGroups.modelKey",
+				"aliases": [
+					"securityGroups.modelKey",
+					"security_groups.entity_id",
+					"securitygroups.modelkey"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"nsGroups": {
+				"propertyType": "REFERENCE",
+				"canonicalName": "nsGroups",
+				"friendlyName": "NSGroup",
+				"aliases": [
+					"NSGroup",
+					"ns groups",
+					"nsgroup",
+					"nsgroups",
+					"nsx-t security group",
+					"nsx-t security groups"
+				],
+				"categories": [
+					"SECURITY"
+				],
+				"helpText": "NSX-T Security Group of which VM is member",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"groups.modelKey": {
+				"propertyType": "STRING",
+				"canonicalName": "groups.modelKey",
+				"friendlyName": "groups.modelKey",
+				"aliases": [
+					"groups.modelKey",
+					"folders.entity_id",
+					"groups.modelkey"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"logicalSwitchNames": {
+				"propertyType": "STRING",
+				"canonicalName": "logicalSwitchNames",
+				"friendlyName": "Vxlan",
+				"aliases": [
+					"Vxlan",
+					"logical switch",
+					"logical switch name",
+					"logical switch names",
+					"logical switches",
+					"logicalswitchnames",
+					"vxlan",
+					"vxlan name",
+					"vxlans"
+				],
+				"categories": [
+					"NETWORK"
+				],
+				"helpText": "Logical Switch to which this VM is connected",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"roles.name": {
+				"propertyType": "STRING",
+				"canonicalName": "roles.name",
+				"friendlyName": "roles.name",
+				"aliases": [
+					"roles.name"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"otherNames": {
+				"propertyType": "STRING",
+				"canonicalName": "otherNames",
+				"friendlyName": "Other Names",
+				"aliases": [
+					"Other Names",
+					"othernames"
+				],
+				"helpText": "Other Names of VM",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"addressGroups.name": {
+				"propertyType": "STRING",
+				"canonicalName": "addressGroups.name",
+				"friendlyName": "addressGroups.name",
+				"aliases": [
+					"addressGroups.name"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"serverdataParent.deviceInfo.model": {
+				"propertyType": "STRING",
+				"canonicalName": "serverdataParent.deviceInfo.model",
+				"friendlyName": "Model",
+				"aliases": [
+					"Model",
+					"serverdataparent.deviceinfo.model"
+				],
+				"helpText": "VM Model",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"applicationProfiles.modelKey": {
+				"propertyType": "STRING",
+				"canonicalName": "applicationProfiles.modelKey",
+				"friendlyName": "applicationProfiles.modelKey",
+				"aliases": [
+					"applicationProfiles.modelKey"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"cloudNetwork.modelKey": {
+				"propertyType": "STRING",
+				"canonicalName": "cloudNetwork.modelKey",
+				"friendlyName": "cloudNetwork.modelKey",
+				"aliases": [
+					"cloudNetwork.modelKey"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"policyGroups.modelKey": {
+				"propertyType": "STRING",
+				"canonicalName": "policyGroups.modelKey",
+				"friendlyName": "policyGroups.modelKey",
+				"aliases": [
+					"policyGroups.modelKey"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"vpc.name": {
+				"propertyType": "STRING",
+				"canonicalName": "vpc.name",
+				"friendlyName": "vpc.name",
+				"aliases": [
+					"vpc.name"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"cpuAllocation.reservation": {
+				"propertyType": "INT",
+				"canonicalName": "cpuAllocation.reservation",
+				"friendlyName": "CPU Reservation",
+				"aliases": [
+					"CPU Reservation",
+					"cpuallocation.reservation",
+					"reserved cpu"
+				],
+				"categories": [
+					"COMPUTE"
+				],
+				"helpText": "CPU Allocation Reservation of VM",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"networks": {
+				"propertyType": "REFERENCE",
+				"canonicalName": "networks",
+				"friendlyName": "Network",
+				"aliases": [
+					"Network",
+					"networks"
+				],
+				"categories": [
+					"SECURITY"
+				],
+				"helpText": "Networks for VM",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"memoryAllocation.reservation": {
+				"propertyType": "INT",
+				"canonicalName": "memoryAllocation.reservation",
+				"friendlyName": "Memory Reservation",
+				"aliases": [
+					"Memory Reservation",
+					"mem reservation",
+					"memory reservation",
+					"memoryallocation.reservation",
+					"reserved mem",
+					"reserved memory"
+				],
+				"categories": [
+					"COMPUTE"
+				],
+				"helpText": "Memory Allocation Reservation of VM",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"srcRuleSets.rules": {
+				"propertyType": "REFERENCE",
+				"canonicalName": "srcRuleSets.rules",
+				"friendlyName": "Outgoing Rules",
+				"aliases": [
+					"Outgoing Rules",
+					"outgoing firewall rule",
+					"outgoing firewall rules",
+					"outgoing rule",
+					"outgoing rules",
+					"source rule",
+					"source rules",
+					"source_firewall_rules.rules",
+					"src rule",
+					"src rules",
+					"srcrulesets.rules"
+				],
+				"categories": [
+					"SECURITY"
+				],
+				"helpText": "Outgoing Rules for VM",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"__numDefaultGatewayInterface": {
+				"propertyType": "INT",
+				"canonicalName": "__numDefaultGatewayInterface",
+				"friendlyName": "Default Gateway Router Interface Count",
+				"aliases": [
+					"Default Gateway Router Interface Count",
+					"__numdefaultgatewayinterface",
+					"default gateway router interface count"
+				],
+				"helpText": "",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"addressRanges.name": {
+				"propertyType": "STRING",
+				"canonicalName": "addressRanges.name",
+				"friendlyName": "addressRanges.name",
+				"aliases": [
+					"addressRanges.name"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"checkpointHost.modelKey": {
+				"propertyType": "STRING",
+				"canonicalName": "checkpointHost.modelKey",
+				"friendlyName": "checkpointHost.modelKey",
+				"aliases": [
+					"checkpointHost.modelKey"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"memoryAllocation.shares": {
+				"propertyType": "INT",
+				"canonicalName": "memoryAllocation.shares",
+				"friendlyName": "memoryAllocation.shares",
+				"aliases": [
+					"memoryAllocation.shares"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"srcRuleSets.rules.name": {
+				"propertyType": "STRING",
+				"canonicalName": "srcRuleSets.rules.name",
+				"friendlyName": "srcRuleSets.rules.name",
+				"aliases": [
+					"srcRuleSets.rules.name",
+					"source_firewall_rules.rules.name",
+					"srcrulesets.rules.name"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"vnics": {
+				"propertyType": "REFERENCE",
+				"canonicalName": "vnics",
+				"friendlyName": "Vnic",
+				"aliases": [
+					"Vnic",
+					"vnics"
+				],
+				"categories": [
+					"NETWORK"
+				],
+				"helpText": "Vnics connected VM",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"ipAddresses.ipMetadata.location.regionName": {
+				"propertyType": "STRING",
+				"canonicalName": "ipAddresses.ipMetadata.location.regionName",
+				"friendlyName": "ipAddresses.ipMetadata.location.regionName",
+				"aliases": [
+					"ipAddresses.ipMetadata.location.regionName"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"manager.name": {
+				"propertyType": "STRING",
+				"canonicalName": "manager.name",
+				"friendlyName": "manager.name",
+				"aliases": [
+					"manager.name",
+					"vcenter_manager.name"
+				],
+				"helpText": "Manager name e.g. vCenter Server for VMware entities",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"standardPortgroup": {
+				"propertyType": "REFERENCE",
+				"canonicalName": "standardPortgroup",
+				"friendlyName": "StandardPortgroup",
+				"aliases": [
+					"StandardPortgroup",
+					"standard portgroup",
+					"standardportgroup"
+				],
+				"categories": [
+					"NETWORK"
+				],
+				"helpText": "Standard Portgroup of VM",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"addresses.modelKey": {
+				"propertyType": "STRING",
+				"canonicalName": "addresses.modelKey",
+				"friendlyName": "addresses.modelKey",
+				"aliases": [
+					"addresses.modelKey"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"agents.type": {
+				"propertyType": "STRING",
+				"canonicalName": "agents.type",
+				"friendlyName": "Agent Type",
+				"aliases": [
+					"Agent Type",
+					"agent name",
+					"agent type",
+					"agents.type"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"resourcePool": {
+				"propertyType": "REFERENCE",
+				"canonicalName": "resourcePool",
+				"friendlyName": "Resource Pool",
+				"aliases": [
+					"Resource Pool",
+					"resource_pool",
+					"resourcepool"
+				],
+				"categories": [
+					"COMPUTE"
+				],
+				"helpText": "Resource Pool associated with this VM",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"annotation": {
+				"propertyType": "STRING",
+				"canonicalName": "annotation",
+				"friendlyName": "Notes",
+				"aliases": [
+					"Notes",
+					"annotation",
+					"notes"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"dnsConfig.searchDomain": {
+				"propertyType": "STRING",
+				"canonicalName": "dnsConfig.searchDomain",
+				"friendlyName": "Search Domain",
+				"aliases": [
+					"Search Domain",
+					"dnsconfig.searchdomain",
+					"search domain"
+				],
+				"categories": [
+					"NETWORK"
+				],
+				"helpText": "DNS Search domains",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"rootSnapshots.modelKey": {
+				"propertyType": "STRING",
+				"canonicalName": "rootSnapshots.modelKey",
+				"friendlyName": "rootSnapshots.modelKey",
+				"aliases": [
+					"rootSnapshots.modelKey"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"srcRuleSets.type": {
+				"propertyType": "STRING",
+				"canonicalName": "srcRuleSets.type",
+				"friendlyName": "source_firewall_rules.rule_set_type",
+				"aliases": [
+					"source_firewall_rules.rule_set_type",
+					"srcrulesets.type"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"srcInversionRuleSets.firewall.modelKey": {
+				"propertyType": "STRING",
+				"canonicalName": "srcInversionRuleSets.firewall.modelKey",
+				"friendlyName": "srcInversionRuleSets.firewall.modelKey",
+				"aliases": [
+					"srcInversionRuleSets.firewall.modelKey",
+					"source_inversion_rules.firewall.entity_id",
+					"srcinversionrulesets.firewall.modelkey"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"manager": {
+				"propertyType": "REFERENCE",
+				"canonicalName": "manager",
+				"friendlyName": "Vcenter",
+				"aliases": [
+					"Vcenter",
+					"manager",
+					"vc",
+					"vcenter",
+					"vcenter_manager"
+				],
+				"categories": [
+					"COMPUTE"
+				],
+				"helpText": "Manager e.g. vCenter Server for VMware entities",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"__numDvpg": {
+				"propertyType": "INT",
+				"canonicalName": "__numDvpg",
+				"friendlyName": "Dvpg Count",
+				"aliases": [
+					"Dvpg Count",
+					"__numdvpg",
+					"dvpg count"
+				],
+				"helpText": "",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"cloudNetwork": {
+				"propertyType": "REFERENCE",
+				"canonicalName": "cloudNetwork",
+				"friendlyName": "cloudNetwork",
+				"aliases": [
+					"cloudNetwork"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"groups.name": {
+				"propertyType": "STRING",
+				"canonicalName": "groups.name",
+				"friendlyName": "groups.name",
+				"aliases": [
+					"groups.name",
+					"folders.name"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"vpc.modelKey": {
+				"propertyType": "STRING",
+				"canonicalName": "vpc.modelKey",
+				"friendlyName": "vpc.modelKey",
+				"aliases": [
+					"vpc.modelKey"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"destRuleSets.firewall.name": {
+				"propertyType": "STRING",
+				"canonicalName": "destRuleSets.firewall.name",
+				"friendlyName": "destRuleSets.firewall.name",
+				"aliases": [
+					"destRuleSets.firewall.name",
+					"destination_firewall_rules.firewall.name",
+					"destrulesets.firewall.name"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"__numNsxtLogicalPorts": {
+				"propertyType": "INT",
+				"canonicalName": "__numNsxtLogicalPorts",
+				"friendlyName": "NSX-T Logical Port Count",
+				"aliases": [
+					"NSX-T Logical Port Count",
+					"__numnsxtlogicalports",
+					"nsx-t logical port count"
+				],
+				"helpText": "",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"connected": {
+				"propertyType": "BOOLEAN",
+				"canonicalName": "connected",
+				"friendlyName": "Connected Vnics",
+				"aliases": [
+					"Connected Vnics",
+					"connected",
+					"connected vnic",
+					"connected vnics"
+				],
+				"categories": [
+					"NETWORK"
+				],
+				"helpText": "Is vNIC Connected?",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"srcInversionRuleSets.type": {
+				"propertyType": "STRING",
+				"canonicalName": "srcInversionRuleSets.type",
+				"friendlyName": "source_inversion_rules.rule_set_type",
+				"aliases": [
+					"source_inversion_rules.rule_set_type",
+					"srcinversionrulesets.type"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"destInversionRuleSets.firewall.name": {
+				"propertyType": "STRING",
+				"canonicalName": "destInversionRuleSets.firewall.name",
+				"friendlyName": "destInversionRuleSets.firewall.name",
+				"aliases": [
+					"destInversionRuleSets.firewall.name",
+					"destination_inversion_rules.firewall.name",
+					"destinversionrulesets.firewall.name"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"destRuleSets.type": {
+				"propertyType": "STRING",
+				"canonicalName": "destRuleSets.type",
+				"friendlyName": "destination_firewall_rules.rule_set_type",
+				"aliases": [
+					"destination_firewall_rules.rule_set_type",
+					"destrulesets.type"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"agents.version": {
+				"propertyType": "STRING",
+				"canonicalName": "agents.version",
+				"friendlyName": "Tools Version",
+				"aliases": [
+					"Tools Version",
+					"agents.version",
+					"tools version"
+				],
+				"categories": [
+					"COMPUTE",
+					"GENERAL"
+				],
+				"helpText": "VMTools version",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"availabilityZone.name": {
+				"propertyType": "STRING",
+				"canonicalName": "availabilityZone.name",
+				"friendlyName": "availabilityZone.name",
+				"aliases": [
+					"availabilityZone.name"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"addresses.name": {
+				"propertyType": "STRING",
+				"canonicalName": "addresses.name",
+				"friendlyName": "addresses.name",
+				"aliases": [
+					"addresses.name"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"serverdataParent.deviceInfo.version": {
+				"propertyType": "STRING",
+				"canonicalName": "serverdataParent.deviceInfo.version",
+				"friendlyName": "Version",
+				"aliases": [
+					"Version",
+					"serverdataparent.deviceinfo.version",
+					"version"
+				],
+				"categories": [
+					"COMPUTE",
+					"GENERAL"
+				],
+				"helpText": "Version of VM",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"memoryAllocation.limit": {
+				"propertyType": "INT",
+				"canonicalName": "memoryAllocation.limit",
+				"friendlyName": "Memory Allocation Limit",
+				"aliases": [
+					"Memory Allocation Limit",
+					"memoryallocation limit",
+					"memoryallocation.limit",
+					"memoryallocationlimit"
+				],
+				"categories": [
+					"GENERAL"
+				],
+				"helpText": "Memory Allocation Limit of VM",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"standardPortgroup.name": {
+				"propertyType": "STRING",
+				"canonicalName": "standardPortgroup.name",
+				"friendlyName": "standardPortgroup.name",
+				"aliases": [
+					"standardPortgroup.name"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"routeConfig.routeTable.ipv6routes.nextHop": {
+				"propertyType": "STRING",
+				"canonicalName": "routeConfig.routeTable.ipv6routes.nextHop",
+				"friendlyName": "routeConfig.routeTable.ipv6routes.nextHop",
+				"aliases": [
+					"routeConfig.routeTable.ipv6routes.nextHop"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"vendorId": {
+				"propertyType": "STRING",
+				"canonicalName": "vendorId",
+				"friendlyName": "Vendor ID",
+				"aliases": [
+					"Vendor ID",
+					"moref",
+					"vendor id",
+					"vendor_id",
+					"vendorid"
+				],
+				"categories": [
+					"COMPUTE",
+					"GENERAL"
+				],
+				"helpText": "Vendor Id for Entity - as it is referred to in the owning system e.g. MOR references in VC",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"dvs.modelKey": {
+				"propertyType": "STRING",
+				"canonicalName": "dvs.modelKey",
+				"friendlyName": "dvs.modelKey",
+				"aliases": [
+					"dvs.modelKey"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"ipEntities": {
+				"propertyType": "REFERENCE",
+				"canonicalName": "ipEntities",
+				"friendlyName": "ipEntities",
+				"aliases": [
+					"ipEntities"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"discoveredApplication": {
+				"propertyType": "REFERENCE",
+				"canonicalName": "discoveredApplication",
+				"friendlyName": "Discovered Application",
+				"aliases": [
+					"Discovered Application",
+					"discoveredapplication"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": false
+			},
+			"networks.name": {
+				"propertyType": "STRING",
+				"canonicalName": "networks.name",
+				"friendlyName": "networks.name",
+				"aliases": [
+					"networks.name"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"numDisconnectedVnics": {
+				"propertyType": "INT",
+				"canonicalName": "numDisconnectedVnics",
+				"friendlyName": "Disconnected Vnic Count",
+				"aliases": [
+					"Disconnected Vnic Count",
+					"count disconnected vnic",
+					"count disconnected vnics",
+					"disconnected vnic",
+					"disconnected vnic count",
+					"disconnected vnic counts",
+					"disconnected vnics",
+					"disconnected vnics count",
+					"disconnected vnics counts",
+					"num disconnected vnic",
+					"num disconnected vnics",
+					"number disconnected vnic",
+					"number disconnected vnics",
+					"numdisconnectedvnics"
+				],
+				"categories": [
+					"NETWORK"
+				],
+				"helpText": "Number of disconnected vNics",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"resourcePool.name": {
+				"propertyType": "STRING",
+				"canonicalName": "resourcePool.name",
+				"friendlyName": "resourcePool.name",
+				"aliases": [
+					"resourcePool.name",
+					"resource_pool.name",
+					"resourcepool.name"
+				],
+				"helpText": "Resource Pool name associated with this VM",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"virtualDisks.capacityInBytes": {
+				"propertyType": "INT",
+				"canonicalName": "virtualDisks.capacityInBytes",
+				"friendlyName": "Virtual Disk Capacity",
+				"aliases": [
+					"Virtual Disk Capacity",
+					"virtual disk size",
+					"virtualdisks.capacityinbytes"
+				],
+				"categories": [
+					"STORAGE"
+				],
+				"helpText": "Virtual Disk Capacity of VM",
+				"facetSupported": true,
+				"sortSupported": false,
+				"projectionSupported": false
+			},
+			"virtualDisks.name": {
+				"propertyType": "STRING",
+				"canonicalName": "virtualDisks.name",
+				"friendlyName": "virtualDisks.name",
+				"aliases": [
+					"virtualDisks.name"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"connectionState": {
+				"propertyType": "STRING",
+				"canonicalName": "connectionState",
+				"friendlyName": "Connection State",
+				"aliases": [
+					"Connection State",
+					"connectionstate"
+				],
+				"categories": [
+					"NETWORK"
+				],
+				"helpText": "Connection State of VM",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"__numNsxtIPSets": {
+				"propertyType": "INT",
+				"canonicalName": "__numNsxtIPSets",
+				"friendlyName": "NSX-T IPSet Count",
+				"aliases": [
+					"NSX-T IPSet Count",
+					"__numnsxtipsets",
+					"nsx-t ipset count"
+				],
+				"helpText": "",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"__numAddressRanges": {
+				"propertyType": "INT",
+				"canonicalName": "__numAddressRanges",
+				"friendlyName": "Address Range Count",
+				"aliases": [
+					"Address Range Count",
+					"__numaddressranges",
+					"address range count"
+				],
+				"helpText": "",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"dvpg.modelKey": {
+				"propertyType": "STRING",
+				"canonicalName": "dvpg.modelKey",
+				"friendlyName": "dvpg.modelKey",
+				"aliases": [
+					"dvpg.modelKey"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"interfaceNames": {
+				"propertyType": "STRING",
+				"canonicalName": "interfaceNames",
+				"friendlyName": "Interface Name",
+				"aliases": [
+					"Interface Name",
+					"interface",
+					"interface name",
+					"interface names",
+					"interfacenames"
+				],
+				"categories": [
+					"NETWORK"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"natDevice.modelKey": {
+				"propertyType": "STRING",
+				"canonicalName": "natDevice.modelKey",
+				"friendlyName": "natDevice.modelKey",
+				"aliases": [
+					"natDevice.modelKey"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"__numSecurityTags": {
+				"propertyType": "INT",
+				"canonicalName": "__numSecurityTags",
+				"friendlyName": "Security Tag Count",
+				"aliases": [
+					"Security Tag Count",
+					"__numsecuritytags",
+					"security tag count"
+				],
+				"helpText": "",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"__numPolicyGroups": {
+				"propertyType": "INT",
+				"canonicalName": "__numPolicyGroups",
+				"friendlyName": "NSX Policy Group Count",
+				"aliases": [
+					"NSX Policy Group Count",
+					"__numpolicygroups",
+					"nsx policy group count"
+				],
+				"helpText": "",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"serverdataParent.deviceInfo.serial": {
+				"propertyType": "STRING",
+				"canonicalName": "serverdataParent.deviceInfo.serial",
+				"friendlyName": "Serial",
+				"aliases": [
+					"Serial",
+					"serverdataparent.deviceinfo.serial"
+				],
+				"helpText": "Serial of VM",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"__numStandardPortgroup": {
+				"propertyType": "INT",
+				"canonicalName": "__numStandardPortgroup",
+				"friendlyName": "StandardPortgroup Count",
+				"aliases": [
+					"StandardPortgroup Count",
+					"__numstandardportgroup",
+					"standardportgroup count"
+				],
+				"helpText": "",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"ipAddresses.ipMetadata.location.metroCode": {
+				"propertyType": "STRING",
+				"canonicalName": "ipAddresses.ipMetadata.location.metroCode",
+				"friendlyName": "ipAddresses.ipMetadata.location.metroCode",
+				"aliases": [
+					"ipAddresses.ipMetadata.location.metroCode"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"__numRootSnapshots": {
+				"propertyType": "INT",
+				"canonicalName": "__numRootSnapshots",
+				"friendlyName": "Snapshots Count",
+				"aliases": [
+					"Snapshots Count",
+					"__numrootsnapshots"
+				],
+				"helpText": "",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"nsxtLogicalPorts.name": {
+				"propertyType": "STRING",
+				"canonicalName": "nsxtLogicalPorts.name",
+				"friendlyName": "nsxtLogicalPorts.name",
+				"aliases": [
+					"nsxtLogicalPorts.name"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"layer2Networks": {
+				"propertyType": "REFERENCE",
+				"canonicalName": "layer2Networks",
+				"friendlyName": "L2 Network",
+				"aliases": [
+					"L2 Network",
+					"l2",
+					"l2 network",
+					"l2network",
+					"layer2 network",
+					"layer2 networks",
+					"layer2_networks",
+					"layer2networks"
+				],
+				"categories": [
+					"NETWORK"
+				],
+				"helpText": "L2 Network of VM",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"name": {
+				"propertyType": "STRING",
+				"canonicalName": "name",
+				"friendlyName": "Name",
+				"aliases": [
+					"Name"
+				],
+				"categories": [
+					"COMPUTE",
+					"GENERAL"
+				],
+				"helpText": "VM Name",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"__numNetworkGroups": {
+				"propertyType": "INT",
+				"canonicalName": "__numNetworkGroups",
+				"friendlyName": "Network Group Count",
+				"aliases": [
+					"Network Group Count",
+					"__numnetworkgroups",
+					"network group count"
+				],
+				"helpText": "",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"ipAddresses.end": {
+				"propertyType": "INT",
+				"canonicalName": "ipAddresses.end",
+				"friendlyName": "ipAddresses.end",
+				"aliases": [
+					"ipAddresses.end"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"vlans.end": {
+				"propertyType": "INT",
+				"canonicalName": "vlans.end",
+				"friendlyName": "End Vlan",
+				"aliases": [
+					"End Vlan",
+					"end vlanid",
+					"end vlans",
+					"vlans.end"
+				],
+				"helpText": "VLAN",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"region": {
+				"propertyType": "STRING",
+				"canonicalName": "region",
+				"friendlyName": "Region",
+				"aliases": [
+					"Region"
+				],
+				"categories": [
+					"COMPUTE"
+				],
+				"helpText": "Region where VM was created",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"deviceInfo.vendor": {
+				"propertyType": "STRING",
+				"canonicalName": "deviceInfo.vendor",
+				"friendlyName": "deviceInfo.vendor",
+				"aliases": [
+					"deviceInfo.vendor"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"dnsConfig.ipAddress": {
+				"propertyType": "STRING",
+				"canonicalName": "dnsConfig.ipAddress",
+				"friendlyName": "Dns Server",
+				"aliases": [
+					"Dns Server",
+					"dns",
+					"dns server",
+					"dnsconfig.ipaddress",
+					"dnsserver",
+					"name server",
+					"nameserver"
+				],
+				"categories": [
+					"NETWORK"
+				],
+				"helpText": "DNS IP address",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"provisionedState": {
+				"propertyType": "STRING",
+				"canonicalName": "provisionedState",
+				"friendlyName": "provisionedState",
+				"aliases": [
+					"provisionedState"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"appliance": {
+				"propertyType": "REFERENCE",
+				"canonicalName": "appliance",
+				"friendlyName": "appliance",
+				"aliases": [
+					"appliance"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"__numDvs": {
+				"propertyType": "INT",
+				"canonicalName": "__numDvs",
+				"friendlyName": "Dvs Count",
+				"aliases": [
+					"Dvs Count",
+					"__numdvs",
+					"dvs count"
+				],
+				"helpText": "",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"cpuAllocation.overheadLimit": {
+				"propertyType": "INT",
+				"canonicalName": "cpuAllocation.overheadLimit",
+				"friendlyName": "cpuAllocation.overheadLimit",
+				"aliases": [
+					"cpuAllocation.overheadLimit"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"firewallStatus": {
+				"propertyType": "STRING",
+				"canonicalName": "firewallStatus",
+				"friendlyName": "Firewall Status",
+				"aliases": [
+					"Firewall Status",
+					"firewallstatus"
+				],
+				"categories": [
+					"SECURITY"
+				],
+				"helpText": "Firewall Status",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"ipAddresses.ipAddressType": {
+				"propertyType": "STRING",
+				"canonicalName": "ipAddresses.ipAddressType",
+				"friendlyName": "ipAddresses.ipAddressType",
+				"aliases": [
+					"ipAddresses.ipAddressType"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"roles": {
+				"propertyType": "REFERENCE",
+				"canonicalName": "roles",
+				"friendlyName": "roles",
+				"aliases": [
+					"roles"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"networks.modelKey": {
+				"propertyType": "STRING",
+				"canonicalName": "networks.modelKey",
+				"friendlyName": "networks.modelKey",
+				"aliases": [
+					"networks.modelKey"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"roleType": {
+				"propertyType": "STRING",
+				"canonicalName": "roleType",
+				"friendlyName": "role",
+				"aliases": [
+					"role",
+					"role type",
+					"roletype"
+				],
+				"categories": [
+					"GENERAL"
+				],
+				"helpText": "Role of VM",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"srcRuleSets.firewall": {
+				"propertyType": "REFERENCE",
+				"canonicalName": "srcRuleSets.firewall",
+				"friendlyName": "source_firewall_rules.firewall",
+				"aliases": [
+					"source_firewall_rules.firewall",
+					"srcrulesets.firewall"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"vnics.pathSwitchPorts.device": {
+				"propertyType": "REFERENCE",
+				"canonicalName": "vnics.pathSwitchPorts.device",
+				"friendlyName": "Switches",
+				"aliases": [
+					"Switches",
+					"switch",
+					"switches",
+					"vnics.pathswitchports.device"
+				],
+				"categories": [
+					"NETWORK"
+				],
+				"helpText": "Switch Ports of VM",
+				"facetSupported": true,
+				"sortSupported": false,
+				"projectionSupported": false
+			},
+			"rootSnapshots": {
+				"propertyType": "REFERENCE",
+				"canonicalName": "rootSnapshots",
+				"friendlyName": "Snapshots",
+				"aliases": [
+					"Snapshots",
+					"root snapshots",
+					"rootsnapshots",
+					"snapshot",
+					"snapshots",
+					"virtual machine snapshot",
+					"virtual machine snapshots",
+					"virtualmachine snapshot",
+					"virtualmachine snapshots",
+					"vm snapshot",
+					"vm snapshots"
+				],
+				"categories": [
+					"STORAGE"
+				],
+				"helpText": "Snapshots of VM",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"nsxtIPSets.name": {
+				"propertyType": "STRING",
+				"canonicalName": "nsxtIPSets.name",
+				"friendlyName": "nsxtIPSets.name",
+				"aliases": [
+					"nsxtIPSets.name"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"serverdataParent.osFullName": {
+				"propertyType": "STRING",
+				"canonicalName": "serverdataParent.osFullName",
+				"friendlyName": "Operating System",
+				"aliases": [
+					"Operating System",
+					"os",
+					"os full name",
+					"serverdataparent.osfullname"
+				],
+				"categories": [
+					"COMPUTE",
+					"GENERAL"
+				],
+				"helpText": "VM Operating System",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"defaultGatewayInterface.modelKey": {
+				"propertyType": "STRING",
+				"canonicalName": "defaultGatewayInterface.modelKey",
+				"friendlyName": "defaultGatewayInterface.modelKey",
+				"aliases": [
+					"defaultGatewayInterface.modelKey"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"ipAddresses.ipMetadata.location.subdivision2Name": {
+				"propertyType": "STRING",
+				"canonicalName": "ipAddresses.ipMetadata.location.subdivision2Name",
+				"friendlyName": "ipAddresses.ipMetadata.location.subdivision2Name",
+				"aliases": [
+					"ipAddresses.ipMetadata.location.subdivision2Name"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"natDeviceDeprecated": {
+				"propertyType": "REFERENCE",
+				"canonicalName": "natDeviceDeprecated",
+				"friendlyName": "natDeviceDeprecated",
+				"aliases": [
+					"natDeviceDeprecated"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"agents.configStatus": {
+				"propertyType": "STRING",
+				"canonicalName": "agents.configStatus",
+				"friendlyName": "VMTools Config Status",
+				"aliases": [
+					"VMTools Config Status",
+					"agents.configstatus",
+					"tools config status",
+					"vmtools config status"
+				],
+				"categories": [
+					"COMPUTE"
+				],
+				"helpText": "Config Status of VM agents",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"standardPortgroup.modelKey": {
+				"propertyType": "STRING",
+				"canonicalName": "standardPortgroup.modelKey",
+				"friendlyName": "standardPortgroup.modelKey",
+				"aliases": [
+					"standardPortgroup.modelKey"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"defaultVRF.name": {
+				"propertyType": "STRING",
+				"canonicalName": "defaultVRF.name",
+				"friendlyName": "defaultVRF.name",
+				"aliases": [
+					"defaultVRF.name"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"securityGroups.name": {
+				"propertyType": "STRING",
+				"canonicalName": "securityGroups.name",
+				"friendlyName": "securityGroups.name",
+				"aliases": [
+					"securityGroups.name",
+					"security_groups.name",
+					"securitygroups.name"
+				],
+				"helpText": "Security Groups that contain this VM",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"nsxtLogicalPorts": {
+				"propertyType": "REFERENCE",
+				"canonicalName": "nsxtLogicalPorts",
+				"friendlyName": "NSX-T Logical Port",
+				"aliases": [
+					"NSX-T Logical Port",
+					"nsxt logical ports",
+					"nsxtlogicalports",
+					"nsxtlogicalportss"
+				],
+				"categories": [
+					"NETWORK"
+				],
+				"helpText": "NSX-T Logical Port to which this VM is connected",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"hvs.modelKey": {
+				"propertyType": "STRING",
+				"canonicalName": "hvs.modelKey",
+				"friendlyName": "hvs.modelKey",
+				"aliases": [
+					"hvs.modelKey"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"vpc": {
+				"propertyType": "REFERENCE",
+				"canonicalName": "vpc",
+				"friendlyName": "vpc",
+				"aliases": [
+					"vpc"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"datacenter": {
+				"propertyType": "REFERENCE",
+				"canonicalName": "datacenter",
+				"friendlyName": "Datacenter",
+				"aliases": [
+					"Datacenter",
+					"vc datacenter"
+				],
+				"categories": [
+					"COMPUTE"
+				],
+				"helpText": "Datacenter of which VM is part",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"agents.status": {
+				"propertyType": "STRING",
+				"canonicalName": "agents.status",
+				"friendlyName": "VMTools Status",
+				"aliases": [
+					"VMTools Status",
+					"agents.status",
+					"tools status",
+					"vmtools status"
+				],
+				"categories": [
+					"COMPUTE"
+				],
+				"helpText": "Tools status",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"virtualDisks": {
+				"propertyType": "REFERENCE",
+				"canonicalName": "virtualDisks",
+				"friendlyName": "Virtual Disks",
+				"aliases": [
+					"Virtual Disks",
+					"vdisk",
+					"vdisks",
+					"virtual disk",
+					"virtual disks",
+					"virtualdisk",
+					"virtualdisks",
+					"vmdk"
+				],
+				"categories": [
+					"STORAGE"
+				],
+				"helpText": "Virtual Disks of VM",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"defaultGateway": {
+				"propertyType": "STRING",
+				"canonicalName": "defaultGateway",
+				"friendlyName": "Default Gateway",
+				"aliases": [
+					"Default Gateway",
+					"defaultgateway"
+				],
+				"helpText": "Default Gateway for VM",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"checkpointHost.name": {
+				"propertyType": "STRING",
+				"canonicalName": "checkpointHost.name",
+				"friendlyName": "checkpointHost.name",
+				"aliases": [
+					"checkpointHost.name"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"dvpg.name": {
+				"propertyType": "STRING",
+				"canonicalName": "dvpg.name",
+				"friendlyName": "dvpg.name",
+				"aliases": [
+					"dvpg.name"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"agents.description": {
+				"propertyType": "STRING",
+				"canonicalName": "agents.description",
+				"friendlyName": "agents.description",
+				"aliases": [
+					"agents.description"
+				],
+				"helpText": "VMTools",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"addressRanges": {
+				"propertyType": "REFERENCE",
+				"canonicalName": "addressRanges",
+				"friendlyName": "Address Range",
+				"aliases": [
+					"Address Range",
+					"address ranges",
+					"addressranges"
+				],
+				"categories": [
+					"SECURITY"
+				],
+				"helpText": "All the Address Ranges which are part of the VM?",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"ipAddresses.ipMetadata.domain": {
+				"propertyType": "STRING",
+				"canonicalName": "ipAddresses.ipMetadata.domain",
+				"friendlyName": "ipAddresses.ipMetadata.domain",
+				"aliases": [
+					"ipAddresses.ipMetadata.domain"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"securityGroups": {
+				"propertyType": "REFERENCE",
+				"canonicalName": "securityGroups",
+				"friendlyName": "Security Group",
+				"aliases": [
+					"Security Group",
+					"security groups",
+					"security_groups",
+					"securitygroup",
+					"securitygroups",
+					"sg",
+					"sgs"
+				],
+				"categories": [
+					"SECURITY"
+				],
+				"helpText": "Security Group of which VM is member",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"__numDatastores": {
+				"propertyType": "INT",
+				"canonicalName": "__numDatastores",
+				"friendlyName": "Datastore Count",
+				"aliases": [
+					"Datastore Count",
+					"__numdatastores",
+					"count datastore",
+					"count datastores",
+					"datastore count",
+					"datastores count",
+					"num datastore",
+					"num datastores",
+					"number datastore",
+					"number datastores"
+				],
+				"helpText": "Number of Datastores for VM",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"srcInversionRuleSets.rules": {
+				"propertyType": "REFERENCE",
+				"canonicalName": "srcInversionRuleSets.rules",
+				"friendlyName": "source_inversion_rules.rules",
+				"aliases": [
+					"source_inversion_rules.rules",
+					"srcinversionrulesets.rules"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"__numAddresses": {
+				"propertyType": "INT",
+				"canonicalName": "__numAddresses",
+				"friendlyName": "Address Count",
+				"aliases": [
+					"Address Count",
+					"__numaddresses",
+					"address count"
+				],
+				"helpText": "",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"__numIpSets": {
+				"propertyType": "INT",
+				"canonicalName": "__numIpSets",
+				"friendlyName": "IPSet Count",
+				"aliases": [
+					"IPSet Count",
+					"__numipsets",
+					"count ipset",
+					"count ipsets",
+					"ipset count",
+					"ipsets count",
+					"num ipset",
+					"num ipsets",
+					"number ipset",
+					"number ipsets"
+				],
+				"helpText": "Number of IPSets of which VM is a member",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"nsxtIPSets.modelKey": {
+				"propertyType": "STRING",
+				"canonicalName": "nsxtIPSets.modelKey",
+				"friendlyName": "nsxtIPSets.modelKey",
+				"aliases": [
+					"nsxtIPSets.modelKey"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"destInversionRuleSets.rules.name": {
+				"propertyType": "STRING",
+				"canonicalName": "destInversionRuleSets.rules.name",
+				"friendlyName": "destInversionRuleSets.rules.name",
+				"aliases": [
+					"destInversionRuleSets.rules.name",
+					"destination_inversion_rules.rules.name",
+					"destinversionrulesets.rules.name"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"networkGroups.modelKey": {
+				"propertyType": "STRING",
+				"canonicalName": "networkGroups.modelKey",
+				"friendlyName": "networkGroups.modelKey",
+				"aliases": [
+					"networkGroups.modelKey"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"dnsConfig.domainName": {
+				"propertyType": "STRING",
+				"canonicalName": "dnsConfig.domainName",
+				"friendlyName": "Domain Name",
+				"aliases": [
+					"Domain Name",
+					"dnsconfig.domainname",
+					"domain",
+					"domain name"
+				],
+				"categories": [
+					"NETWORK"
+				],
+				"helpText": "DNS Domain name",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"routeConfig.defaultGateway": {
+				"propertyType": "STRING",
+				"canonicalName": "routeConfig.defaultGateway",
+				"friendlyName": "Default Gateway",
+				"aliases": [
+					"Default Gateway",
+					"def gateway",
+					"def nexthop",
+					"default_gateway",
+					"gateway",
+					"nexthop",
+					"routeconfig.defaultgateway"
+				],
+				"categories": [
+					"NETWORK"
+				],
+				"helpText": "Default Gateway",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"natDevice": {
+				"propertyType": "REFERENCE",
+				"canonicalName": "natDevice",
+				"friendlyName": "nat device",
+				"aliases": [
+					"nat device",
+					"nat devices",
+					"nat edge",
+					"nat edges",
+					"nat vrf",
+					"nat vrfs",
+					"natdevice"
+				],
+				"categories": [
+					"NETWORK"
+				],
+				"helpText": "Nat Device of VM",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"destRuleSets.rules.modelKey": {
+				"propertyType": "STRING",
+				"canonicalName": "destRuleSets.rules.modelKey",
+				"friendlyName": "destRuleSets.rules.modelKey",
+				"aliases": [
+					"destRuleSets.rules.modelKey",
+					"destination_firewall_rules.rules.entity_id",
+					"destrulesets.rules.modelkey"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"layer3Domain.modelKey": {
+				"propertyType": "STRING",
+				"canonicalName": "layer3Domain.modelKey",
+				"friendlyName": "layer3Domain.modelKey",
+				"aliases": [
+					"layer3Domain.modelKey"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"currentSnapshot": {
+				"propertyType": "REFERENCE",
+				"canonicalName": "currentSnapshot",
+				"friendlyName": "currentSnapshot",
+				"aliases": [
+					"currentSnapshot"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"epg.name": {
+				"propertyType": "STRING",
+				"canonicalName": "epg.name",
+				"friendlyName": "epg.name",
+				"aliases": [
+					"epg.name"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"problem": {
+				"propertyType": "CUSTOM_TYPE",
+				"canonicalName": "problem",
+				"friendlyName": "Problem",
+				"aliases": [
+					"Problem",
+					"problem type",
+					"problems"
+				],
+				"helpText": "Problem related to VM",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": false
+			},
+			"applicationProfiles": {
+				"propertyType": "REFERENCE",
+				"canonicalName": "applicationProfiles",
+				"friendlyName": "ACI Application Profile",
+				"aliases": [
+					"ACI Application Profile",
+					"application profiles",
+					"applicationprofiles",
+					"applicaton profile"
+				],
+				"categories": [
+					"GENERAL"
+				],
+				"helpText": "ACI Application Profile assigned to VM",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"serverdataParent.cpuSockets": {
+				"propertyType": "INT",
+				"canonicalName": "serverdataParent.cpuSockets",
+				"friendlyName": "serverdataParent.cpuSockets",
+				"aliases": [
+					"serverdataParent.cpuSockets"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"__numLbServiceNodes": {
+				"propertyType": "INT",
+				"canonicalName": "__numLbServiceNodes",
+				"friendlyName": "Service Nodes Count",
+				"aliases": [
+					"Service Nodes Count",
+					"__numlbservicenodes",
+					"service nodes count"
+				],
+				"helpText": "",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"virtualDisks.modelKey": {
+				"propertyType": "STRING",
+				"canonicalName": "virtualDisks.modelKey",
+				"friendlyName": "virtualDisks.modelKey",
+				"aliases": [
+					"virtualDisks.modelKey"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"physicalAddresses": {
+				"propertyType": "STRING",
+				"canonicalName": "physicalAddresses",
+				"friendlyName": "Mac Address",
+				"aliases": [
+					"Mac Address",
+					"mac",
+					"mac address",
+					"physical address",
+					"physical addresses",
+					"physicaladdress",
+					"physicaladdresses"
+				],
+				"categories": [
+					"NETWORK"
+				],
+				"helpText": "vNics MAC addresses",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"tagKey": {
+				"propertyType": "STRING",
+				"canonicalName": "tagKey",
+				"friendlyName": "Tag Key",
+				"aliases": [
+					"Tag Key",
+					"tagkey"
+				],
+				"categories": [
+					"GENERAL"
+				],
+				"helpText": "Tag Key assigned to VM",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"epg": {
+				"propertyType": "REFERENCE",
+				"canonicalName": "epg",
+				"friendlyName": "Endpoint Group",
+				"aliases": [
+					"Endpoint Group",
+					"endpoint groups",
+					"endpointgroup",
+					"endpointgroups",
+					"epg"
+				],
+				"categories": [
+					"SECURITY",
+					"GENERAL"
+				],
+				"helpText": "Endpoint Group of VM",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"epg.modelKey": {
+				"propertyType": "STRING",
+				"canonicalName": "epg.modelKey",
+				"friendlyName": "epg.modelKey",
+				"aliases": [
+					"epg.modelKey"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"ipAddresses.prefixLength": {
+				"propertyType": "INT",
+				"canonicalName": "ipAddresses.prefixLength",
+				"friendlyName": "ipAddresses.prefixLength",
+				"aliases": [
+					"ipAddresses.prefixLength"
+				],
+				"helpText": "vNics prefix length",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"natDomain": {
+				"propertyType": "REFERENCE",
+				"canonicalName": "natDomain",
+				"friendlyName": "natDomain",
+				"aliases": [
+					"natDomain"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"defaultGatewayInterface.name": {
+				"propertyType": "STRING",
+				"canonicalName": "defaultGatewayInterface.name",
+				"friendlyName": "defaultGatewayInterface.name",
+				"aliases": [
+					"defaultGatewayInterface.name"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"vnics.pathSwitchPorts": {
+				"propertyType": "REFERENCE",
+				"canonicalName": "vnics.pathSwitchPorts",
+				"friendlyName": "Switch Ports",
+				"aliases": [
+					"Switch Ports",
+					"physical port",
+					"physical ports",
+					"pnic",
+					"pnics",
+					"port",
+					"ports",
+					"switch port",
+					"switch ports",
+					"vnics.pathswitchports"
+				],
+				"categories": [
+					"NETWORK"
+				],
+				"helpText": "Switch Ports of VM",
+				"facetSupported": true,
+				"sortSupported": false,
+				"projectionSupported": false
+			},
+			"hvs": {
+				"propertyType": "REFERENCE",
+				"canonicalName": "hvs",
+				"friendlyName": "Standard Switch",
+				"aliases": [
+					"Standard Switch",
+					"hvs",
+					"standard switch"
+				],
+				"categories": [
+					"NETWORK"
+				],
+				"helpText": "Host Virtual Switch of VM",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"hvs.name": {
+				"propertyType": "STRING",
+				"canonicalName": "hvs.name",
+				"friendlyName": "hvs.name",
+				"aliases": [
+					"hvs.name"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"ipAddresses.ipMetadata.location.subdivision2Iso": {
+				"propertyType": "STRING",
+				"canonicalName": "ipAddresses.ipMetadata.location.subdivision2Iso",
+				"friendlyName": "ipAddresses.ipMetadata.location.subdivision2Iso",
+				"aliases": [
+					"ipAddresses.ipMetadata.location.subdivision2Iso"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"ipEntities.name": {
+				"propertyType": "STRING",
+				"canonicalName": "ipEntities.name",
+				"friendlyName": "ipEntities.name",
+				"aliases": [
+					"ipEntities.name"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"defaultVRF.modelKey": {
+				"propertyType": "STRING",
+				"canonicalName": "defaultVRF.modelKey",
+				"friendlyName": "defaultVRF.modelKey",
+				"aliases": [
+					"defaultVRF.modelKey"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"appliance.modelKey": {
+				"propertyType": "STRING",
+				"canonicalName": "appliance.modelKey",
+				"friendlyName": "appliance.modelKey",
+				"aliases": [
+					"appliance.modelKey"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"discoveredTier": {
+				"propertyType": "REFERENCE",
+				"canonicalName": "discoveredTier",
+				"friendlyName": "Discovered Tier",
+				"aliases": [
+					"Discovered Tier",
+					"discoveredtier"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": false
+			},
+			"srcRuleSets.firewall.name": {
+				"propertyType": "STRING",
+				"canonicalName": "srcRuleSets.firewall.name",
+				"friendlyName": "srcRuleSets.firewall.name",
+				"aliases": [
+					"srcRuleSets.firewall.name",
+					"source_firewall_rules.firewall.name",
+					"srcrulesets.firewall.name"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"deviceInfo.serial": {
+				"propertyType": "STRING",
+				"canonicalName": "deviceInfo.serial",
+				"friendlyName": "deviceInfo.serial",
+				"aliases": [
+					"deviceInfo.serial"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"manager.sddcType": {
+				"propertyType": "STRING",
+				"canonicalName": "manager.sddcType",
+				"friendlyName": "SDDC Type",
+				"aliases": [
+					"SDDC Type",
+					"manager.sddctype",
+					"sddc type"
+				],
+				"categories": [
+					"COMPUTE"
+				],
+				"helpText": "Type of SDDC Deployment",
+				"facetSupported": true,
+				"sortSupported": false,
+				"projectionSupported": false
+			},
+			"nsxtLogicalPorts.modelKey": {
+				"propertyType": "STRING",
+				"canonicalName": "nsxtLogicalPorts.modelKey",
+				"friendlyName": "nsxtLogicalPorts.modelKey",
+				"aliases": [
+					"nsxtLogicalPorts.modelKey"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"destInversionRuleSets.firewall.modelKey": {
+				"propertyType": "STRING",
+				"canonicalName": "destInversionRuleSets.firewall.modelKey",
+				"friendlyName": "destInversionRuleSets.firewall.modelKey",
+				"aliases": [
+					"destInversionRuleSets.firewall.modelKey",
+					"destination_inversion_rules.firewall.entity_id",
+					"destinversionrulesets.firewall.modelkey"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"destRuleSets.rules": {
+				"propertyType": "REFERENCE",
+				"canonicalName": "destRuleSets.rules",
+				"friendlyName": "Incoming Rules",
+				"aliases": [
+					"Incoming Rules",
+					"destination rule",
+					"destination rules",
+					"destination_firewall_rules.rules",
+					"destrulesets.rules",
+					"dst rule",
+					"dst rules",
+					"incoming firewall rule",
+					"incoming firewall rules",
+					"incoming rule",
+					"incoming rules"
+				],
+				"categories": [
+					"SECURITY"
+				],
+				"helpText": "Incoming firewall rules for VM",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"dvs.name": {
+				"propertyType": "STRING",
+				"canonicalName": "dvs.name",
+				"friendlyName": "dvs.name",
+				"aliases": [
+					"dvs.name"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"destInversionRuleSets.firewall": {
+				"propertyType": "REFERENCE",
+				"canonicalName": "destInversionRuleSets.firewall",
+				"friendlyName": "destination_inversion_rules.firewall",
+				"aliases": [
+					"destination_inversion_rules.firewall",
+					"destinversionrulesets.firewall"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"__numLayer2Networks": {
+				"propertyType": "INT",
+				"canonicalName": "__numLayer2Networks",
+				"friendlyName": "L2 Network Count",
+				"aliases": [
+					"L2 Network Count",
+					"__numlayer2networks",
+					"l2 network count"
+				],
+				"helpText": "",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"ipAddresses.ipMetadata.location.localeCode": {
+				"propertyType": "STRING",
+				"canonicalName": "ipAddresses.ipMetadata.location.localeCode",
+				"friendlyName": "ipAddresses.ipMetadata.location.localeCode",
+				"aliases": [
+					"ipAddresses.ipMetadata.location.localeCode"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"destInversionRuleSets.type": {
+				"propertyType": "STRING",
+				"canonicalName": "destInversionRuleSets.type",
+				"friendlyName": "destination_inversion_rules.rule_set_type",
+				"aliases": [
+					"destination_inversion_rules.rule_set_type",
+					"destinversionrulesets.type"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"ipAddresses.ipMetadata.location.subdivision1Iso": {
+				"propertyType": "STRING",
+				"canonicalName": "ipAddresses.ipMetadata.location.subdivision1Iso",
+				"friendlyName": "ipAddresses.ipMetadata.location.subdivision1Iso",
+				"aliases": [
+					"ipAddresses.ipMetadata.location.subdivision1Iso"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"__numVnics": {
+				"propertyType": "INT",
+				"canonicalName": "__numVnics",
+				"friendlyName": "Vnic Count",
+				"aliases": [
+					"Vnic Count",
+					"__numvnics",
+					"count vnic",
+					"count vnics",
+					"num vnic",
+					"num vnics",
+					"number vnic",
+					"number vnics",
+					"numvnics",
+					"vnic count",
+					"vnic counts",
+					"vnics count",
+					"vnics counts"
+				],
+				"helpText": "Number of vNics",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"addressGroups.modelKey": {
+				"propertyType": "STRING",
+				"canonicalName": "addressGroups.modelKey",
+				"friendlyName": "addressGroups.modelKey",
+				"aliases": [
+					"addressGroups.modelKey"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"ipAddresses.ipAddress": {
+				"propertyType": "STRING",
+				"canonicalName": "ipAddresses.ipAddress",
+				"friendlyName": "ip_addresses.ip_address",
+				"aliases": [
+					"ip_addresses.ip_address",
+					"ipaddresses.ipaddress"
+				],
+				"categories": [
+					"NETWORK"
+				],
+				"helpText": "vNic's IP address",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"ipAddresses.ipMetadata.location.subdivision1Name": {
+				"propertyType": "STRING",
+				"canonicalName": "ipAddresses.ipMetadata.location.subdivision1Name",
+				"friendlyName": "ipAddresses.ipMetadata.location.subdivision1Name",
+				"aliases": [
+					"ipAddresses.ipMetadata.location.subdivision1Name"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"appliance.name": {
+				"propertyType": "STRING",
+				"canonicalName": "appliance.name",
+				"friendlyName": "appliance.name",
+				"aliases": [
+					"appliance.name"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"networkGroups": {
+				"propertyType": "REFERENCE",
+				"canonicalName": "networkGroups",
+				"friendlyName": "Network Group",
+				"aliases": [
+					"Network Group",
+					"network groups",
+					"network grpup",
+					"network grpups",
+					"networkgroups"
+				],
+				"categories": [
+					"SECURITY"
+				],
+				"helpText": "Network Group of VM",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"outgoingFlow": {
+				"propertyType": "REFERENCE",
+				"canonicalName": "outgoingFlow",
+				"friendlyName": "outgoingFlow",
+				"aliases": [
+					"outgoingFlow"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": false
+			},
+			"securityTags": {
+				"propertyType": "REFERENCE",
+				"canonicalName": "securityTags",
+				"friendlyName": "Security Tag",
+				"aliases": [
+					"Security Tag",
+					"security tags",
+					"security_tags",
+					"securitytag",
+					"securitytags",
+					"st",
+					"sts"
+				],
+				"categories": [
+					"SECURITY"
+				],
+				"helpText": "Security Tags of VM",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"host.modelKey": {
+				"propertyType": "STRING",
+				"canonicalName": "host.modelKey",
+				"friendlyName": "host.modelKey",
+				"aliases": [
+					"host.modelKey",
+					"host.entity_id",
+					"host.modelkey"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"memoryAllocation.overheadLimit": {
+				"propertyType": "INT",
+				"canonicalName": "memoryAllocation.overheadLimit",
+				"friendlyName": "memoryAllocation.overheadLimit",
+				"aliases": [
+					"memoryAllocation.overheadLimit"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"defaultVRF": {
+				"propertyType": "REFERENCE",
+				"canonicalName": "defaultVRF",
+				"friendlyName": "Default Gateway Router",
+				"aliases": [
+					"Default Gateway Router",
+					"def gateway router",
+					"def gateway routers",
+					"def next hop router",
+					"def next hop routers",
+					"def nexthop router",
+					"def nexthop routers",
+					"default gateway router",
+					"default vrf",
+					"defaultvrf"
+				],
+				"categories": [
+					"NETWORK"
+				],
+				"helpText": "Default Gateway Router for VM",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"event": {
+				"propertyType": "CUSTOM_TYPE",
+				"canonicalName": "event",
+				"friendlyName": "Event",
+				"aliases": [
+					"Event",
+					"event type",
+					"events"
+				],
+				"helpText": "Event associated with VM.",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": false
+			},
+			"serverdataParent.numCpus": {
+				"propertyType": "INT",
+				"canonicalName": "serverdataParent.numCpus",
+				"friendlyName": "CPU Cores",
+				"aliases": [
+					"CPU Cores",
+					"count core",
+					"count cores",
+					"count cpu",
+					"count cpus",
+					"cpu core count",
+					"cpu cores",
+					"cpu cores count",
+					"cpu count",
+					"cpu_count",
+					"cpus count",
+					"num core",
+					"num cores",
+					"num cpu",
+					"num cpus",
+					"number core",
+					"number cores",
+					"number cpu",
+					"number cpus",
+					"numcpus",
+					"serverdataparent.numcpus"
+				],
+				"categories": [
+					"COMPUTE"
+				],
+				"helpText": "Number of vCPUs",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"defaultGatewayInterface": {
+				"propertyType": "REFERENCE",
+				"canonicalName": "defaultGatewayInterface",
+				"friendlyName": "Default Gateway Router Interface",
+				"aliases": [
+					"Default Gateway Router Interface",
+					"def gateway router interface",
+					"def gateway router interfaces",
+					"def next hop router interface",
+					"def next hop router interfaces",
+					"def nexthop router interface",
+					"def nexthop router interfaces",
+					"default gateway interface",
+					"default gateway router interface",
+					"defaultgatewayinterface"
+				],
+				"categories": [
+					"NETWORK"
+				],
+				"helpText": "Default Gateway Router Interface for VM",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"nsGroups.modelKey": {
+				"propertyType": "STRING",
+				"canonicalName": "nsGroups.modelKey",
+				"friendlyName": "nsGroups.modelKey",
+				"aliases": [
+					"nsGroups.modelKey"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"cluster.name": {
+				"propertyType": "STRING",
+				"canonicalName": "cluster.name",
+				"friendlyName": "cluster.name",
+				"aliases": [
+					"cluster.name"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"routeConfig.ipv6DefaultGateway": {
+				"propertyType": "STRING",
+				"canonicalName": "routeConfig.ipv6DefaultGateway",
+				"friendlyName": "routeConfig.ipv6DefaultGateway",
+				"aliases": [
+					"routeConfig.ipv6DefaultGateway"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"__numNetworks": {
+				"propertyType": "INT",
+				"canonicalName": "__numNetworks",
+				"friendlyName": "Network Count",
+				"aliases": [
+					"Network Count",
+					"__numnetworks",
+					"network count"
+				],
+				"helpText": "",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"addressRanges.modelKey": {
+				"propertyType": "STRING",
+				"canonicalName": "addressRanges.modelKey",
+				"friendlyName": "addressRanges.modelKey",
+				"aliases": [
+					"addressRanges.modelKey"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"ipSets": {
+				"propertyType": "REFERENCE",
+				"canonicalName": "ipSets",
+				"friendlyName": "IPSet",
+				"aliases": [
+					"IPSet",
+					"ip set",
+					"ip sets",
+					"ip_sets",
+					"ipset",
+					"ipsets"
+				],
+				"categories": [
+					"SECURITY"
+				],
+				"helpText": "IPSets of which this VM is a member",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"change": {
+				"propertyType": "CUSTOM_TYPE",
+				"canonicalName": "change",
+				"friendlyName": "Change",
+				"aliases": [
+					"Change",
+					"change event",
+					"change events",
+					"change type",
+					"changes"
+				],
+				"helpText": "Change events associated with VM",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": false
+			},
+			"instanceType": {
+				"propertyType": "STRING",
+				"canonicalName": "instanceType",
+				"friendlyName": "instance type",
+				"aliases": [
+					"instance type",
+					"instancetype"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"manager.modelKey": {
+				"propertyType": "STRING",
+				"canonicalName": "manager.modelKey",
+				"friendlyName": "manager.modelKey",
+				"aliases": [
+					"manager.modelKey",
+					"vcenter_manager.entity_id"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"ipAddresses.privateAddress": {
+				"propertyType": "BOOLEAN",
+				"canonicalName": "ipAddresses.privateAddress",
+				"friendlyName": "ipAddresses.privateAddress",
+				"aliases": [
+					"ipAddresses.privateAddress"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"datastores": {
+				"propertyType": "REFERENCE",
+				"canonicalName": "datastores",
+				"friendlyName": "Datastore",
+				"aliases": [
+					"Datastore",
+					"data store",
+					"data stores",
+					"datastore",
+					"datastores"
+				],
+				"categories": [
+					"STORAGE"
+				],
+				"helpText": "Datastores for this VM",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"datastores.name": {
+				"propertyType": "STRING",
+				"canonicalName": "datastores.name",
+				"friendlyName": "datastores.name",
+				"aliases": [
+					"datastores.name"
+				],
+				"helpText": "Datastores",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"ipAddresses.ipMetadata.location.continentName": {
+				"propertyType": "STRING",
+				"canonicalName": "ipAddresses.ipMetadata.location.continentName",
+				"friendlyName": "ipAddresses.ipMetadata.location.continentName",
+				"aliases": [
+					"ipAddresses.ipMetadata.location.continentName"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"natDevice.name": {
+				"propertyType": "STRING",
+				"canonicalName": "natDevice.name",
+				"friendlyName": "natDevice.name",
+				"aliases": [
+					"natDevice.name"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"modelKey": {
+				"propertyType": "STRING",
+				"canonicalName": "modelKey",
+				"friendlyName": "modelKey",
+				"aliases": [
+					"modelKey",
+					"entity_id",
+					"modelkey"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"incomingFlow": {
+				"propertyType": "REFERENCE",
+				"canonicalName": "incomingFlow",
+				"friendlyName": "incomingFlow",
+				"aliases": [
+					"incomingFlow"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": false
+			},
+			"ipAddresses.cidr": {
+				"propertyType": "STRING",
+				"canonicalName": "ipAddresses.cidr",
+				"friendlyName": "Cidr",
+				"aliases": [
+					"Cidr",
+					"ipaddresses.cidr"
+				],
+				"categories": [
+					"NETWORK"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"ipAddresses.ipMetadata.location.timeZone": {
+				"propertyType": "STRING",
+				"canonicalName": "ipAddresses.ipMetadata.location.timeZone",
+				"friendlyName": "ipAddresses.ipMetadata.location.timeZone",
+				"aliases": [
+					"ipAddresses.ipMetadata.location.timeZone"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"rootSnapshots.createTime": {
+				"propertyType": "INT",
+				"canonicalName": "rootSnapshots.createTime",
+				"friendlyName": "Snapshot Create Time",
+				"aliases": [
+					"Snapshot Create Time",
+					"rootsnapshots.createtime",
+					"snapshot create time",
+					"time snapshot created"
+				],
+				"categories": [
+					"STORAGE"
+				],
+				"helpText": "Snapshot Create Time of VM",
+				"facetSupported": true,
+				"sortSupported": false,
+				"projectionSupported": false
+			},
+			"numNetworkAddresses": {
+				"propertyType": "INT",
+				"canonicalName": "numNetworkAddresses",
+				"friendlyName": "Network Address Count",
+				"aliases": [
+					"Network Address Count",
+					"count ip",
+					"count ip address",
+					"count ip addresses",
+					"count ips",
+					"count network address",
+					"count network addresses",
+					"ip address count",
+					"ip address counts",
+					"ip addresses count",
+					"ip addresses counts",
+					"ip count",
+					"ip counts",
+					"ips count",
+					"ips counts",
+					"network address count",
+					"network address counts",
+					"network addresses count",
+					"network addresses counts",
+					"num ip",
+					"num ip address",
+					"num ip addresses",
+					"num ips",
+					"num network address",
+					"num network addresses",
+					"number ip",
+					"number ip address",
+					"number ip addresses",
+					"number ips",
+					"number network address",
+					"number network addresses",
+					"numnetworkaddresses"
+				],
+				"categories": [
+					"NETWORK"
+				],
+				"helpText": "Number of network addresses",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"serverdataParent.oSHostName": {
+				"propertyType": "STRING",
+				"canonicalName": "serverdataParent.oSHostName",
+				"friendlyName": "Fqdn",
+				"aliases": [
+					"Fqdn",
+					"serverdataparent.oshostname"
+				],
+				"categories": [
+					"COMPUTE",
+					"GENERAL"
+				],
+				"helpText": "OS Host Name",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"srcRuleSets.subType": {
+				"propertyType": "STRING",
+				"canonicalName": "srcRuleSets.subType",
+				"friendlyName": "srcRuleSets.subType",
+				"aliases": [
+					"srcRuleSets.subType"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"addresses": {
+				"propertyType": "REFERENCE",
+				"canonicalName": "addresses",
+				"friendlyName": "Address",
+				"aliases": [
+					"Address",
+					"addresses",
+					"addresss"
+				],
+				"categories": [
+					"SECURITY"
+				],
+				"helpText": "All the Addresses which are part of the VM?",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"ipAddresses.ipMetadata.location.countryName": {
+				"propertyType": "STRING",
+				"canonicalName": "ipAddresses.ipMetadata.location.countryName",
+				"friendlyName": "ipAddresses.ipMetadata.location.countryName",
+				"aliases": [
+					"ipAddresses.ipMetadata.location.countryName"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"nsxManager.name": {
+				"propertyType": "STRING",
+				"canonicalName": "nsxManager.name",
+				"friendlyName": "nsxManager.name",
+				"aliases": [
+					"nsxManager.name",
+					"nsx_manager.name",
+					"nsxmanager.name"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"datacenter.modelKey": {
+				"propertyType": "STRING",
+				"canonicalName": "datacenter.modelKey",
+				"friendlyName": "datacenter.modelKey",
+				"aliases": [
+					"datacenter.modelKey",
+					"datacenter.entity_id",
+					"datacenter.modelkey"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"serverdataParent.deviceInfo.vendor": {
+				"propertyType": "STRING",
+				"canonicalName": "serverdataParent.deviceInfo.vendor",
+				"friendlyName": "Vendor",
+				"aliases": [
+					"Vendor",
+					"serverdataparent.deviceinfo.vendor",
+					"vendor"
+				],
+				"categories": [
+					"COMPUTE",
+					"GENERAL"
+				],
+				"helpText": "Vendor of VM",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"planScopeKey": {
+				"propertyType": "STRING",
+				"canonicalName": "planScopeKey",
+				"friendlyName": "planScopeKey",
+				"aliases": [
+					"planScopeKey"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": false
+			},
+			"firewallRule": {
+				"propertyType": "STRING",
+				"canonicalName": "firewallRule",
+				"friendlyName": "Firewall Rule",
+				"aliases": [
+					"Firewall Rule",
+					"firewall rules",
+					"firewallrule",
+					"firewalls rule",
+					"firewalls rules",
+					"policy",
+					"policys",
+					"rule",
+					"rules"
+				],
+				"categories": [
+					"SECURITY"
+				],
+				"helpText": "Firewall Rule for VM",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": false
+			},
+			"destRuleSets.firewall": {
+				"propertyType": "REFERENCE",
+				"canonicalName": "destRuleSets.firewall",
+				"friendlyName": "destination_firewall_rules.firewall",
+				"aliases": [
+					"destination_firewall_rules.firewall",
+					"destrulesets.firewall"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"ipAddresses.start": {
+				"propertyType": "INT",
+				"canonicalName": "ipAddresses.start",
+				"friendlyName": "ipAddresses.start",
+				"aliases": [
+					"ipAddresses.start"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"availabilityZone": {
+				"propertyType": "REFERENCE",
+				"canonicalName": "availabilityZone",
+				"friendlyName": "availabilityZone",
+				"aliases": [
+					"availabilityZone"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"natDomain.modelKey": {
+				"propertyType": "STRING",
+				"canonicalName": "natDomain.modelKey",
+				"friendlyName": "natDomain.modelKey",
+				"aliases": [
+					"natDomain.modelKey"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"__numNsGroups": {
+				"propertyType": "INT",
+				"canonicalName": "__numNsGroups",
+				"friendlyName": "NSGroup Count",
+				"aliases": [
+					"NSGroup Count",
+					"__numnsgroups",
+					"nsgroup count"
+				],
+				"helpText": "",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"nsxtIPSets": {
+				"propertyType": "REFERENCE",
+				"canonicalName": "nsxtIPSets",
+				"friendlyName": "NSX-T IPSet",
+				"aliases": [
+					"NSX-T IPSet",
+					"nsxt ipsets",
+					"nsxtipset",
+					"nsxtipsets"
+				],
+				"categories": [
+					"SECURITY"
+				],
+				"helpText": "NSX-T IPSets of which this VM is a member",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"incomingFlow.port": {
+				"propertyType": "RANGE",
+				"canonicalName": "incomingFlow.port",
+				"friendlyName": "Incoming Port",
+				"aliases": [
+					"Incoming Port",
+					"incoming flow port",
+					"incoming flow ports",
+					"incoming port",
+					"incoming ports",
+					"incomingflow.port"
+				],
+				"helpText": "Incoming Port of VM",
+				"facetSupported": true,
+				"sortSupported": false,
+				"projectionSupported": false
+			},
+			"host": {
+				"propertyType": "REFERENCE",
+				"canonicalName": "host",
+				"friendlyName": "Host",
+				"aliases": [
+					"Host",
+					"hostname"
+				],
+				"categories": [
+					"COMPUTE"
+				],
+				"helpText": "Host on which VM is installed",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"__numAddressGroups": {
+				"propertyType": "INT",
+				"canonicalName": "__numAddressGroups",
+				"friendlyName": "Address Group Count",
+				"aliases": [
+					"Address Group Count",
+					"__numaddressgroups",
+					"address group count"
+				],
+				"helpText": "",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"host.name": {
+				"propertyType": "STRING",
+				"canonicalName": "host.name",
+				"friendlyName": "host.name",
+				"aliases": [
+					"host.name"
+				],
+				"helpText": "Hypervisor",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"lbServiceNodes": {
+				"propertyType": "REFERENCE",
+				"canonicalName": "lbServiceNodes",
+				"friendlyName": "Service Nodes",
+				"aliases": [
+					"Service Nodes",
+					"lb service nodes",
+					"lbservicenodes",
+					"nodes",
+					"service nodes"
+				],
+				"categories": [
+					"NETWORK"
+				],
+				"helpText": "Load Balancer Service Node that ths VM backs.",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"routeConfig.routeTable.ipv6routes.prefixLength": {
+				"propertyType": "INT",
+				"canonicalName": "routeConfig.routeTable.ipv6routes.prefixLength",
+				"friendlyName": "routeConfig.routeTable.ipv6routes.prefixLength",
+				"aliases": [
+					"routeConfig.routeTable.ipv6routes.prefixLength"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"serverdataParent.memoryMB": {
+				"propertyType": "INT",
+				"canonicalName": "serverdataParent.memoryMB",
+				"friendlyName": "Memory",
+				"aliases": [
+					"Memory",
+					"mem",
+					"memory",
+					"memorymb",
+					"serverdataparent.memorymb"
+				],
+				"categories": [
+					"COMPUTE"
+				],
+				"helpText": "Memory configured for the VM",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"destInversionRuleSets.rules": {
+				"propertyType": "REFERENCE",
+				"canonicalName": "destInversionRuleSets.rules",
+				"friendlyName": "destination_inversion_rules.rules",
+				"aliases": [
+					"destination_inversion_rules.rules",
+					"destinversionrulesets.rules"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"routeConfig.routeTable.ipv6routes.network": {
+				"propertyType": "STRING",
+				"canonicalName": "routeConfig.routeTable.ipv6routes.network",
+				"friendlyName": "routeConfig.routeTable.ipv6routes.network",
+				"aliases": [
+					"routeConfig.routeTable.ipv6routes.network"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"addressGroups": {
+				"propertyType": "REFERENCE",
+				"canonicalName": "addressGroups",
+				"friendlyName": "Address Group",
+				"aliases": [
+					"Address Group",
+					"address groups",
+					"addressgroup",
+					"addressgroups",
+					"ag",
+					"ags"
+				],
+				"categories": [
+					"SECURITY"
+				],
+				"helpText": "All the Address Groups which are part of the VM?",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"layer2Networks.name": {
+				"propertyType": "STRING",
+				"canonicalName": "layer2Networks.name",
+				"friendlyName": "layer2Networks.name",
+				"aliases": [
+					"layer2Networks.name",
+					"layer2_networks.name",
+					"layer2networks.name"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"lbServiceNodes.name": {
+				"propertyType": "STRING",
+				"canonicalName": "lbServiceNodes.name",
+				"friendlyName": "lbServiceNodes.name",
+				"aliases": [
+					"lbServiceNodes.name"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"roles.modelKey": {
+				"propertyType": "STRING",
+				"canonicalName": "roles.modelKey",
+				"friendlyName": "roles.modelKey",
+				"aliases": [
+					"roles.modelKey"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"cpuAllocation.shares": {
+				"propertyType": "INT",
+				"canonicalName": "cpuAllocation.shares",
+				"friendlyName": "cpuAllocation.shares",
+				"aliases": [
+					"cpuAllocation.shares"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"srcRuleSets.rules.modelKey": {
+				"propertyType": "STRING",
+				"canonicalName": "srcRuleSets.rules.modelKey",
+				"friendlyName": "srcRuleSets.rules.modelKey",
+				"aliases": [
+					"srcRuleSets.rules.modelKey",
+					"source_firewall_rules.rules.entity_id",
+					"srcrulesets.rules.modelkey"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"layer3Domain": {
+				"propertyType": "REFERENCE",
+				"canonicalName": "layer3Domain",
+				"friendlyName": "layer3Domain",
+				"aliases": [
+					"layer3Domain"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"routeConfig.routeTable.ipRoutes.interfaceName": {
+				"propertyType": "STRING",
+				"canonicalName": "routeConfig.routeTable.ipRoutes.interfaceName",
+				"friendlyName": "routeConfig.routeTable.ipRoutes.interfaceName",
+				"aliases": [
+					"routeConfig.routeTable.ipRoutes.interfaceName"
+				],
+				"helpText": "VM routes interface name",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"policyGroup": {
+				"propertyType": "REFERENCE",
+				"canonicalName": "policyGroup",
+				"friendlyName": "Policy Group",
+				"aliases": [
+					"Policy Group",
+					"policygroup"
+				],
+				"helpText": "Policy Group of VM",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": false
+			},
+			"ipAddresses.networkAddress": {
+				"propertyType": "STRING",
+				"canonicalName": "ipAddresses.networkAddress",
+				"friendlyName": "Network Address",
+				"aliases": [
+					"Network Address",
+					"ip_addresses.network_address",
+					"ipaddresses.networkaddress",
+					"network address",
+					"network addresses"
+				],
+				"categories": [
+					"NETWORK"
+				],
+				"helpText": "Network Addresses",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"resourcePool.modelKey": {
+				"propertyType": "STRING",
+				"canonicalName": "resourcePool.modelKey",
+				"friendlyName": "resourcePool.modelKey",
+				"aliases": [
+					"resourcePool.modelKey",
+					"resource_pool.entity_id",
+					"resourcepool.modelkey"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"networkGroups.name": {
+				"propertyType": "STRING",
+				"canonicalName": "networkGroups.name",
+				"friendlyName": "networkGroups.name",
+				"aliases": [
+					"networkGroups.name"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"__numDefaultVRF": {
+				"propertyType": "INT",
+				"canonicalName": "__numDefaultVRF",
+				"friendlyName": "Default Gateway Router Count",
+				"aliases": [
+					"Default Gateway Router Count",
+					"__numdefaultvrf",
+					"default gateway router count"
+				],
+				"helpText": "",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"srcRuleSets.firewall.modelKey": {
+				"propertyType": "STRING",
+				"canonicalName": "srcRuleSets.firewall.modelKey",
+				"friendlyName": "srcRuleSets.firewall.modelKey",
+				"aliases": [
+					"srcRuleSets.firewall.modelKey",
+					"source_firewall_rules.firewall.entity_id",
+					"srcrulesets.firewall.modelkey"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"numSnapshots": {
+				"propertyType": "INT",
+				"canonicalName": "numSnapshots",
+				"friendlyName": "Snapshot Count",
+				"aliases": [
+					"Snapshot Count",
+					"count snapshot",
+					"count snapshots",
+					"num snapshot",
+					"num snapshots",
+					"number snapshot",
+					"number snapshots",
+					"numsnapshots",
+					"snapshot count",
+					"snapshot counts",
+					"snapshots count",
+					"snapshots counts"
+				],
+				"categories": [
+					"STORAGE"
+				],
+				"helpText": "Number of Snapshots of VM",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"__numCheckpointHost": {
+				"propertyType": "INT",
+				"canonicalName": "__numCheckpointHost",
+				"friendlyName": "checkpoint host Count",
+				"aliases": [
+					"checkpoint host Count",
+					"__numcheckpointhost",
+					"checkpoint host count"
+				],
+				"helpText": "",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"ipAddresses": {
+				"propertyType": "IP",
+				"canonicalName": "ipAddresses",
+				"friendlyName": "IP Address",
+				"aliases": [
+					"IP Address",
+					"ip",
+					"ip address",
+					"ip addresses",
+					"ip_addresses",
+					"ipaddress",
+					"ipaddresses"
+				],
+				"categories": [
+					"NETWORK"
+				],
+				"helpText": "IP addresses",
+				"facetSupported": false,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"destRuleSets.firewall.modelKey": {
+				"propertyType": "STRING",
+				"canonicalName": "destRuleSets.firewall.modelKey",
+				"friendlyName": "destRuleSets.firewall.modelKey",
+				"aliases": [
+					"destRuleSets.firewall.modelKey",
+					"destination_firewall_rules.firewall.entity_id",
+					"destrulesets.firewall.modelkey"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"securityTags.modelKey": {
+				"propertyType": "STRING",
+				"canonicalName": "securityTags.modelKey",
+				"friendlyName": "securityTags.modelKey",
+				"aliases": [
+					"securityTags.modelKey",
+					"security_tags.entity_id",
+					"securitytags.modelkey"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"tagKeyVal": {
+				"propertyType": "STRING",
+				"canonicalName": "tagKeyVal",
+				"friendlyName": "Tag",
+				"aliases": [
+					"Tag",
+					"tag key val",
+					"tagkeyval"
+				],
+				"categories": [
+					"GENERAL"
+				],
+				"helpText": "Tag assigned to VM",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"srcInversionRuleSets.firewall.name": {
+				"propertyType": "STRING",
+				"canonicalName": "srcInversionRuleSets.firewall.name",
+				"friendlyName": "srcInversionRuleSets.firewall.name",
+				"aliases": [
+					"srcInversionRuleSets.firewall.name",
+					"source_inversion_rules.firewall.name",
+					"srcinversionrulesets.firewall.name"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"__numHvs": {
+				"propertyType": "INT",
+				"canonicalName": "__numHvs",
+				"friendlyName": "Standard Switch Count",
+				"aliases": [
+					"Standard Switch Count",
+					"__numhvs",
+					"standard switch count"
+				],
+				"helpText": "",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"natDomain.name": {
+				"propertyType": "STRING",
+				"canonicalName": "natDomain.name",
+				"friendlyName": "natDomain.name",
+				"aliases": [
+					"natDomain.name"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"currentSnapshot.name": {
+				"propertyType": "STRING",
+				"canonicalName": "currentSnapshot.name",
+				"friendlyName": "currentSnapshot.name",
+				"aliases": [
+					"currentSnapshot.name"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"ipAddresses.ipMetadata.location.countryIso": {
+				"propertyType": "STRING",
+				"canonicalName": "ipAddresses.ipMetadata.location.countryIso",
+				"friendlyName": "ipAddresses.ipMetadata.location.countryIso",
+				"aliases": [
+					"ipAddresses.ipMetadata.location.countryIso"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"cpuAllocation.limit": {
+				"propertyType": "INT",
+				"canonicalName": "cpuAllocation.limit",
+				"friendlyName": "CPU Allocation Limit",
+				"aliases": [
+					"CPU Allocation Limit",
+					"cpuallocation limit",
+					"cpuallocation.limit",
+					"cpuallocationlimit"
+				],
+				"categories": [
+					"GENERAL"
+				],
+				"helpText": "CPU Allocation Limit of VM",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"availabilityZone.modelKey": {
+				"propertyType": "STRING",
+				"canonicalName": "availabilityZone.modelKey",
+				"friendlyName": "availabilityZone.modelKey",
+				"aliases": [
+					"availabilityZone.modelKey"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"tier": {
+				"propertyType": "REFERENCE",
+				"canonicalName": "tier",
+				"friendlyName": "Tier",
+				"aliases": [
+					"Tier"
+				],
+				"helpText": "Application Tier of which VM is a member",
+				"facetSupported": true,
+				"sortSupported": false,
+				"projectionSupported": false
+			},
+			"routeConfig.routeTable.ipRoutes.nextHop": {
+				"propertyType": "STRING",
+				"canonicalName": "routeConfig.routeTable.ipRoutes.nextHop",
+				"friendlyName": "routeConfig.routeTable.ipRoutes.nextHop",
+				"aliases": [
+					"routeConfig.routeTable.ipRoutes.nextHop"
+				],
+				"helpText": "List of the VMs to be routed in next hops",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"deviceInfo.model": {
+				"propertyType": "STRING",
+				"canonicalName": "deviceInfo.model",
+				"friendlyName": "deviceInfo.model",
+				"aliases": [
+					"deviceInfo.model"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"__numVirtualDisks": {
+				"propertyType": "INT",
+				"canonicalName": "__numVirtualDisks",
+				"friendlyName": "VirtualDisk Count",
+				"aliases": [
+					"VirtualDisk Count",
+					"__numvirtualdisks",
+					"count virtual disk",
+					"count virtual disks",
+					"num virtual disk",
+					"num virtual disks",
+					"number virtual disk",
+					"number virtual disks",
+					"numvirtualdisks",
+					"virtual disks count",
+					"virtualdisk count",
+					"virtualdisks count"
+				],
+				"categories": [
+					"STORAGE"
+				],
+				"helpText": "",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"vnics.modelKey": {
+				"propertyType": "STRING",
+				"canonicalName": "vnics.modelKey",
+				"friendlyName": "vnics.modelKey",
+				"aliases": [
+					"vnics.modelKey",
+					"vnics.entity_id",
+					"vnics.modelkey"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"serverdataParent.runtime.powerState": {
+				"propertyType": "STRING",
+				"canonicalName": "serverdataParent.runtime.powerState",
+				"friendlyName": "Power State",
+				"aliases": [
+					"Power State",
+					"powerstate",
+					"serverdataparent.runtime.powerstate"
+				],
+				"categories": [
+					"COMPUTE",
+					"GENERAL"
+				],
+				"helpText": "VM power state",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"layer3Domain.name": {
+				"propertyType": "STRING",
+				"canonicalName": "layer3Domain.name",
+				"friendlyName": "layer3Domain.name",
+				"aliases": [
+					"layer3Domain.name"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"policyGroups": {
+				"propertyType": "REFERENCE",
+				"canonicalName": "policyGroups",
+				"friendlyName": "NSX Policy Group",
+				"aliases": [
+					"NSX Policy Group",
+					"nsx policy groups",
+					"policy groups",
+					"policy manager group",
+					"policy manager groups",
+					"policygroups"
+				],
+				"categories": [
+					"SECURITY"
+				],
+				"helpText": "NSX Policy Group of which VM is a member",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"ipSets.name": {
+				"propertyType": "STRING",
+				"canonicalName": "ipSets.name",
+				"friendlyName": "ipSets.name",
+				"aliases": [
+					"ipSets.name",
+					"ip_sets.name",
+					"ipsets.name"
+				],
+				"helpText": "IPSets name of which this VM is a member",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"securityTags.name": {
+				"propertyType": "STRING",
+				"canonicalName": "securityTags.name",
+				"friendlyName": "securityTags.name",
+				"aliases": [
+					"securityTags.name",
+					"security_tags.name",
+					"securitytags.name"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"datastores.modelKey": {
+				"propertyType": "STRING",
+				"canonicalName": "datastores.modelKey",
+				"friendlyName": "datastores.modelKey",
+				"aliases": [
+					"datastores.modelKey",
+					"datastores.entity_id",
+					"datastores.modelkey"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"nsGroups.name": {
+				"propertyType": "STRING",
+				"canonicalName": "nsGroups.name",
+				"friendlyName": "nsGroups.name",
+				"aliases": [
+					"nsGroups.name"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"vnics.name": {
+				"propertyType": "STRING",
+				"canonicalName": "vnics.name",
+				"friendlyName": "vnics.name",
+				"aliases": [
+					"vnics.name"
+				],
+				"helpText": "vNic's name",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"dnsConfig.staticIpAddress": {
+				"propertyType": "BOOLEAN",
+				"canonicalName": "dnsConfig.staticIpAddress",
+				"friendlyName": "Static IP",
+				"aliases": [
+					"Static IP",
+					"dnsconfig.staticipaddress",
+					"static ip",
+					"static ip address"
+				],
+				"categories": [
+					"NETWORK"
+				],
+				"helpText": "DNS static IP address",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"srcInversionRuleSets.rules.name": {
+				"propertyType": "STRING",
+				"canonicalName": "srcInversionRuleSets.rules.name",
+				"friendlyName": "srcInversionRuleSets.rules.name",
+				"aliases": [
+					"srcInversionRuleSets.rules.name",
+					"source_inversion_rules.rules.name",
+					"srcinversionrulesets.rules.name"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"groups": {
+				"propertyType": "REFERENCE",
+				"canonicalName": "groups",
+				"friendlyName": "Folder",
+				"aliases": [
+					"Folder",
+					"folders",
+					"groups"
+				],
+				"categories": [
+					"COMPUTE"
+				],
+				"helpText": "Groups of which VM is part.",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"ipAddresses.source": {
+				"propertyType": "STRING",
+				"canonicalName": "ipAddresses.source",
+				"friendlyName": "ipAddresses.source",
+				"aliases": [
+					"ipAddresses.source"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"layer2Networks.modelKey": {
+				"propertyType": "STRING",
+				"canonicalName": "layer2Networks.modelKey",
+				"friendlyName": "layer2Networks.modelKey",
+				"aliases": [
+					"layer2Networks.modelKey",
+					"layer2_networks.entity_id",
+					"layer2networks.modelkey"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"lbServiceNodes.modelKey": {
+				"propertyType": "STRING",
+				"canonicalName": "lbServiceNodes.modelKey",
+				"friendlyName": "lbServiceNodes.modelKey",
+				"aliases": [
+					"lbServiceNodes.modelKey"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"applicationProfiles.name": {
+				"propertyType": "STRING",
+				"canonicalName": "applicationProfiles.name",
+				"friendlyName": "applicationProfiles.name",
+				"aliases": [
+					"applicationProfiles.name"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"cluster.modelKey": {
+				"propertyType": "STRING",
+				"canonicalName": "cluster.modelKey",
+				"friendlyName": "cluster.modelKey",
+				"aliases": [
+					"cluster.modelKey",
+					"cluster.entity_id",
+					"cluster.modelkey"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"destInversionRuleSets.rules.modelKey": {
+				"propertyType": "STRING",
+				"canonicalName": "destInversionRuleSets.rules.modelKey",
+				"friendlyName": "destInversionRuleSets.rules.modelKey",
+				"aliases": [
+					"destInversionRuleSets.rules.modelKey",
+					"destination_inversion_rules.rules.entity_id",
+					"destinversionrulesets.rules.modelkey"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"vlans.start": {
+				"propertyType": "INT",
+				"canonicalName": "vlans.start",
+				"friendlyName": "Vlan",
+				"aliases": [
+					"Vlan",
+					"vlanid",
+					"vlans.begin",
+					"vlans.start"
+				],
+				"categories": [
+					"NETWORK"
+				],
+				"helpText": "Start Vlan ID of the VMSecurity Group of which VM is member",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"natDeviceDeprecated.modelKey": {
+				"propertyType": "STRING",
+				"canonicalName": "natDeviceDeprecated.modelKey",
+				"friendlyName": "natDeviceDeprecated.modelKey",
+				"aliases": [
+					"natDeviceDeprecated.modelKey"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"application": {
+				"propertyType": "REFERENCE",
+				"canonicalName": "application",
+				"friendlyName": "Application",
+				"aliases": [
+					"Application"
+				],
+				"helpText": "Application of which VM is a member",
+				"facetSupported": true,
+				"sortSupported": false,
+				"projectionSupported": false
+			},
+			"ipEntities.modelKey": {
+				"propertyType": "STRING",
+				"canonicalName": "ipEntities.modelKey",
+				"friendlyName": "ipEntities.modelKey",
+				"aliases": [
+					"ipEntities.modelKey"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"policyGroups.name": {
+				"propertyType": "STRING",
+				"canonicalName": "policyGroups.name",
+				"friendlyName": "policyGroups.name",
+				"aliases": [
+					"policyGroups.name"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"cloudNetwork.name": {
+				"propertyType": "STRING",
+				"canonicalName": "cloudNetwork.name",
+				"friendlyName": "cloudNetwork.name",
+				"aliases": [
+					"cloudNetwork.name"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"srcInversionRuleSets.subType": {
+				"propertyType": "STRING",
+				"canonicalName": "srcInversionRuleSets.subType",
+				"friendlyName": "srcInversionRuleSets.subType",
+				"aliases": [
+					"srcInversionRuleSets.subType"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"deviceInfo.version": {
+				"propertyType": "STRING",
+				"canonicalName": "deviceInfo.version",
+				"friendlyName": "deviceInfo.version",
+				"aliases": [
+					"deviceInfo.version"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"ipAddresses.netMask": {
+				"propertyType": "STRING",
+				"canonicalName": "ipAddresses.netMask",
+				"friendlyName": "Netmask",
+				"aliases": [
+					"Netmask",
+					"ip_addresses.netmask",
+					"ipaddresses.netmask",
+					"mask",
+					"net mask",
+					"netmask"
+				],
+				"categories": [
+					"NETWORK"
+				],
+				"helpText": "vNics NetMask",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			},
+			"destRuleSets.subType": {
+				"propertyType": "STRING",
+				"canonicalName": "destRuleSets.subType",
+				"friendlyName": "destRuleSets.subType",
+				"aliases": [
+					"destRuleSets.subType"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"rootSnapshots.name": {
+				"propertyType": "STRING",
+				"canonicalName": "rootSnapshots.name",
+				"friendlyName": "rootSnapshots.name",
+				"aliases": [
+					"rootSnapshots.name"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"srcInversionRuleSets.rules.modelKey": {
+				"propertyType": "STRING",
+				"canonicalName": "srcInversionRuleSets.rules.modelKey",
+				"friendlyName": "srcInversionRuleSets.rules.modelKey",
+				"aliases": [
+					"srcInversionRuleSets.rules.modelKey",
+					"source_inversion_rules.rules.entity_id",
+					"srcinversionrulesets.rules.modelkey"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"datacenter.name": {
+				"propertyType": "STRING",
+				"canonicalName": "datacenter.name",
+				"friendlyName": "datacenter.name",
+				"aliases": [
+					"datacenter.name"
+				],
+				"helpText": "",
+				"facetSupported": false,
+				"sortSupported": false,
+				"projectionSupported": true
+			},
+			"outgoingFlow.port": {
+				"propertyType": "RANGE",
+				"canonicalName": "outgoingFlow.port",
+				"friendlyName": "Outgoing Port",
+				"aliases": [
+					"Outgoing Port",
+					"outgoing flow port",
+					"outgoing flow ports",
+					"outgoing port",
+					"outgoing ports",
+					"outgoingflow.port"
+				],
+				"helpText": "Outgoing Port of VM",
+				"facetSupported": true,
+				"sortSupported": false,
+				"projectionSupported": false
+			},
+			"__numSecurityGroups": {
+				"propertyType": "INT",
+				"canonicalName": "__numSecurityGroups",
+				"friendlyName": "Security Group Count",
+				"aliases": [
+					"Security Group Count",
+					"__numsecuritygroups",
+					"count security group",
+					"count security groups",
+					"count sg",
+					"count sgs",
+					"num security group",
+					"num security groups",
+					"num sg",
+					"num sgs",
+					"number security group",
+					"number security groups",
+					"number sg",
+					"number sgs",
+					"security group count",
+					"security groups count",
+					"sg count",
+					"sgs count"
+				],
+				"helpText": "Number of Security Groups of which VM is a member",
+				"facetSupported": true,
+				"sortSupported": true,
+				"projectionSupported": true
+			}
+		}
+	}
+}

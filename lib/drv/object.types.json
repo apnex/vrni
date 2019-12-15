@@ -1,0 +1,7413 @@
+{
+	"all": [
+		{
+			"objectType": 1,
+			"displayName": "VMware VM",
+			"helpText": "Virtual Machines",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"PCI_ENABLED",
+				"PLAN_ENABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 11,
+			"displayName": "Vxlan",
+			"helpText": "VXLANs",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"PCI_ENABLED",
+				"PLAN_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 4,
+			"displayName": "Host",
+			"helpText": "Hosts",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 515,
+			"displayName": "Flow",
+			"helpText": "Flows",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"PLAN_ENABLED",
+				"SKIP_INDEX_ON_NAME"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 12,
+			"displayName": "Vlan",
+			"helpText": "Vlans",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"PLAN_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 27,
+			"displayName": "ROUTER",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 29,
+			"displayName": "Firewall",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": true,
+			"childTypes": [
+				39,
+				160,
+				608,
+				1705,
+				305,
+				754,
+				804,
+				942,
+				723,
+				754
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 39,
+			"displayName": "NSX-V Firewall",
+			"helpText": "Distributed Firewalls",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 160,
+			"displayName": "Palo Alto firewall",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 608,
+			"displayName": "AWS Firewall",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 1705,
+			"displayName": "Azure Network Security Group",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 305,
+			"displayName": "Check Point Policy Package",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 754,
+			"displayName": "Fortinet Policy Package",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 804,
+			"displayName": "NSX-T Firewall",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 942,
+			"displayName": "NSX Policy Firewall",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 723,
+			"displayName": "ASA Firewall",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 21,
+			"displayName": "Switch",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": true,
+			"childTypes": [
+				2,
+				37,
+				14,
+				69,
+				72,
+				256
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 2,
+			"displayName": "Distributed Virtual Switch",
+			"helpText": "Distributed Virtual Switches",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 37,
+			"displayName": "Cisco N2K Device",
+			"helpText": "Cisco Fex Devices",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 14,
+			"displayName": "Cisco N5K Device",
+			"helpText": "Cisco Nexus Devices",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 69,
+			"displayName": "Cisco L3 Switch",
+			"helpText": "Cisco L3 Switch Devices",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 72,
+			"displayName": "Cisco UCS Fabric Interconnect",
+			"helpText": "Cisco UCS Fabric Interconnect Devices",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 256,
+			"displayName": "aci switch",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 6,
+			"displayName": "EDGE_ROUTER",
+			"helpText": "Edge Routers",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 66,
+			"displayName": "Cluster",
+			"helpText": "Clusters",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"PCI_ENABLED",
+				"PLAN_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 77,
+			"displayName": "Cisco UCS Chassis",
+			"helpText": "Cisco UCS Chassis",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 19,
+			"displayName": "Switch Port",
+			"helpText": "Switch Ports",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 90,
+			"displayName": "Port Channel",
+			"helpText": "Port Channel",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 16,
+			"displayName": "Router Interface",
+			"helpText": "Router Interface",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 34,
+			"displayName": "Object",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": true,
+			"childTypes": [
+				1,
+				4,
+				105,
+				28,
+				11,
+				12,
+				13,
+				96,
+				45,
+				66,
+				2,
+				3,
+				5,
+				37,
+				14,
+				69,
+				75,
+				147,
+				72,
+				77,
+				150,
+				76,
+				148,
+				80,
+				79,
+				81,
+				82,
+				99,
+				83,
+				84,
+				87,
+				94,
+				161,
+				158,
+				159,
+				160,
+				156,
+				157,
+				168,
+				175,
+				85,
+				86,
+				39,
+				7,
+				800,
+				8,
+				205,
+				149,
+				155,
+				707,
+				206,
+				540,
+				16,
+				97,
+				17,
+				19,
+				90,
+				95,
+				62,
+				63,
+				515,
+				110,
+				112,
+				113,
+				114,
+				542,
+				144,
+				545,
+				544,
+				15,
+				10401,
+				10403,
+				146,
+				561,
+				562,
+				563,
+				170,
+				176,
+				173,
+				172,
+				171,
+				60,
+				1702,
+				1710,
+				1701,
+				1703,
+				1704,
+				1705,
+				1706,
+				1707,
+				1708,
+				1709,
+				1711,
+				1712,
+				966,
+				1713,
+				601,
+				602,
+				603,
+				604,
+				607,
+				612,
+				608,
+				609,
+				610,
+				611,
+				614,
+				613,
+				618,
+				619,
+				620,
+				616,
+				617,
+				615,
+				625,
+				626,
+				627,
+				628,
+				629,
+				621,
+				622,
+				623,
+				940,
+				213,
+				214,
+				217,
+				212,
+				35220,
+				35216,
+				194,
+				35217,
+				306,
+				303,
+				304,
+				305,
+				300,
+				301,
+				299,
+				302,
+				313,
+				325,
+				326,
+				305,
+				316,
+				314,
+				323,
+				801,
+				802,
+				191,
+				805,
+				944,
+				804,
+				929,
+				942,
+				943,
+				941,
+				858,
+				854,
+				950,
+				935,
+				958,
+				807,
+				808,
+				806,
+				803,
+				825,
+				826,
+				827,
+				841,
+				828,
+				843,
+				809,
+				945,
+				946,
+				712,
+				711,
+				713,
+				714,
+				715,
+				716,
+				723,
+				10002,
+				1503,
+				1505,
+				1504,
+				1502,
+				1501,
+				1508,
+				577,
+				836,
+				837,
+				839,
+				872,
+				838,
+				745,
+				747,
+				749,
+				752,
+				754,
+				756,
+				758,
+				760,
+				762,
+				764,
+				766,
+				768,
+				770,
+				772,
+				774,
+				776,
+				778,
+				782,
+				780,
+				1201,
+				1202,
+				1203,
+				1204,
+				1161,
+				1236,
+				1235,
+				1234,
+				1205,
+				1206,
+				1207,
+				1210,
+				1211,
+				1212,
+				1213,
+				1214,
+				1272,
+				1273,
+				1274,
+				1275,
+				1240,
+				1241,
+				5100,
+				5200,
+				902,
+				903,
+				905,
+				927,
+				906,
+				907,
+				908,
+				909,
+				910,
+				912,
+				914,
+				915,
+				916,
+				966,
+				919,
+				921,
+				923,
+				904,
+				1500,
+				911,
+				928,
+				952,
+				960,
+				963,
+				1550,
+				964,
+				744,
+				962,
+				541
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 105,
+			"displayName": "Datacenter",
+			"helpText": "Data center in VC.",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"PCI_ENABLED",
+				"PLAN_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 28,
+			"displayName": "L3 Network",
+			"helpText": "L3 Networks",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 13,
+			"displayName": "Native L2 Network",
+			"helpText": "Native L2 Networks",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 96,
+			"displayName": "VRF",
+			"helpText": "VRFs",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 45,
+			"displayName": "DISTRIBUTED_ROUTER",
+			"helpText": "Distributed Routers",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 3,
+			"displayName": "Distributed Virtual Portgroup",
+			"helpText": "Distributed Virtual Portgroups",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 5,
+			"displayName": "Standard Portgroup",
+			"helpText": "Standard Portgroups",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 75,
+			"displayName": "Cisco UCS FEX",
+			"helpText": "Cisco UCS FEX Devices",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 147,
+			"displayName": "HP Interconnect",
+			"helpText": "HP Interconnect",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 150,
+			"displayName": "HP Chassis",
+			"helpText": "HP Chassis",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 76,
+			"displayName": "Cisco UCS Blade",
+			"helpText": "Cisco UCS Server Devices",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 148,
+			"displayName": "HP Blade",
+			"helpText": "HP Blade Server",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 80,
+			"displayName": "Datastore",
+			"helpText": "Datastores",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 79,
+			"displayName": "Resource Pool",
+			"helpText": "Resource Pools",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"PCI_ENABLED",
+				"PLAN_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 81,
+			"displayName": "Folder",
+			"helpText": "Groups",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"PLAN_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 82,
+			"displayName": "NSX-V Security Group",
+			"helpText": "Security Groups",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"PCI_ENABLED",
+				"PLAN_ENABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 99,
+			"displayName": "Security Tag",
+			"helpText": "Security Tag",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"PCI_ENABLED",
+				"PLAN_ENABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 83,
+			"displayName": "Generic Entity",
+			"helpText": "Generic Entity",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 84,
+			"displayName": "NSX-V IPSet",
+			"helpText": "IPSet",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"PCI_ENABLED",
+				"PLAN_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 87,
+			"displayName": "NSX-V Firewall Rule",
+			"helpText": "Firewall Rules",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 94,
+			"displayName": "NSX Firewall Redirect Rule",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 161,
+			"displayName": "Palo Alto policy",
+			"helpText": "Firewall Rules",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 158,
+			"displayName": "Palo Alto service",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 159,
+			"displayName": "Palo Alto service group",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 156,
+			"displayName": "Palo Alto address",
+			"helpText": "PAN Address",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 157,
+			"displayName": "Palo Alto address group",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 168,
+			"displayName": "Palo Alto Manager",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 175,
+			"displayName": "NSX Fabric Agent",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 85,
+			"displayName": "NSX Service",
+			"helpText": "Services",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 86,
+			"displayName": "NSX service Group",
+			"helpText": "Service Groups",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 7,
+			"displayName": "NSX-V Manager",
+			"helpText": "NSX Managers",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 800,
+			"displayName": "NSX-T Manager",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 8,
+			"displayName": "VC Manager",
+			"helpText": "VC Managers",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"PCI_ENABLED",
+				"PLAN_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 205,
+			"displayName": "UCS Manager",
+			"helpText": "UCS Managers",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 149,
+			"displayName": "HP Chassis Manager",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 155,
+			"displayName": "HP Virtual Connect Manager",
+			"helpText": "HP VirtualConnect Manager",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 707,
+			"displayName": "HP OneView Manager",
+			"helpText": "HP OneView Manager",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 206,
+			"displayName": "L3 Switch Manager",
+			"helpText": "L3 Switch Managers",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 540,
+			"displayName": "N1K Manager",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 97,
+			"displayName": "Router",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 17,
+			"displayName": "Vmknic",
+			"helpText": "Vmknics",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 95,
+			"displayName": "Route",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 62,
+			"displayName": "NSX Controller Cluster",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 63,
+			"displayName": "NSX-V Controller",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 110,
+			"displayName": "Virtual Disk",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 112,
+			"displayName": "snapshot",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 113,
+			"displayName": "vmdatastore",
+			"helpText": "Link through which VM is connected to data store.",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 114,
+			"displayName": "hostdatastore",
+			"helpText": "Link through which host is connected to data store.",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 542,
+			"displayName": "NSX Feature",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 144,
+			"displayName": "disk",
+			"helpText": "Host scsi disk.",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 545,
+			"displayName": "NSX-V Transport Zone",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 544,
+			"displayName": "vxlan management domain",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 15,
+			"displayName": "Edge Device",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 10401,
+			"displayName": "Module",
+			"helpText": "NSX Modules installed on ESXi Host",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 10403,
+			"displayName": "Esx Vib",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 146,
+			"displayName": "hostdisklink",
+			"helpText": "Link through which host is connected to host.",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 561,
+			"displayName": "Application",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"PCI_ENABLED",
+				"PLAN_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 562,
+			"displayName": "Tier",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"PLAN_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 563,
+			"displayName": "Policy Group",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"PLAN_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 170,
+			"displayName": "Palo Alto Physical Device",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 176,
+			"displayName": "Palo Alto VM Device",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 173,
+			"displayName": "Palo Alto Device Group",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 172,
+			"displayName": "Palo Alto Zone",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 171,
+			"displayName": "Palo Alto Virtual System",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 60,
+			"displayName": "Firewall Exclusion",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 1702,
+			"displayName": "Azure Virtual Machine",
+			"helpText": "Azure VM",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"PLAN_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 1710,
+			"displayName": "Azure Route Table",
+			"helpText": "Azure Route Table",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 1701,
+			"displayName": "Azure Virtual Network",
+			"helpText": "Azure Virtual Network",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"PLAN_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 1703,
+			"displayName": "Azure Network Interface",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 1704,
+			"displayName": "Azure Application Security Group",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"PLAN_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 1706,
+			"displayName": "Azure NSG Rule",
+			"helpText": "Azure NSG Rule",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 1707,
+			"displayName": "Azure IPSet",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 1708,
+			"displayName": "Azure Subscription",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 1709,
+			"displayName": "Azure Subnet",
+			"helpText": "Azure Subnet",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"PLAN_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 1711,
+			"displayName": "Azure Route",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 1712,
+			"displayName": "Azure Service",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 966,
+			"displayName": "Azure Data Source",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 1713,
+			"displayName": "AZURE VRF",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 601,
+			"displayName": "AWS EC2",
+			"helpText": "AWS Instance",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"PLAN_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 602,
+			"displayName": "AWS Security Group",
+			"helpText": "AWS Security Group",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"PLAN_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 603,
+			"displayName": "AWS VPC",
+			"helpText": "AWS VPC",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"PLAN_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 604,
+			"displayName": "AWS Firewall Rule",
+			"helpText": "AWS Firewall Rule",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 607,
+			"displayName": "AWS Manager",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 612,
+			"displayName": "AWS Account",
+			"helpText": "AWs Account",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 609,
+			"displayName": "AWS Host",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 610,
+			"displayName": "AWS Service",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 611,
+			"displayName": "AWS IPSet",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 614,
+			"displayName": "AWS VPC Peering Connection",
+			"helpText": "AWS VPC Peering Connection",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 613,
+			"displayName": "AWS Subnet",
+			"helpText": "AWS Subnet",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 618,
+			"displayName": "AWS Availability Zone",
+			"helpText": "AWS Availability Zone",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 619,
+			"displayName": "AWS Security Group Count",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 620,
+			"displayName": "AWS Interface Count",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 616,
+			"displayName": "AWS VPN Connection",
+			"helpText": "AWS VPN Connection",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 617,
+			"displayName": "AWS Virtual Private Gateway",
+			"helpText": "AWS Virtual Private Gateway",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 615,
+			"displayName": "AWS Interface",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"PLAN_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 625,
+			"displayName": "AWS IPSec VPN Local Endpoint",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 626,
+			"displayName": "AWS IPSec VPN Peer Endpoint",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 627,
+			"displayName": "AWS IPSec VPN Tunnel Port Configuration",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 628,
+			"displayName": "AWS Route based IPSec VPN",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 629,
+			"displayName": "AWS IPSec VPN Service",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 621,
+			"displayName": "AWS Route Table",
+			"helpText": "AWS Route Table",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 622,
+			"displayName": "AWS Route",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 623,
+			"displayName": "AWS VRF",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 940,
+			"displayName": "IPSec VPN Tunnel",
+			"helpText": "IPSec VPN Tunnel",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 213,
+			"displayName": "NSX Universal Security Group",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"PCI_ENABLED",
+				"PLAN_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 214,
+			"displayName": "NSX Universal Ipset",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"PCI_ENABLED",
+				"PLAN_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 217,
+			"displayName": "NSX Universal Security Tag",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"PCI_ENABLED",
+				"PLAN_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 212,
+			"displayName": "NSX Manager Group",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 35220,
+			"displayName": "NSX Appliances",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 35216,
+			"displayName": "Server Appliance",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 194,
+			"displayName": "NSX Edge Appliance",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 35217,
+			"displayName": "Fabric Agent Appliance",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 306,
+			"displayName": "Check Point Access Rule",
+			"helpText": "Firewall Rules",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 303,
+			"displayName": "Check Point Service",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 304,
+			"displayName": "Check Point Service Group",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 300,
+			"displayName": "Check Point Address Range",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 301,
+			"displayName": "Check Point Network",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 299,
+			"displayName": "Check Point Host Network Object",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 302,
+			"displayName": "Check Point Network Group",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 313,
+			"displayName": "Check Point Security Manager",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 325,
+			"displayName": "Check Point Domain",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 326,
+			"displayName": "Check Point Multi-Domain Manager",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 316,
+			"displayName": "Check Point Access Layer",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 314,
+			"displayName": "Check Point Gateway",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 323,
+			"displayName": "Check Point Gateway Cluster",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 801,
+			"displayName": "NSX-T Logical Port",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 802,
+			"displayName": "NSX-T Logical Switch",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 191,
+			"displayName": "NSX-T Layer2 Network",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"PCI_ENABLED",
+				"PLAN_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 805,
+			"displayName": "NSX-T Firewall Rule",
+			"helpText": "Firewall Rules",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 944,
+			"displayName": "NSX Policy Firewall Rule",
+			"helpText": "Firewall Rules",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 929,
+			"displayName": "NSX Policy Manager",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 943,
+			"displayName": "NSX Policy Firewall Section",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 941,
+			"displayName": "NSX Policy Based VPN",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 858,
+			"displayName": "NSX-V Policy Based VPN",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 854,
+			"displayName": "NSX-T Policy Based VPN",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 950,
+			"displayName": "NSX Policy Segment",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"PCI_ENABLED",
+				"PLAN_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 935,
+			"displayName": "Policy based VPN Rule",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 958,
+			"displayName": "NSX Policy Group",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"PCI_ENABLED",
+				"PLAN_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 807,
+			"displayName": "NSX-T Service",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 808,
+			"displayName": "NSX-T Service Group",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 806,
+			"displayName": "NSX-T IPSet",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"PCI_ENABLED",
+				"PLAN_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 803,
+			"displayName": "NSX-T Security Group",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"PCI_ENABLED",
+				"PLAN_ENABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 825,
+			"displayName": "NSX-T Router",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 826,
+			"displayName": "NSX-T Distributed Router",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 827,
+			"displayName": "NSX-T Service Router",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 841,
+			"displayName": "NSX-T Transport Zone",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 828,
+			"displayName": "NSX-T Edge Cluster",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 843,
+			"displayName": "NSX-T Transport Node",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 809,
+			"displayName": "NSX-T Fabric Node",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 945,
+			"displayName": "Policy Service",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 946,
+			"displayName": "Policy Service entry",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 712,
+			"displayName": "ASA Access Rule",
+			"helpText": "Firewall Rules",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 711,
+			"displayName": "ASA Access Group",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 713,
+			"displayName": "ASA Network Object",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 714,
+			"displayName": "ASA Network Object Group",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 715,
+			"displayName": "ASA Service Object",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 716,
+			"displayName": "ASA Service Object Group",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 10002,
+			"displayName": "Pinboard",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 1503,
+			"displayName": "Kubernetes Namespace",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"PLAN_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 1505,
+			"displayName": "Kubernetes Pod",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 1504,
+			"displayName": "Kubernetes Service",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"PLAN_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 1502,
+			"displayName": "Kubernetes Node",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"PLAN_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 1501,
+			"displayName": "Kubernetes Cluster",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"PLAN_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 1508,
+			"displayName": "Container Interface",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 577,
+			"displayName": "Analytics Bucket",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 836,
+			"displayName": "Pool",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 837,
+			"displayName": "Pool Member",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 839,
+			"displayName": "Load Balancer Device",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 872,
+			"displayName": "Virtual Server",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 838,
+			"displayName": "Service Node",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 745,
+			"displayName": "Fortinet Manager",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 747,
+			"displayName": "Fortinet ADOM",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 749,
+			"displayName": "Fortinet Policy",
+			"helpText": "Firewall Rules",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 752,
+			"displayName": "Fortinet Realized Policy",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 756,
+			"displayName": "Fortinet Address",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 758,
+			"displayName": "Fortinet Realized Address",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 760,
+			"displayName": "Fortinet Address Group",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 762,
+			"displayName": "Fortinet Realized Address Group",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 764,
+			"displayName": "Fortinet Service",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 766,
+			"displayName": "Fortinet Service Group",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 768,
+			"displayName": "Fortinet Device",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 770,
+			"displayName": "Fortinet Device Group",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 772,
+			"displayName": "Fortinet VDOM",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 774,
+			"displayName": "Fortinet Dynamic Address",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 776,
+			"displayName": "Fortinet Dynamic Address Group",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 778,
+			"displayName": "Fortinet Dynamic Interface",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 782,
+			"displayName": "Fortinet Zone",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 780,
+			"displayName": "Fortinet Global Interface",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 1201,
+			"displayName": "VeloCloud Manager",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 1202,
+			"displayName": "VeloCloud Enterprise",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 1203,
+			"displayName": "VeloCloud Edge",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"PLAN_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 1204,
+			"displayName": "VeloCloud Site",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 1161,
+			"displayName": "Network Interface",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 1236,
+			"displayName": "KVM VM",
+			"helpText": "KVM Virtual Machine",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 1235,
+			"displayName": "KVM Host",
+			"helpText": "KVM Host",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 1234,
+			"displayName": "Baremetal Host",
+			"helpText": "Baremetal Host",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 1205,
+			"displayName": "VeloCloud Segment",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 1206,
+			"displayName": "VeloCloud Gateway",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 1207,
+			"displayName": "VeloCloud Link",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 1210,
+			"displayName": "VeloCloud Layer2 Network",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 1211,
+			"displayName": "VeloCloud Profile",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 1212,
+			"displayName": "Velocloud Logical Router",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 1213,
+			"displayName": "VeloCloud Wan",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 1214,
+			"displayName": "VeloCloud Cluster",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 1272,
+			"displayName": "AWS Direct Connect Connection",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 1273,
+			"displayName": "AWS Direct Connect Virtual Interface",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 1274,
+			"displayName": "AWS Direct Connect Peering Configuration",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 1275,
+			"displayName": "Colo Router Peering Configuration",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 1240,
+			"displayName": "SD-WAN Application",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 1241,
+			"displayName": "SD-WAN Edge Application",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 5100,
+			"displayName": "NI Platform",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 5200,
+			"displayName": "NI Collector",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 902,
+			"displayName": "VCenter Data Source",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 903,
+			"displayName": "NSX Data Source",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 905,
+			"displayName": "Cisco Switch Data Source",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 927,
+			"displayName": "Cisco ACI Data Source",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 906,
+			"displayName": "Arista Switch Data Source",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 907,
+			"displayName": "Dell Switch Data Source",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 908,
+			"displayName": "Brocade Switch Data Source",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 909,
+			"displayName": "Juniper Switch Data Source",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 910,
+			"displayName": "Check Point Firewall Data Source",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 912,
+			"displayName": "Cisco UCS Manager Data Source",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 914,
+			"displayName": "HPE Virtual Connect Data Source",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 915,
+			"displayName": "HPE Oneview Data Source",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 916,
+			"displayName": "AWS Data Source",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 919,
+			"displayName": "NSX Edge Data Source",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 921,
+			"displayName": "Infoblox Dns Data Source",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 923,
+			"displayName": "Log Insight Data Source",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 904,
+			"displayName": "NSX-T Data Source",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 1500,
+			"displayName": "Kubernetes Data Source",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 911,
+			"displayName": "Palo Alto Panorama Data Source",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 928,
+			"displayName": "NSX Policy Manager Data Source",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 952,
+			"displayName": "F5 BIG-IP Data Source",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 960,
+			"displayName": "Huawei Data Source",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 963,
+			"displayName": "Generic Switch Data Source",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 1550,
+			"displayName": "PKS Data Source",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 964,
+			"displayName": "ServiceNow Data Source",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 744,
+			"displayName": "Fortinet Data Source",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 962,
+			"displayName": "VeloCloud Data Source",
+			"helpText": "",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 541,
+			"displayName": "IP Endpoint",
+			"helpText": "Endpoint IP Entity",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SKIP_INDEX_ON_NAME"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 208,
+			"displayName": "Problem",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": true,
+			"childTypes": [
+				80001,
+				80002,
+				80003,
+				80006,
+				80004,
+				80005,
+				20003,
+				20004,
+				20006,
+				20007,
+				20008,
+				20009,
+				20010,
+				20012,
+				20015,
+				20019,
+				20020,
+				20021,
+				20063,
+				20064,
+				36042,
+				36044,
+				36045,
+				36066,
+				36046,
+				36047,
+				36058,
+				36059,
+				36048,
+				36049,
+				36050,
+				36043,
+				20066,
+				20068,
+				20069,
+				20067,
+				20070,
+				20038,
+				20040,
+				20042,
+				20043,
+				20041,
+				20022,
+				20023,
+				20031,
+				20054,
+				20037,
+				20036,
+				70001,
+				70002,
+				70003,
+				70004,
+				70005,
+				70006,
+				70007,
+				70008,
+				70009,
+				70010,
+				70011,
+				30001,
+				30002,
+				30003,
+				30004,
+				30005,
+				30006,
+				30007,
+				30008,
+				30009,
+				30101,
+				30102,
+				30103,
+				30104,
+				30105,
+				36022,
+				36023,
+				30106,
+				36025,
+				36026,
+				36031,
+				36027,
+				36028,
+				30205,
+				30206,
+				30203,
+				30204,
+				36030,
+				70013,
+				70012,
+				70014,
+				36053,
+				36052,
+				36032,
+				36033,
+				36056,
+				36057,
+				36054,
+				36055,
+				36051,
+				70000,
+				71000,
+				35221,
+				35222,
+				35223,
+				35225,
+				35224,
+				35226,
+				35227,
+				35228,
+				35229,
+				35230,
+				35231,
+				36061,
+				36062,
+				36063,
+				36064,
+				80103,
+				80102,
+				80104,
+				35232,
+				40001,
+				36065,
+				36067,
+				80105,
+				80501,
+				80502,
+				80503,
+				80504,
+				80505,
+				80506,
+				80507,
+				80508,
+				80509,
+				80510,
+				80511,
+				80512,
+				80527,
+				80528,
+				80529,
+				80513,
+				80514,
+				80515,
+				80516,
+				80517,
+				80518,
+				80519,
+				80520,
+				80521,
+				80522,
+				80524,
+				80525,
+				80526,
+				80523,
+				80631,
+				80630,
+				80629,
+				80628,
+				80627,
+				8061313,
+				8061314,
+				8061315,
+				80626,
+				80625,
+				806100018,
+				806100012,
+				80624,
+				80623,
+				80622,
+				80621,
+				80620,
+				80619,
+				80618,
+				80617,
+				80616,
+				80614,
+				80613,
+				80612,
+				80611,
+				80609,
+				80608,
+				80606,
+				80605,
+				80603,
+				80602,
+				80601,
+				80201,
+				80202,
+				80224,
+				80203,
+				80207,
+				80208,
+				80209,
+				80210,
+				80205,
+				80206,
+				80211,
+				80223,
+				80212,
+				80213,
+				80214,
+				80637,
+				80636,
+				80635,
+				80657,
+				80658,
+				80634,
+				80633,
+				80632,
+				80638,
+				80639,
+				80640,
+				80641,
+				80643,
+				80642,
+				30010,
+				30011,
+				30012,
+				30013,
+				30014,
+				80644,
+				80645,
+				80646,
+				80647,
+				80648,
+				80649,
+				80650,
+				80655,
+				80654,
+				80656,
+				80653,
+				80652,
+				80651,
+				80215,
+				80216,
+				80217,
+				80219,
+				80220,
+				80218,
+				80221,
+				80222,
+				37003,
+				568,
+				90001,
+				90002,
+				90003,
+				90004,
+				90005,
+				90013,
+				90007,
+				90008,
+				90009,
+				90010,
+				90011,
+				90012,
+				30107,
+				30108
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80001,
+			"displayName": "Palo Alto NSX Registration Event",
+			"helpText": "Panorama manager is not registered with NSX manager.",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80002,
+			"displayName": "Palo Alto NSX Dynamic Update Event",
+			"helpText": "Panorama manager dynamic membership definition update is delayed with respect to NSX.",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80003,
+			"displayName": "Palo Alto Device Disconnect Event",
+			"helpText": "Palo Alto Networks device is not in connected state with Panorama.",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80006,
+			"displayName": "Palo Alto Service VM Not Found Event",
+			"helpText": "Service VM not found on a Host for Palo Alto Networks.",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80004,
+			"displayName": "Palo Alto Service Device Mismatch Event",
+			"helpText": "Mismatch between NSX and Panorama for deployed service device.",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80005,
+			"displayName": "NSX Fabric Agent Not Found Event",
+			"helpText": "NSX Fabric Agent not found on Host.",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 20003,
+			"displayName": "Firewall Not Installed On Host Event",
+			"helpText": "This host does not have firewall module installed.",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 20004,
+			"displayName": "Host With Stale Firewall Rules Event",
+			"helpText": "This host has stale firewall rules.",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 20006,
+			"displayName": "L2 Gateway Anomaly Event",
+			"helpText": "This network has multiple|zero gateways configured",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 20007,
+			"displayName": "L2 Network Address Anomaly Event",
+			"helpText": "This network has multiple|zero subnets configured",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 20008,
+			"displayName": "L2 Network Diameter Exceeded Event",
+			"helpText": "This network has more than allowed vms",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 20009,
+			"displayName": "L2 Network Uplink Missing Event",
+			"helpText": "This network has no uplinks on a host",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 20010,
+			"displayName": "L2 Network With No VMs Event",
+			"helpText": "This network has no vms attached to it",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 20012,
+			"displayName": "MTU Mismatch Event",
+			"helpText": "MTU mismatch found in the path of VTEP to its physical switch port",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 20015,
+			"displayName": "Spoofguard Disabled Event",
+			"helpText": "NSX Spoofguard is disabled",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 20019,
+			"displayName": "VM With Disconnected Vnics Event",
+			"helpText": "This VM has disconnected VNICs - this affects the network connectivity of the VM",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 20020,
+			"displayName": "VM With Multiple Vnics On Different Vxlans Event",
+			"helpText": "This VM has multiple VNICs on different VXLAN networks - this is typically an error",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 20021,
+			"displayName": "VM With Multiple Vnics On Same L2 Event",
+			"helpText": "This VM has multiple VNICs on the Layer 2 network - there is usually no need for that and may be a configuration error",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 20063,
+			"displayName": "IPSET Definition Mismatch Event",
+			"helpText": "These IPSets are defined in different NSX manager scopes and have the same name but different definitions -  there is usually no need for a different definition and may be a configuration error",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 20064,
+			"displayName": "Segment Mismatch Event",
+			"helpText": "The Segment ID ranges defined in different NSX managers have overlapping ranges -  the best practice is to have non-overlapping ranges",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 36042,
+			"displayName": "Module Not Loaded Event",
+			"helpText": "On this Host a critical module has not been loaded - e.g. this can affect NSX.",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 36044,
+			"displayName": "Control Plane Network Mismatch Event",
+			"helpText": "Information related to VXLAN to NSX Controller association on Host is not matching with that from NSX Controllers.",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 36045,
+			"displayName": "Control Plane Network Connection Failure Event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 36066,
+			"displayName": "VDR Port Unset Event",
+			"helpText": "VDR port not found on Host for VXLAN routing.",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 36046,
+			"displayName": "Host Control Plane Sync Failure Event",
+			"helpText": "This host is not in sync with control plane information.",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 36047,
+			"displayName": "NSX Controller Cluster Majority Event",
+			"helpText": "Some of the NSX Controllers in the cluster are not communicating with the NSX Manager, which is preventing the cluster from establishing a majority.",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 36058,
+			"displayName": "NSX Controller count  Event",
+			"helpText": "There are fewer than three controllers deployed, which increases the risk of an outage when a controller is down.",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 36059,
+			"displayName": "NSX Controller Not Active  Event",
+			"helpText": "There are fewer than three controllers active, which may cause provisioning operations to fail.",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 36048,
+			"displayName": "NSX Controllers VM On Same Host Event",
+			"helpText": "All NSX Controllers in the cluster are deployed to the same host, which limits redundancy.",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 36049,
+			"displayName": "Vxlan range exhaust  Event",
+			"helpText": "More than 90% of VXLAN segments have been used.",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 36050,
+			"displayName": "NSX Firewall Allow All Rules Event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 36043,
+			"displayName": "Module Network Connection Failure Event",
+			"helpText": "On this Host a critical module is experiencing connection failures - e.g. to controller or NSX manager.",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 20066,
+			"displayName": "Vtep Configuration Fault Event",
+			"helpText": "This VTEP has configuration issues - example link local address",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 20068,
+			"displayName": "Vtep Subnet Mismatch Event",
+			"helpText": "This Cluster has VTEPs with subnet mismatches - can result in network connectivity issues",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 20069,
+			"displayName": "Vtep Count Mismatch Event",
+			"helpText": "This Cluster has Hosts with # VTEPs mismatches - can result in network connectivity issues",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 20067,
+			"displayName": "DLR Routing event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 20070,
+			"displayName": "Edge Routing event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 20038,
+			"displayName": "OSPF Mismatch Event",
+			"helpText": "OSPF area id is different on router interfaces connecting the routers.",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 20040,
+			"displayName": "Service VM Not Powered On Event",
+			"helpText": "Service VM is not powered on.",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 20042,
+			"displayName": "Service VM High Memory Usage Event",
+			"helpText": "Service VM Memory usage is beyond threshold limit.",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 20043,
+			"displayName": "Service VM High Disk Usage Event",
+			"helpText": "Service VM Disk usage is beyond threshold limit.",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 20041,
+			"displayName": "Service VM High CPU Usage Event",
+			"helpText": "Service VM CPU usage is beyond threshold limit.",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 20022,
+			"displayName": "VM With No Ip Address Event",
+			"helpText": "This VM has no IP Address",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 20023,
+			"displayName": "VTEP Missing Event",
+			"helpText": "There is no VTEP on this Host - no VMs on this host connected to VXLANs will be able to communicate",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 20031,
+			"displayName": "VTEP Ping Failure Event",
+			"helpText": "This reports a condition where the VXLAN underlay has communication problems between VTEPs",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 20054,
+			"displayName": "Firewall Rule Masked Event",
+			"helpText": "This firewall rule is being masked by other rules preceding it.",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 20037,
+			"displayName": "Search results changed (Problem)",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 20036,
+			"displayName": "Search with no results (Problem)",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 70001,
+			"displayName": "Filter Config Apply On Host Failed Event",
+			"helpText": "This host is affected by a firewall rule application error",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 70002,
+			"displayName": "Ruleset Load On Host Failed Event",
+			"helpText": "This host is affected by a firewall rule application error",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 70003,
+			"displayName": "Config Update On Host Failed Event",
+			"helpText": "This host is affected by a firewall rule application error",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 70004,
+			"displayName": "Spoofguard Config Update On Host Failed Event",
+			"helpText": "This host is affected by a firewall rule application error",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 70005,
+			"displayName": "Apply Rule To Vnic Failed Event",
+			"helpText": "This VM is affected by a firewall rule application error",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 70006,
+			"displayName": "Container Config Update On Vnic Failed Event",
+			"helpText": "This VM is affected by a firewall rule application error",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 70007,
+			"displayName": "Spoofguard Apply To Vnic Failed Event",
+			"helpText": "This VM is affected by a firewall rule application error",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 70008,
+			"displayName": "Host Messaging Configuration Failed Event",
+			"helpText": "This feature is affected on the host",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 70009,
+			"displayName": "Host Messaging Connection Reconfiguration Failed Event",
+			"helpText": "This feature is affected on the host",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 70010,
+			"displayName": "Host Messaging Configuration Failed Notification Skipped Event",
+			"helpText": "This feature is affected on the host",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 70011,
+			"displayName": "Host Messaging Infrastructure Down Event",
+			"helpText": "This feature is affected on the host",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 30001,
+			"displayName": "Threshold Exceeded Cpu Ready",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 30002,
+			"displayName": "Threshold Exceeded Cpu Co Stop",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 30003,
+			"displayName": "Threshold Exceeded Disk Command Abort Rule",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 30004,
+			"displayName": "Threshold Exceeded IO Device Latency Rule",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 30005,
+			"displayName": "Threshold Exceeded IO Kernel Latency Rule",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 30006,
+			"displayName": "Threshold Exceeded Memory Swap In Rule",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 30007,
+			"displayName": "Threshold Exceeded Memory Swap Out Rule",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 30008,
+			"displayName": "Threshold Exceeded Memory Rx Drop Rule",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 30009,
+			"displayName": "Threshold Exceeded Memory Tx Drop Rule",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 30101,
+			"displayName": "Switch Port Packet Drop",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 30102,
+			"displayName": "Router Interface Packet Drop",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 30103,
+			"displayName": "Vnic Packet Drop",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 30104,
+			"displayName": "VTEP Underlay Packet Drop",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 30105,
+			"displayName": "PNIC Underlying Switch Port Packet Drop",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 36022,
+			"displayName": "Cluster Feature Mismatch Event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 36023,
+			"displayName": "Host Feature Mismatch Event",
+			"helpText": "This Host's fabric status resource feature version is not same as that of Cluster's/NSX's.",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 30106,
+			"displayName": "Device Packet Drop",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 36025,
+			"displayName": "Feature Enabled Mismatch Event",
+			"helpText": "This Host's vib enable state mismatch with cluster's",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 36026,
+			"displayName": "Feature Installed Mismatch Event",
+			"helpText": "This Host's vib installed state mismatch with cluster's",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 36031,
+			"displayName": "Feature Health Event",
+			"helpText": "This VIB is unhealthy",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 36027,
+			"displayName": "Host Vtep Not Found Event",
+			"helpText": "There is no VTEP on this Host - no VMs on this host connected to VXLANs will be able to communicate",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 36028,
+			"displayName": "Host Vtep Disconnected Event",
+			"helpText": "This Host's VTEP is disconnected",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 30205,
+			"displayName": "ThresholdExceededEventDatastoreReadLatency",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 30206,
+			"displayName": "ThresholdExceededEventDatastoreWriteLatency",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 30203,
+			"displayName": "ThresholdExceededEventDatastoreFreeSpaceWarning",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 30204,
+			"displayName": "ThresholdExceededEventDatastoreFreeSpaceCritical",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 36030,
+			"displayName": "Host Vtep Mtu Mismatch Event",
+			"helpText": "Some or all of the Hosts in this Cluster have VTEP MTU mismatch.",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 70013,
+			"displayName": "Edge Health Event",
+			"helpText": "None of the Edge VMs is in serving state.",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 70012,
+			"displayName": "Edge VM Responding Event",
+			"helpText": "This Edge VM is not responding to health check.",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 70014,
+			"displayName": "Edge communication failure Event",
+			"helpText": "This Edge VM communication with NSX Manager failed.",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 36053,
+			"displayName": "NSX Edge not deployed Event",
+			"helpText": "The NSX Edge has not been deployed.",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 36052,
+			"displayName": "NSX Edge not Highly Available Event",
+			"helpText": "The NSX Edge is not highly available, which may result in network outages.",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 36032,
+			"displayName": "NSX Edge High Availability is not enabled Event",
+			"helpText": "High Availability is not enabled on the NSX Edge, which may result in network outages.",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 36033,
+			"displayName": "One or More NSX Edge Interfaces are down Event",
+			"helpText": "One or more interfaces on the NSX Edge are currently down.",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 36056,
+			"displayName": "NSX Edge Interface to OSPF Area Mapping Missing Event",
+			"helpText": "OSPF is enabled on the NSX Edge, but Interface to OSPF area mapping configuration is missing.",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 36057,
+			"displayName": "One or more OSPF areas on the NSX Edge are using insecure authentication Event",
+			"helpText": "One or more OSPF areas on the NSX Edge are not configured to use MD5 authentication, which could compromise information about the network.",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 36054,
+			"displayName": "NSX Edge Running with both ECMP and Stateful Edge Services Event",
+			"helpText": "A firewall, NAT, load balancer, or VPN service is running on this NSX Edge with ECMP enabled.",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 36055,
+			"displayName": "Logical Router and ECMP Edge on Same Host Event",
+			"helpText": "The NSX Logical Router is deployed to the same host as one or more NSX Edges that are configured for ECMP.",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 36051,
+			"displayName": "Logical Router does not have an uplink interface configured Event",
+			"helpText": "The NSX Logical Router does not have an uplink interface configured, which is preventing external communication.",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 70000,
+			"displayName": "NSX System Event (Warning)",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 71000,
+			"displayName": "NSX System Event (Critical)",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 35221,
+			"displayName": "NSX Service not running event",
+			"helpText": "NSX Service is not running.",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 35222,
+			"displayName": "NSX Backup not configured",
+			"helpText": "Backups are not configured for NSX Manager.",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 35223,
+			"displayName": "Audit Log excluded from NSX Backup",
+			"helpText": "Audit logs are excluded from backup.",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 35225,
+			"displayName": "System Event excluded from NSX Backup",
+			"helpText": "System events are excluded from backup.",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 35224,
+			"displayName": "NSX Backups not using secure FTP",
+			"helpText": "Backups are not using Secure FTP.",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 35226,
+			"displayName": "Scheduled backups are not enabled",
+			"helpText": "Scheduled backups are not enabled.",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 35227,
+			"displayName": "No backup of the environment has been recorded",
+			"helpText": "No backup of the environment has been recorded.",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 35228,
+			"displayName": "NTP Server not configured",
+			"helpText": "NTP Server not configured for the NSX Manager.",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 35229,
+			"displayName": "Syslog Server not configured",
+			"helpText": "Syslog server not configured for NSX Manager.",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 35230,
+			"displayName": "Syslog Server not configured",
+			"helpText": "Syslog server not configured for NSX Controller.",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 35231,
+			"displayName": "IPv6 is enabled for NSX Manager",
+			"helpText": "IPv6 enabled for NSX Manager.",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 36061,
+			"displayName": "One or more NSX Edges in the ECMP Cluster are currently down",
+			"helpText": "One or more NSX Edges in the ECMP Cluster are currently down, which has degraded the capacity of the cluster.",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 36062,
+			"displayName": "The majority of NSX Edges in the ECMP Cluster are currently down",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 36063,
+			"displayName": "All NSX Edges in the ECMP Cluster are currently down",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 36064,
+			"displayName": "The MTU configured on one or more interfaces on the Edge does not match the MTU on the next hop router",
+			"helpText": "The MTU configured on one or more interfaces on the Edge does not match the MTU on the next hop router, which may impact network performance.",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80103,
+			"displayName": "Check Point Service VM Not Found Event",
+			"helpText": "Service VM not found on a Host for Palo Alto Networks.",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80102,
+			"displayName": "Check Point NSX Fabric Agent Not Found Event",
+			"helpText": "NSX Fabric Agent not found on Host.",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80104,
+			"displayName": "Check Point Gateway Sic Status Not Communicating Event",
+			"helpText": "Check Point Gateway Sic Status not in communicating state.",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 35232,
+			"displayName": "One or more OSPF Neighbors down",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 40001,
+			"displayName": "Host with VMs running critical services is not accessible",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 36065,
+			"displayName": "Both VMs of Edge HA are in active state",
+			"helpText": "Both Edge HA VMs in active state.",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 36067,
+			"displayName": "BGP Neighbour is not in established state",
+			"helpText": "BGP Neighbour is not in established state.",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80105,
+			"displayName": "Check Point Service VM Mismatch Event",
+			"helpText": "Mismatch between NSX and Check Point for deployed service VM.",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80501,
+			"displayName": "Index Lag Event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80502,
+			"displayName": "IPFIX Flow Data Provider Paused Event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80503,
+			"displayName": "Grid Processing Stopped Event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80504,
+			"displayName": "Unable to Send Emails Event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80505,
+			"displayName": "SMPT Not Configured Event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80506,
+			"displayName": "SNMP Not Configured Event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80507,
+			"displayName": "Redindexing In Process Event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80508,
+			"displayName": "Node Version Mismatch Event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80509,
+			"displayName": "Not All Services Running Event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80510,
+			"displayName": "Not All Services Healthy Event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80511,
+			"displayName": "Expand Partition Failed Event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80512,
+			"displayName": "Disk Cleanup Failed Event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80527,
+			"displayName": "Appliance Not Configured Event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80528,
+			"displayName": "Appliance Not Registered Event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80529,
+			"displayName": "Appliance Registration Certificate Expired Event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80513,
+			"displayName": "Vacuum Failed Event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80514,
+			"displayName": "Config Store Cleanup Failed Event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80515,
+			"displayName": "HBASE Retention Tool Failed Event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80516,
+			"displayName": "Metric Store Updater Failed Event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80517,
+			"displayName": "Collecter Lag Event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80518,
+			"displayName": "Collection Lag Event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80519,
+			"displayName": "Grid Processing Lag Event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80520,
+			"displayName": "Connection Error Event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80521,
+			"displayName": "Node Not Active Event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80522,
+			"displayName": "High Disk Utilization Event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80524,
+			"displayName": "Upgrade Failed Event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80525,
+			"displayName": "Flow Processing Suspended Event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80526,
+			"displayName": "Data Processing Error",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80523,
+			"displayName": "Indexing Aborted Event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80631,
+			"displayName": "COMPUTE_MANAGERS_NOT_ADDED_EVENT",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80630,
+			"displayName": "COMPUTE_MANAGERS_NOT_FOUND_EVENT",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80629,
+			"displayName": "UNSUPPORTED_NSXT_VERSION_EVENT",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80628,
+			"displayName": "NOT_EMPTY_NODE_EVENT",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80627,
+			"displayName": "FLOW_PHYSICAL_NODE_EVENT",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 8061313,
+			"displayName": "FLOW_COLLECTION_ERROR_EVENT",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 8061314,
+			"displayName": "AWS_THROTTLING_EXCEPTION_EVENT",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 8061315,
+			"displayName": "AWS_FLOW_LOG_ACCESS_DENIED_EXCEPTION_EVENT",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80626,
+			"displayName": "NSX_IPFIX_STATUS_MISMATCH_EVENT",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80625,
+			"displayName": "NUM_VMS_OR_HOSTS_NOT_FOUND_EVENT",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 806100018,
+			"displayName": "UNSUPPORTED_NSX_VERSION_EVENT",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 806100012,
+			"displayName": "PWD_AUTH_MODE_DISABLED_ARISTA_EVENT",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80624,
+			"displayName": "HOSTNAME_RESOLUTION_ERROR_EVENT",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80623,
+			"displayName": "PRIMARY_NSX_NOT_ADDED_EVENT",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80622,
+			"displayName": "DATA_PROVIDER_NOT_RUNNING_EVENT",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80621,
+			"displayName": "INVALID_RESPONSE_FROM_DATASOURCE_EVENT",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80620,
+			"displayName": "HOST_NOT_REACHABLE_EVENT",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80619,
+			"displayName": "NSX_CONTROLLER_NOT_FOUND_EVENT",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80618,
+			"displayName": "UNEXPECTED_DS_TYPE_OR_VERSION_EVENT",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80617,
+			"displayName": "WARN_CONFIG_EVENT",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80616,
+			"displayName": "INVALID_CONFIG_EVENT",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80614,
+			"displayName": "NOT_FOUND_EVENT",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80613,
+			"displayName": "INSUFFICIENT_PRIVILEGES_EVENT",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80612,
+			"displayName": "PWD_AUTH_MODE_DISABLED_EVENT",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80611,
+			"displayName": "FAILED_CREDS_ENCRYPT_EVENT",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80609,
+			"displayName": "SNMP_CONNECTION_INVALID_EVENT",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80608,
+			"displayName": "UNKNOWN_HOST_EVENT",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80606,
+			"displayName": "INVALID_CREDENTIALS_EVENT",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80605,
+			"displayName": "INCORRECT_CONNECTION_STRING_EVENT",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80603,
+			"displayName": "CONNECTION_REFUSED_EVENT",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80602,
+			"displayName": "TIMEOUT_EVENT",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80601,
+			"displayName": "FAILED_EVENT",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80201,
+			"displayName": "VC Not Added As Data Source Event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80202,
+			"displayName": "Standalone hosts added in NSX-T Event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80224,
+			"displayName": "vCenter Manager managing one or more standalone fabric nodes in NSX-T is not added as a data source in vRNI Event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80203,
+			"displayName": "NSX-T System Event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80207,
+			"displayName": "NSX-T Manager Connectivity Down Event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80208,
+			"displayName": "NSX-T Controller Connectivity Degraded Event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80209,
+			"displayName": "NSX-T Controller Connectivity Down Event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80210,
+			"displayName": "NSX-T MTU Mismatch Event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80205,
+			"displayName": "No NS connectivity for NSX-T router event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80206,
+			"displayName": "Routing advertisement is not enabled for tier-1 router",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80211,
+			"displayName": "VM is not protected by NSX-T DFW firewall. Network Insight will not receive IPFIX flow for these VM.",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80223,
+			"displayName": "NSX-T Switch Ipfix is enabled and is using vRNI collector IP, this configuration is not recommended.",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80212,
+			"displayName": "Uplink Vlan misconfiguration",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80213,
+			"displayName": "NSX-T Transport node is not attached to any transport zone",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80214,
+			"displayName": "No vmknic/vtep available on the NSX-T transport node.",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80637,
+			"displayName": "WEBHOOK_NOT_RUNNING_EVENT",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80636,
+			"displayName": "INCORRECT_WEBHOOK_CONFIGURED_ON_ALERT_EVENT",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80635,
+			"displayName": "WEBHOOK_NOT_ENABLED_ON_ALERT_EVENT",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80657,
+			"displayName": "UANI_FILE_NOT_PROVIDED_EVENT",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80658,
+			"displayName": "UANI_FILE_DOES_NOT_EXIST_EVENT",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80634,
+			"displayName": "vRNI_CONTENT_PACK_NOT_INSTALLED_EVENT",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80633,
+			"displayName": "UNSUPPORTED_vRNI_CONTENT_PACK_VERSION_EVENT",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80632,
+			"displayName": "UNSUPPORTED_LOG_INSIGHT_VERSION_EVENT",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80638,
+			"displayName": "The number of A records fetched from Infoblox exceeds the current limit",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80639,
+			"displayName": "Invalid credentials or insufficient privileges",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80640,
+			"displayName": "The version of Infoblox is not supported",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80641,
+			"displayName": "Infoblox version cannot be determined",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80643,
+			"displayName": "VC_NOT_ON_SAME_PROXY_EVENT",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80642,
+			"displayName": "NO_DVS_AVAILABLE_EVENT",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 30010,
+			"displayName": "AWS Region Security Group count near threshold.",
+			"helpText": "AWS Security Groups available with AWS Region.",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 30011,
+			"displayName": "AWS VPC Security Group count near threshold.",
+			"helpText": "AWS Security Groups available with AWS VPC.",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 30012,
+			"displayName": "AWS Security Group Inbound Rule count near threshold.",
+			"helpText": "Inbound Rules available with AWS Security Group.",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 30013,
+			"displayName": "AWS Security Group Outbound Rule count near threshold.",
+			"helpText": "Outbound Rules available with AWS Security Group.",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 30014,
+			"displayName": "AWS VPC Security Group count near threshold.",
+			"helpText": "AWS Security Groups available with AWS Interface.",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80644,
+			"displayName": "NSXT_IPFIX_NO_COLLECTOR_PROFILE_EVENT",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80645,
+			"displayName": "NSXT_IPFIX_NO_NEW_COLLECTOR_PROFILE_CAN_BE_ADDED_EVENT",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80646,
+			"displayName": "NSXT_IPFIX_NO_IPFIX_PROFILE_EVENT",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80647,
+			"displayName": "NSXT_IPFIX_IPFIX_PROFILE_PRIORITY_NOT_ZERO_EVENT",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80648,
+			"displayName": "NSXT_IPFIX_COLLECTOR_AND_IPFIX_PROFILE_MISMATCH_EVENT",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80649,
+			"displayName": "NSXT_IPFIX_PORT_INCORRECT_EVENT",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80650,
+			"displayName": "NSXT_IPFIX_DFW_STATUS_NOT_ENABLED_EVENT",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80655,
+			"displayName": "KUBERNETES_INSUFFICIENT_PRIVILEGES_EVENT",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80654,
+			"displayName": "PKS_KUBERNETES_UNKNOWN_HOST_EVENT",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80656,
+			"displayName": "SERVICE_NOW_APP_LIMIT_EXCEEDED_EVENT",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80653,
+			"displayName": "DATASOURCE_IDENTIFICATION_CHANGED_EVENT",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80652,
+			"displayName": "POLICY_MANAGER_VRNI_DFW_IPFIX_COLLECTOR_ABSENT",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80651,
+			"displayName": "POLICY_MANAGER_NO_DFW_IPFIX_PROFILE",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80215,
+			"displayName": "Duplicate L3Switch Event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80216,
+			"displayName": "Load Balancer Pool Member Down event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80217,
+			"displayName": "Load Balancer Pool Down event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80219,
+			"displayName": "VM of Load Balancer Pool Member Down event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80220,
+			"displayName": "Load Balancer Virtual Server Disable event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80218,
+			"displayName": "Load Balancer Pool Empty event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80221,
+			"displayName": "IP of Service Node Not Found Event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 80222,
+			"displayName": "Multiple Nic of Service Node IP Found Event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 37003,
+			"displayName": "Threshold Event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 568,
+			"displayName": "Application Member Limit Event",
+			"helpText": "Member Limit exceeded for application.",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 90001,
+			"displayName": "VeloCloud Edge Down Event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 90002,
+			"displayName": "VeloCloud Link Down Event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 90003,
+			"displayName": "VeloCloud Edge Packet Drop Event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 90004,
+			"displayName": "VeloCloud Edge Retransmitted Packet Event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 90005,
+			"displayName": "Velocloud Link Lost Packet Tx Event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 90013,
+			"displayName": "Velocloud Link Lost Packet Rx Event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 90007,
+			"displayName": "Velocloud Link Degraded Voice QOE Event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 90008,
+			"displayName": "Velocloud Link Degraded Video QOE Event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 90009,
+			"displayName": "Velocloud Link Degraded Transactional QOE Event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 90010,
+			"displayName": "Velocloud Edge Degraded Voice QOE Event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 90011,
+			"displayName": "Velocloud Edge Degraded Video QOE Event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 90012,
+			"displayName": "Velocloud Edge Degraded Trans QOE Event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 30107,
+			"displayName": "Switch Port Buffer Threshold Exceeded Event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 30108,
+			"displayName": "Router Interface Buffer Threshold Exceeded Event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 31,
+			"displayName": "Change",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": true,
+			"childTypes": [
+				20001,
+				20002,
+				20050,
+				20052,
+				20057,
+				20051,
+				20018,
+				20005,
+				20011,
+				20026,
+				20058,
+				20027,
+				20028,
+				20029,
+				20053,
+				20030,
+				20034,
+				20035,
+				20090,
+				20091,
+				20092,
+				20093,
+				20094,
+				20095,
+				20096,
+				20097,
+				20098,
+				20099,
+				20100,
+				20101,
+				20103,
+				20102
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 20001,
+			"displayName": "Discovery Event",
+			"helpText": "This entity has been discovered by the system",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 20002,
+			"displayName": "Property Change Event",
+			"helpText": "The properties of this entity have changed",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 20050,
+			"displayName": "IPSet Change",
+			"helpText": "The properties of this IPSet have changed",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 20052,
+			"displayName": "Security Group Change",
+			"helpText": "The properties of this security group have changed",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 20057,
+			"displayName": "Security Tag Change",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 20051,
+			"displayName": "Firewall Rule Change",
+			"helpText": "The properties of this firewall rule have changed",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 20018,
+			"displayName": "VMotion Event",
+			"helpText": "The VM has moved from a source to a destination host",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 20005,
+			"displayName": "Ip Address Change",
+			"helpText": "This VMs ip address(es) have changed",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 20011,
+			"displayName": "Layer2 Network Diameter Changed Event",
+			"helpText": "This network diameter has changed - hosts added|deleted",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 20026,
+			"displayName": "Security Group Membership Change",
+			"helpText": "The VM membership of this security group has changed",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 20058,
+			"displayName": "Security Tag Membership Change",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 20027,
+			"displayName": "Firewall Rule Membership Change",
+			"helpText": "The VM membership of this firewall rule has changed",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 20028,
+			"displayName": "Vlan Membership Change",
+			"helpText": "The VM membership of this VLAN has changed",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 20029,
+			"displayName": "Vxlan Membership Change",
+			"helpText": "The VM membership of this VXLAN has changed",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 20053,
+			"displayName": "IPSet Membership Change",
+			"helpText": "The VM membership of this IPSet has changed",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 20030,
+			"displayName": "Delete Event",
+			"helpText": "This entity has been deleted",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 20034,
+			"displayName": "Search with no results",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 20035,
+			"displayName": "Search results changed",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 20090,
+			"displayName": "Data Source Enabled",
+			"helpText": "This data source has been enabled.",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 20091,
+			"displayName": "Data Source Disabled",
+			"helpText": "This data source has been disabled.",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 20092,
+			"displayName": "Data Source Created",
+			"helpText": "This data source has been added.",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 20093,
+			"displayName": "Platform CPU Change Event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 20094,
+			"displayName": "Platform Disk Change Event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 20095,
+			"displayName": "Platform Memory Change Event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 20096,
+			"displayName": "Platform Reboot Change Event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 20097,
+			"displayName": "Collector CPU Change Event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 20098,
+			"displayName": "Collector Disk Change Event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 20099,
+			"displayName": "Collector Memory Change Event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 20100,
+			"displayName": "Collector Reboot Change Event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 20101,
+			"displayName": "Cluster Change Event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 20103,
+			"displayName": "Cluster Create Event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		},
+		{
+			"objectType": 20102,
+			"displayName": "System Proxy Change Event",
+			"helpText": "",
+			"isEventType": true,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"SEARCH_DISABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": ""
+		}
+	],
+	"endpoints": [
+		{
+			"objectType": 1,
+			"displayName": "VMware VM",
+			"helpText": "Virtual Machines",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"PCI_ENABLED",
+				"PLAN_ENABLED",
+				"TROUBLESHOOT_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		}
+	],
+	"containers": [
+		{
+			"objectType": 11,
+			"displayName": "Vxlan",
+			"helpText": "VXLANs",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"PCI_ENABLED",
+				"PLAN_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 12,
+			"displayName": "Vlan",
+			"helpText": "Vlans",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"flags": [
+				"PLAN_ENABLED"
+			],
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		},
+		{
+			"objectType": 4,
+			"displayName": "Host",
+			"helpText": "Hosts",
+			"isEventType": false,
+			"isMetaType": false,
+			"childTypes": null,
+			"adminState": "ENABLED",
+			"eventSeverity": "Info"
+		}
+	]
+}

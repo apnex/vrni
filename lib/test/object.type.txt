@@ -1,0 +1,6 @@
+
+# list all object types
+https://field-demo.vrni.cmbu.local/api/model/objectTypes?=
+
+# get fields of object
+
