@@ -1,6 +1,6 @@
 ### vRNI SDK - Backup and Restore Applications
 
-Step by step instructions for setting up and exporting vRNI Application defintions as per:  
+Step by step instructions for setting up and exporting vRNI Application definitions as per:  
 https://code.vmware.com/samples/7128/backup-and-restore-applications---vrealize-network-insight
 
 #### 1. Create new Centos VM
