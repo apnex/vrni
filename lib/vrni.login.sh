@@ -1,11 +1,21 @@
 #!/bin/bash
 
-read -r -d '' BODY <<-CONFIG
+read -r -d '' BBODY <<-CONFIG
 {
 	"username": "demouser@cmbu.local",
 	"password": "demoVMware1!",
 	"domain": {
 		"domain_type": "LOCAL"
+	}
+}
+CONFIG
+read -r -d '' BODY <<-CONFIG
+{
+	"username": "aobersnel@vmware.com",
+	"password": "WanObi323#@#",
+	"domain": {
+		"domain_type": "LDAP",
+		"value": "vmware.com"
 	}
 }
 CONFIG

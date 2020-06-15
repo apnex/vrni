@@ -10,7 +10,8 @@ https://github.com/apnex/pxe
 
 
 #### 2. Install Python and pre-requisite packages
-Each command should be completed individually before proceeding to the next.
+Each command should be completed individually before proceeding to the next.  
+Commands assume you are logged in as root.  
 ```sh
 yum update
 yum install epel-release
@@ -33,10 +34,10 @@ python setup.py install
 #### 5. Test and run an example
 ```sh
 cd ../examples
-python application_backup.py --help
+python application_backups.py --help
 ```
 
-#### 6. Run `application_back.py` with valid parameters
+#### 6. EXPORT: Run `application_backups.py` with valid parameters
 Example with **LOCAL** auth:
 ```sh
 python application_backups.py \
@@ -60,4 +61,30 @@ python application_backups.py \
 --password '<password>' \
 --application_backup_yaml 'applications.yaml' \
 --application_backup_action 'save'
+```
+
+#### 7. RESTORE: Run `application_backups.py` with valid parameters
+Example with **LOCAL** auth:
+```sh
+python application_backups.py \
+--deployment_type 'onprem' \
+--platform_ip '<vrni.fqdn.or.ip>' \
+--domain_type 'LOCAL' \
+--username '<username>' \
+--password '<password>' \
+--application_backup_yaml 'applications.yaml' \
+--application_backup_action 'restore'
+```
+
+Example with **LDAP** auth:
+```sh
+python application_backups.py \
+--deployment_type 'onprem' \
+--platform_ip '<vrni.fqdn.or.ip>' \
+--domain_type 'LDAP' \
+--domain_value '<domain>' \
+--username '<username@domain>' \
+--password '<password>' \
+--application_backup_yaml 'applications.yaml' \
+--application_backup_action 'restore'
 ```

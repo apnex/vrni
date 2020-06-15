@@ -1,15 +1,33 @@
 #!/bin/bash
 
-STATEDIR="./state"
-TOKEN=$(curl -k -X POST \
-  -c "${STATEDIR}/vrni.cookies.txt" \
-  https://field-demo.vrni.cmbu.local/api/auth/login \
-  -H 'accept: application/json' \
-  -H 'content-type: application/json' \
-  -d '{"username":"demouser@cmbu.local","password":"demoVMware1!","tenantName":"field-demo.vrni.cmbu.local","vIDMURL":"","redirectURL":"","authenticationDomains":{"0":{"domainType":"LDAP","domain":"vmware.com","redirectUrl":""},"1":{"domainType":"LOCAL_DOMAIN","domain":"localdomain","redirectUrl":""}},"currentDomain":1,"domain":"localdomain","nDomains":2,"serverTimestamp":false,"loginFieldPlaceHolder":"Username"}' \
-2>/dev/null | jq -r '.csrfToken')
+read -r -d '' BBODY <<-CONFIG
+{
+	"username": "demouser@cmbu.local",
+	"password": "demoVMware1!",
+	"domain": {
+		"domain_type": "LOCAL"
+	}
+}
+CONFIG
+read -r -d '' BODY <<-CONFIG
+{
+	"username": "aobersnel@vmware.com",
+	"password": "WanObi323#@#",
+	"domain": {
+		"domain_type": "LDAP",
+		"value": "vmware.com"
+	}
+}
+CONFIG
 
-printf '%s' "${TOKEN}" >${STATEDIR}/vrni.token.txt
-printf '%s\n' "${TOKEN}" 1>&2
+URL='https://field-demo.vrni.cmbu.org/api/ni/auth/token'
 
-#{"username":"demouser@cmbu.local","password":"demoVMware1!","tenantName":"field-demo.vrni.cmbu.local","vIDMURL":"","redirectURL":"","authenticationDomains":{"0":{"domainType":"LDAP","domain":"vmware.com","redirectUrl":""},"1":{"domainType":"LOCAL_DOMAIN","domain":"localdomain","redirectUrl":""}},"currentDomain":1,"domain":"localdomain","nDomains":2,"serverTimestamp":false,"loginFieldPlaceHolder":"Username"}
+RESPONSE=$(curl -k -X POST \
+	-c "./vrni.cookies.txt" \
+	-H 'Content-Type: application/json' \
+	-H 'Accept: application/json' \
+	-d "${BODY}" \
+"${URL}" 2>/dev/null)
+
+printf "${RESPONSE}" | jq --tab . 1>&2
+printf "${RESPONSE}" | jq -r '.token' > vrni.token.txt

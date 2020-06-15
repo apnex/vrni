@@ -21,15 +21,16 @@ urldecode() {
 	printf '%b' "${url_encoded//%/\\x}"
 }
 
-SEARCH=${1}
-STATEDIR="./state"
+SEARCH="hosts+where+VM+Count+%3E+10"
+#SEARCH=${1}
+STATEDIR="."
 TOKEN=$(<${STATEDIR}/vrni.token.txt)
 QUERY=$(urlencode "${SEARCH}")
-#searchString=hosts+where+VM+Count+%3E+10
-RESULT=$(curl -k -b "${STATEDIR}/vrni.cookies.txt" -X GET \
+RESULT=$(curl -k -X GET \
+	-b "{STATEDIR}/vrni.cookies.txt" \
 	-H 'accept: application/json' \
 	-H "x-vrni-csrf-token: $TOKEN" \
-	"https://field-demo.vrni.cmbu.local/api/search/query?searchString=${QUERY}&includeObjects=false&includeModelKeyOnly=false&startIndex=0&maxItemCount=10" \
+	"https://field-demo.vrni.cmbu.org/api/search/query?searchString=${QUERY}&includeObjects=false&includeModelKeyOnly=false&startIndex=0&maxItemCount=10" \
 2>/dev/null)
 
 read -r -d '' SPEC <<-CONFIG
@@ -41,9 +42,10 @@ read -r -d '' SPEC <<-CONFIG
 	} else "" end
 CONFIG
 
+printf '%s' "${RESULT}" | jq --tab "${SPEC}"
 printf '%s' "${RESULT}" | jq --tab "${SPEC}" >${STATEDIR}/result.json
 
-./drv/drv.objects.list.sh
+#./drv/drv.objects.list.sh
 
 #'https://field-demo.vrni.cmbu.local/api/search/query?searchString=host&includeObjects=false&includeFacets=true&includeMetrics=false&includeEvents=false&includeModelKeyOnly=false&startIndex=0&maxItemCount=10'
 #'https://field-demo.vrni.cmbu.local/api/search/query?searchString=host&includeObjects=true&includeModelKeyOnly=false'

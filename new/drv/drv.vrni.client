@@ -38,7 +38,8 @@ function vrniLogin {
 		"username": "${VRNIUSER}",
 		"password": "${VRNIPASS}",
 		"domain": {
-			"domain_type": "LOCAL"
+			"domain_type": "LDAP"
+			"value": "vmware.com"
 		}
 	}
 	CONFIG
