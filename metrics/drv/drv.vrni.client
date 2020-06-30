@@ -1,0 +1,146 @@
+#!/bin/bash
+if [ -z ${WORKDIR} ]; then
+	if [[ $0 =~ ^(.*)/[^/]+$ ]]; then
+		WORKDIR=${BASH_REMATCH[1]}
+	fi
+	if [[ $0 == "bash" ]]; then
+		WORKDIR="."
+	fi
+fi
+if [ -z ${SDDCDIR} ]; then
+	SDDCDIR=${WORKDIR}
+fi
+STATEDIR="${WORKDIR}/state"
+if [ ! -d ${STATEDIR} ]; then
+        mkdir ${STATEDIR}
+fi
+source ${WORKDIR}/mod.core
+
+PARAMS=$(cat ${SDDCDIR}/sddc.parameters)
+DOMAIN=$(echo "${PARAMS}" | jq -r '.domain')
+SPEC=$(echo "${PARAMS}" | jq -r '.endpoints[] | select(.type=="vrni")')
+VRNIHOST=$(echo "$SPEC" | jq -r '.hostname')
+if [[ ! "$VRNIHOST" =~ ^[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}$ ]]; then
+	if [[ ! "$VRNIHOST" =~ [.] ]]; then
+		VRNIHOST+=".$DOMAIN" #if not an IP or FQDN, append domain
+	fi
+fi
+VRNIUSER=$(echo "$SPEC" | jq -r '.username')
+VRNIPASS=$(echo "$SPEC" | jq -r '.password')
+VRNIONLINE=$(echo "$SPEC" | jq -r '.online')
+VRNISESSION="${STATEDIR}/vrni.token.txt"
+VRNIBASE="https://${VRNIHOST}/api/ni/"
+
+function vrniLogin {
+	local URL="https://${VRNIHOST}/api/ni/auth/token"
+	read -r -d '' VRNIBODY <<-CONFIG
+	{
+		"username": "${VRNIUSER}",
+		"password": "${VRNIPASS}",
+		"domain": {
+			"domain_type": "LDAP",
+			"value": "vmware.com"
+		}
+	}
+	CONFIG
+	#local RESPONSE=$(curl -k -w "%{http_code}" -X POST \
+	local RESPONSE=$(curl -k -c "${STATEDIR}/vrni.cookies.txt" -D "${STATEDIR}/vrni.headers.txt" -w "%{http_code}" -X POST \
+		-H 'Content-Type: application/json' \
+		-H 'Accept: application/json' \
+		-d "${VRNIBODY}" \
+	"${URL}" 2>/dev/null)
+	local RESULT=$(isSuccess "${RESPONSE}")
+	local CODE=$(getCode "${RESPONSE}")
+	if [[ $CODE =~ 2..$ ]]; then
+		local TOKEN=$(echo $RESULT | jq -r '.token')
+		printf "%s\n" "${TOKEN}"
+	#else
+	#	printf "%s\n" "${VRNIHOST}" 1>&2
+	fi
+}
+
+function vrniSession {
+	local SESSION=$VRNISESSION
+	local ONLINE=$VRNIONLINE
+	if [[ "$ONLINE" == "true" ]]; then
+		local RUNFIND="$(find ${SESSION} -mmin -10 2>/dev/null)"
+		if [[ -z ${RUNFIND} ]]; then
+			printf "No valid session found, authenticating... " 1>&2
+			local LOGIN=$(vrniLogin)
+			if [[ -n ${LOGIN} ]]; then
+				echo "${LOGIN}" >"$SESSION"
+			fi
+		fi
+	fi
+	printf "%s\n" "$(cat "${SESSION}" 2>/dev/null)"
+}
+
+function vrniPost {
+	local URL=${1}
+	local BODY=${2}
+	if [[ "$VRNIONLINE" == "true" ]]; then
+		RESPONSE=$(curl -k -w "%{http_code}" -X POST \
+			-H "Content-Type: application/json" \
+			-H 'Accept: application/json' \
+			-H "Authorization: NetworkInsight $(cat ${VRNISESSION})" \
+			-d "$BODY" \
+		"${URL}" 2>/dev/null)
+		RESULT=$(isSuccess "${RESPONSE}")
+	else
+		printf "[$(ccyan "OFFLINE")] - SUCCESS\n" 1>&2
+	fi
+	printf "%s\n" "${RESULT}" | jq --tab .
+}
+
+function vrniGet {
+	local URL=${1}
+	local BASE=${VRNIBASE}
+	local ONLINE="${VRNIONLINE}"
+	local STATE
+	if [[ "$ONLINE" == "true" ]]; then
+		local SUCCESS=$(vrniSession)
+		local FILE=$(getFile "${URL}" "${BASE}")
+		STATE="${STATEDIR}/vrni${FILE}"
+
+		### DEBUG ###
+		#curl -k --trace-ascii /dev/stdout -b "${STATEDIR}/vrni.cookies.txt" -D "${STATEDIR}/vrni.headers.txt" -w "%{http_code}" -X GET \
+		#	-H 'Accept: application/json' \
+		#	-H 'Origin: https://field-demo.vrni.cmbu.local' \
+		#	-H "Authorization: NetworkInsight $(cat ${VRNISESSION})" \
+		#"${URL}" 1>&2
+		### DEBUG ###
+		#	-H 'x-vrni-csrf-token: RW6X9sZkHvNM+rJLFlEpaQ==' \
+
+		RESPONSE=$(curl -k -w "%{http_code}" -X GET \
+			-H 'Accept: application/json' \
+			-H "Authorization: NetworkInsight $(cat ${VRNISESSION})" \
+		"${URL}" 2>/dev/null)
+		#	-H 'Origin: https://field-demo.vrni.cmbu.local' \
+		RESULT=$(isSuccess "${RESPONSE}")
+	else
+		printf "[$(ccyan "OFFLINE")] - SUCCESS\n" 1>&2
+		RESULT=$(cat "${URL}")
+		STATE="${URL}"
+	fi
+	#printf "%s\n" "${RESULT}" | jq --tab . >"${STATE}"
+	printf "%s\n" "${RESULT}" | jq --tab .
+}
+
+function buildURL {
+	local ENDPOINT="${1}"
+	local BASE="${VRNIBASE}"
+	local STATE="${STATEDIR}"
+	local ONLINE="${VRNIONLINE}"
+	if [[ "$ONLINE" == "true" ]]; then
+		local SUCCESS=$(vrniSession)
+		if [[ -n ${SUCCESS} ]]; then
+			URL="$BASE$ENDPOINT"
+		else
+			URL="" #failed to obtain valid session
+		fi
+	else
+		local FILE=$(getFile "${ENDPOINT}")
+		URL="${STATE}/vrni${FILE}"
+	fi
+	printf "$URL"
+}

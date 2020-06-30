@@ -1,0 +1,36 @@
+# security planning
+explain percentages
+group by
+drill down
+recommended
+
+# general
+vms
+hosts
+clusters
+vms where vc = 'blah' group by cluster
+
+# network
+flows where destination port = 3389
+flows where destination port = 22 and source country = 'China' group by destination vm order by sum(bytes)
+flows where destination port = 3306 group by destination vm order by sum(bytes)
+router interface where Tx Packet Drop Ratio > 1
+router interface where Rx Packet Drop Ratio > 1
+host where rx Packet Drop Ratio > 0
+vms group by subnet
+vms group by Network Address, Default Gateway
+
+# pairs of things
+flows where Flow Type = 'Routed' and Flow Type = 'Same Host' group by source vm, destination vm order by sum(bytes)
+flows where Flow Type = 'Routed' group by Source Subnet Network, Destination Subnet Network order by sum(Bytes)
+
+# applications
+
+# security
+punching hole 
+# topology
+
+OTV
+
+
+

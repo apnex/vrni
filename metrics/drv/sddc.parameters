@@ -1,0 +1,13 @@
+{
+	"dns": "172.16.0.1",
+	"domain": "lab",
+	"endpoints": [
+		{
+			"type": "vrni",
+			"hostname": "field-demo.vrni.cmbu.org",
+			"username": "aobersnel@vmware.com",
+			"password": "WanObi323#@#",
+			"online": "true"
+		}
+	]
+}

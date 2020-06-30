@@ -1,4 +1,4 @@
-### vRNI SDK - Backup and Restore Applications
+### Import / Export Applications
 
 Step by step instructions for setting up and exporting vRNI Application definitions as per:  
 https://code.vmware.com/samples/7128/backup-and-restore-applications---vrealize-network-insight
@@ -7,7 +7,6 @@ https://code.vmware.com/samples/7128/backup-and-restore-applications---vrealize-
 Build a new minimal Centos VM to run the necessary scripts.  
 For this, you can use my unattended install procedure here:  
 https://github.com/apnex/pxe
-
 
 #### 2. Install Python and pre-requisite packages
 Each command should be completed individually before proceeding to the next.  
@@ -63,7 +62,7 @@ python application_backups.py \
 --application_backup_action 'save'
 ```
 
-#### 7. RESTORE: Run `application_backups.py` with valid parameters
+#### 7. IMPORT: Run `application_backups.py` with valid parameters
 Example with **LOCAL** auth:
 ```sh
 python application_backups.py \
