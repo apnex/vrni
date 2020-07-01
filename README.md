@@ -115,9 +115,11 @@ The usefulness of these outputs is only as good as the questions asked of the sy
 Here is a collection of query information that I have personally found useful.  
 
 **Basic Search Queries**
+
 https://docs.vmware.com/en/VMware-vRealize-Network-Insight/5.2/com.vmware.vrni.using.doc/GUID-176F5A09-2325-41EA-A315-58738CB4F117.html
 
 **Advanced Search Queries**
+
 https://docs.vmware.com/en/VMware-vRealize-Network-Insight/5.2/com.vmware.vrni.using.doc/GUID-6D40445C-8BBD-4BCE-88D5-BD4A9D733EFF.html
 
 #### Security Rules <a name="query-security"></a>
