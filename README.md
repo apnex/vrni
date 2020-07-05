@@ -501,3 +501,16 @@ python application_backups.py \
 --application_backup_yaml 'applications.yaml' \
 --application_backup_action 'restore'
 ```
+
+#### Throttling Calls - HTTP 429 Errors
+Depending on vRNI platform utilisation and deployed size, you may see a `429 Too Many Requests` error.  
+This is the platfrom appliance rejecting API calls that exceed its current ability to process.  
+
+Solve this by modifying the `application_backups.py` file to sleep longer (for 1 second) between API calls.  
+
+```diff
+-    36	                time.sleep(0.025)
++    36	                time.sleep(1)
+-    58	                time.sleep(0.025)
++    58	                time.sleep(1)
+```
