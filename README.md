@@ -54,7 +54,7 @@ To set up these VMs - you will require:
 - dvPort group: Modify
 
 More details on permissions here:  
-https://docs.vmware.com/en/VMware-vRealize-Network-Insight/5.2/com.vmware.vrni.using.doc/GUID-B9F6B6B4-5426-4752-B852-B307E49E86D1.html
+https://docs.vmware.com/en/VMware-vRealize-Network-Insight/6.1/com.vmware.vrni.using.doc/GUID-B9F6B6B4-5426-4752-B852-B307E49E86D1.html
 
 6. Once installed - the vRNI Platform will modify and enable IPFIX flows on the VDS
 - This will be a change (although non-impacting) - please ensure any change control items are covered  
@@ -85,7 +85,7 @@ VMware ESXi:
 - 6.0 Update 1b (Build 3380124) and above
 
 Full list of supported data sources:  
-https://docs.vmware.com/en/VMware-vRealize-Network-Insight/5.2/com.vmware.vrni.using.doc/GUID-4BA21C7A-18FD-4411-BFAC-CADEF0050D76.html
+https://docs.vmware.com/en/VMware-vRealize-Network-Insight/6.1/com.vmware.vrni.using.doc/GUID-4BA21C7A-18FD-4411-BFAC-CADEF0050D76.html
 
 VMware Tools ideally installed on all the virtual machines in the data center.  
 This helps in identifying the VM to VM traffic.  
@@ -116,11 +116,11 @@ Here is a collection of query information that I have personally found useful.
 
 **Basic Search Queries**
 
-https://docs.vmware.com/en/VMware-vRealize-Network-Insight/5.2/com.vmware.vrni.using.doc/GUID-176F5A09-2325-41EA-A315-58738CB4F117.html
+https://docs.vmware.com/en/VMware-vRealize-Network-Insight/6.1/com.vmware.vrni.using.doc/GUID-176F5A09-2325-41EA-A315-58738CB4F117.html
 
 **Advanced Search Queries**
 
-https://docs.vmware.com/en/VMware-vRealize-Network-Insight/5.2/com.vmware.vrni.using.doc/GUID-6D40445C-8BBD-4BCE-88D5-BD4A9D733EFF.html
+https://docs.vmware.com/en/VMware-vRealize-Network-Insight/6.1/com.vmware.vrni.using.doc/GUID-6D40445C-8BBD-4BCE-88D5-BD4A9D733EFF.html
 
 #### Security Rules <a name="query-security"></a>
 ```

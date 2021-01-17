@@ -1,0 +1,11 @@
+{
+	"endpoints": [
+		{
+			"type": "vrni",
+			"hostname": "10.221.81.189",
+			"username": "admin@local",
+			"password": "VMware1!SDDC",
+			"online": "true"
+		}
+	]
+}
