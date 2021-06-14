@@ -30,4 +30,6 @@ Roses are \textcolor{red}{red}, violets are \textcolor{blue}{blue}.
 ! text in orange
 # text in gray
 @@ text in purple (and bold)@@
-                                 
+git clone https://apnex.io/vrni
+cli test
+```
